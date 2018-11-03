@@ -161,7 +161,7 @@ $("#validarEdad").on('click',function(e){
 });
 
 $(window).on("load", function () {
-    $(".loading").stop().delay(1200).fadeOut(350,'swing');
+    $(".loading").fadeOut(700,'swing');
     var state=false;
     if(localStorage.getItem('session')){
         if(window.location.pathname==='/'){
