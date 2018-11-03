@@ -32,12 +32,17 @@ $(document).ready(function(){
            }
     });
 
-
+try {
     const ps = new PerfectScrollbar('#resultado', {
         wheelSpeed: 2,
         wheelPropagation: true,
         minScrollbarLength: 20
       });
+} catch (error) {
+   console.log("no iniciado");
+}
+
+
 $("#validarEdad").on('click',function(e){
     e.preventDefault();
     let edad = document.getElementById("edad").value;
@@ -166,6 +171,7 @@ $(window).on("load", function () {
     }
 
     const contenedor = document.getElementById("marco");
+    if(contenedor){
     const padre = document.getElementById("contenedor");
     let ancho = window.innerWidth;
     let alto = window.innerHeight;
@@ -189,7 +195,7 @@ $(window).on("load", function () {
             altoDinamico(1);
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
         }
-
+    }
 });
 
 $(window).resize(function(){
