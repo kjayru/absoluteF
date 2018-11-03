@@ -1,0 +1,120 @@
+[
+  {
+    "tienda":"Mimar",
+    "distrito":
+    [
+      {
+      
+        "dist":"Lince",
+        "address":"Jirón Mariscal Miller 1898",
+        "address2":""
+       
+      },
+      {
+     
+        "dist":"Pueblo Libre",
+        "address":"Av Brasil 1196",
+        "address2":""
+        }
+     ]
+  },
+  {
+    "tienda":"Sumon",
+    "distrito":
+    [
+      {
+      
+        "dist":"San Luis",
+        "address":"Av. Canadá 3770",
+        "address2":""
+       
+      }
+     ]
+  },
+  {
+    "tienda":"Nuevo Mundo",
+    "distrito":
+    [
+      {
+      
+        "dist":"San Isidro",
+        "address":"Av. Arenales 289 (A media Cdra. de la Av. javier Prado)",
+        "address2":""
+       
+      },
+      {
+     
+        "dist":"San Borja",
+        "address":"Av. Aviación 2842",
+        "address2":""
+        }
+     ]
+  },
+  {
+    "tienda":"Almendariz",
+    "distrito":
+    [
+      {
+      
+        "dist":"San Isidro",
+        "address":"Av. Los Conquistadores 875",
+        "address2":""
+       
+      },
+      {
+     
+        "dist":"Miraflores",
+        "address":"Calle Gral Mendiburu 665",
+        "address2":""
+        }
+     ]
+  },
+  {
+    "tienda":"El Pozito",
+    "distrito":
+    [
+      {
+      
+        "dist":"Barranco",
+        "address":"Av. San Martín 564, Barranco",
+        "address2":""
+      },
+      {
+     
+        "dist":"San Isidro",
+        "address":"Av. Guardia Civil 816 Urb. Corpac",
+        "address2":"Av. Álvarez Calderón 107"
+      },
+      {
+     
+        "dist":"Miraflores",
+        "address":"Av. Comandante Espinar 381",
+        "address2":""
+      },
+      {
+     
+        "dist":"Surco",
+        "address":"Jr. Simón Salguero 588",
+        "address2":""
+      },
+      {
+     
+        "dist":"La Molina",
+        "address":"Av. Raúl Ferrero 1083",
+        "address2":""
+      },
+      {
+     
+        "dist":"Cercado de Lima",
+        "address":"Santiago de Compostela 160, Urb. La Estancia",
+        "address2":""
+      },
+      {
+     
+        "dist":"Trujillo",
+        "address":"Prol. César Vallejo Mz. 11 - Lt. 13, Urb. Los Jardínes del Golf",
+        "address2":""
+      }
+     ]
+  }
+]
