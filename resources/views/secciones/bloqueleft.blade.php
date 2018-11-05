@@ -128,7 +128,7 @@
                                             <img src="/images/botella.png" class="img-fluid"/>
                                         </div>
 
-                                        <div class="col-md-9 col-lg-7 col-xl-4 bq1">
+                                        <div class="col-md-9 col-lg-7 col-xl-5 bq1">
                                             <div class="cuadro">
                                             <h1 class="text-center">Absolut a drop of Love</h1>
                                             <p class="text-center">Coloca tus datos y obtén acceso a
