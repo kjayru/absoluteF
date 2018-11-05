@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Register;
 class HomeController extends Controller
 {
     /**
@@ -18,6 +18,7 @@ class HomeController extends Controller
 
 
     public function secciones(){
+
         return view('front.secciones');
     }
     /**
@@ -27,7 +28,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -38,7 +39,9 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $registro = Register::create(['nombres'=>$request->nombres,'email'=>$request->email,'suscripcion'=>$request->suscripcion, 'terminos'=>$request->terminos]);
+
+        return response()->json(['rpta'=>'ok']);
     }
 
     /**

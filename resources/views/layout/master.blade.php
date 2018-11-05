@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/css/vendor/bootstrap.min.css" >
         <link href="/css/vendor/perfect-scrollbar.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/main.css?v={{ uniqid() }}">
     </head>
     <body>
          @yield('content')
@@ -30,10 +30,18 @@
         <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
+        <script src="/js/vendor/jquery.validate.min.js"></script>
         <script src="/js/vendor/perfect-scrollbar.js"></script>
         <script src="/js/vendor/jquery.threesixty.min.js"></script>
         <script src="/js/vendor/heartcode-canvasloader-min.js"></script>
+        <script src="/js/vendor/jquery.parallax.js"></script>
+
+        @desktop
         <script src="/js/main.js?v={{ uniqid() }}"></script>
+        @enddesktop
+        @handheld
+        <script src="/js/mainmobile.js?v={{ uniqid() }}"></script>
+        @endhandheld
+
     </body>
 </html>

@@ -1,23 +1,29 @@
-<div class="bl-left column" id="col-izquierda">
+<div  id="conocemob">
+        <div class="bl-left column" id="col-izquierda" >
                 <div class="lienzo ventana" id="pagina1-l">
                     <div class="container">
-                            <div class="row h-100 justify-content-center align-items-center">
-                                <div class="col-md-4">
-                                   <div class="text-absolute-left">
-                                       <p> <img src="/images/absolutesign.png" class="img-fluid"/></p>
-                                       <p class="txt-2">A drop of love</p>
-                                       <p class="txt-3">Edición limitada, sabor original.</p>
-                                   </div>
+                            <div class="row mb-bloque1">
+                                <div class="col">
+                                  <p> <img src="/images/absolutesign.png" class="img-fluid"/></p>
                                 </div>
-                                <div class="col-md-4">
-                                <div class="threesixty" id="threesixty">
-                                    <div id="spinner">
-                                        <span>0%</span>
+                                <div class="col">
+                                    <p class="txt-2">A drop of love</p>
+                                    <p class="txt-3">Edición limitada, sabor original.</p>
+                                </div>
+                            </div>
+
+                            <div class="row mb-botella">
+                                <div class="col-12">
+                                    <div class="threesixty" id="threesixty">
+                                        <div id="spinner">
+                                            <span>0%</span>
+                                        </div>
+                                        <ol class="threesixty_images" id="threesixty_images"></ol>
                                     </div>
-                                    <ol class="threesixty_images" id="threesixty_images"></ol>
                                 </div>
-                                </div>
-                                <div class="col-md-4 texto-ab">
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12 texto-ab text-center">
                                     <p>Absolut Drop of love, mismo sabor.
                                         pero con más amor. Una Botella de
                                         edición limitada hecha con la tinta
@@ -26,29 +32,35 @@
                                     </p>
                                     <div class="cambioescena">
                                         Prende el amor
-                                    </div>
-                                    <label class="switch p1">
+                                        <label class="switch p1">
                                         <input type="checkbox" id="cambio"/>
                                         <span class="slider round"></span>
                                     </label>
+                                    </div>
+
                                 </div>
                             </div>
                     </div>
                     <div class="fondoactivo" style="display:none">
                         <div class="container">
-                            <div class="row h-100 justify-content-center align-items-center">
-                                <div class="col-md-4">
-                                   <div class="text-absolute-left">
-                                       <p> <img src="/images/absolutesign.png" class=" img-fluid"/></p>
-                                       <p class="txt-2">A drop of love</p>
-                                       <p class="txt-3">Edición limitada, sabor original.</p>
-                                   </div>
+                            <div class="row mb-bloque1">
+                                <div class="col">
+                                  <p> <img src="/images/absolutesign.png" class="img-fluid"/></p>
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="/images/botella_on.png" class="img-fluid botell"/>
+                                <div class="col">
+                                    <p class="txt-2">A drop of love</p>
+                                    <p class="txt-3">Edición limitada, sabor original.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-botella">
+                                <div class="col-12">
+
+                                    <img src="/images/botella_on.png" class="img-fluid"/>
 
                                 </div>
-                                <div class="col-md-4 texto-ab">
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12 texto-ab text-center">
                                     <p>Absolut Drop of love, mismo sabor.
                                         pero con más amor. Una Botella de
                                         edición limitada hecha con la tinta
@@ -57,11 +69,11 @@
                                     </p>
                                     <div class="cambioescena">
                                         Prende el amor
-                                    </div>
-                                    <label class="switch p2">
-                                        <input type="checkbox" id="cambio2" checked/>
+                                        <label class="switch p2">
+                                        <input type="checkbox" id="cambio2"/>
                                         <span class="slider round"></span>
                                     </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -69,16 +81,16 @@
                 </div>
 
                 <div class="lienzo ventana" id="pagina2-l">
-                    <div class="container part1">
+                    <div class="container ">
                          <div class="row h-100 justify-content-center align-items-center text-center">
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 col-12 text-center">
                                 <h1>Encuentra la Botella</h1>
                                 <p>Encuentra la edición limitada<br/>
                                 A drop of Love en cualquiera de nuestros puntos de venta y<br/>
                                 brindemos con amor.
                                 </p>
                             </div>
-                            <div class="col-md-8 mercados">
+                            <div class="col-md-8 col-12 mercados">
                                 <h2>Supermercados y tiendas</h2>
                                 <p>Ubícalos en todos estos establecimientos:</p>
                                     <ul>
@@ -93,7 +105,7 @@
                                     <li><img src="/images/tottus.png" class="img-fluid" alt="Tottus"/></li>
                                     </ul>
                             </div>
-                            <div class="col-md-4 tiendas">
+                            <div class="col-md-4 col-12 tiendas">
                                 <h2>Licorerías</h2>
                                 <p>Ubícalos en las siguientes licorerías:</p>
 
@@ -101,7 +113,7 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" id="lugares" >
+                                        <select class="form-control" id="lugares2" >
                                             <option>Seleccione</option>
                                             <option value="Mimar">Mimar</option>
                                             <option value="Sumon">Sumon</option>
@@ -123,47 +135,51 @@
 
 
                     </div>
-                    <div class="container-fluid part2">
-                        <div class="row align-items-end">
-                                <div class="col-md-12 col-lg-12 col-xl-12 barra-azul">
+                    <div class="container-fluid ">
+                        <div class="row">
+                                <div class="col-12 barra-azul">
+                                <div class="cuadro">
                                     <div class="row justify-content-center">
-                                        <div class="col-md-3 col-lg-3 col-xl-2">
+                                        <div class="col-12">
+                                        <h1 class="text-center">Absolut a drop of Love</h1>
+                                        </div>
+                                        <div class="col-7">
                                             <img src="/images/botella.png" class="img-fluid"/>
                                         </div>
-
-                                        <div class="col-md-9 col-lg-7 col-xl-4 bq1">
-                                            <div class="cuadro">
-                                            <h1 class="text-center">Absolut a drop of Love</h1>
-                                            <p class="text-center">Coloca tus datos y obtén acceso a
+                                        <p class="text-center">Coloca tus datos y obtén acceso a<br/>
                                                 material exclusivo.
                                             </p>
-                                            <form class="form" id="formdata">
+                                        <div class="col-12  bq1">
+
+
+
+                                            <form class="form" id="formdata2">
                                             <input type="hidden" name='_method' value="POST" id="method">
                                              @csrf
                                                 <div class="row align-items-start">
-                                                    <div class="form-group col">
-                                                        <input type="text" class="form-control" name="nombres" maxlength="50" id="nombres" data-rel="Nombre y apellido"/>
+                                                    <div class="form-group col-12">
+                                                        <input type="text" class="form-control" name="nombres2" maxlength="50" id="nombres2" data-rel="Nombre y apellido"/>
                                                     </div>
-                                                    <div class="form-group col">
-                                                        <input type="text" class="form-control" name="email" id="email" maxlength="50" data-rel="Correo electrónico"/>
+                                                    <div class="form-group col-12">
+                                                        <input type="text" class="form-control" name="email2" id="email2" maxlength="50" data-rel="Correo electrónico"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="suscripcion" value="1"  id="suscripcion"/>
+                                                    <input class="form-check-input" type="checkbox" name="suscripcion2" value="1"  id="suscripcion2"/>
                                                     <label class="form-check-label">
                                                         Desea recibir información y noticias de ABSOLUT.
                                                     </label>
                                                 </div>
 
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox"  name="terminos" value="1" id="terminos"/>
+                                                    <input class="form-check-input" type="checkbox"  name="terminos2" value="1" id="terminos2"/>
                                                     <label class="form-check-label">
                                                         Acepto los términos y condiciones y políticas de privacidad.
                                                     </label>
                                                 </div>
-
-                                                    <a href="#" class="btn btn-light btn-sendata">Enviar</a>
-
+                                                <div class="text-center">
+                                                    <a href="#" class="btn btn-light btn-sendata2">Enviar</a>
+                                                </div>
 
                                             </form>
                                             </div>
@@ -188,3 +204,6 @@
                     </div>
                 </div>
             </div>
+
+
+</div>

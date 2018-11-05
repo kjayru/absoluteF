@@ -87,32 +87,7 @@ $("#validarEdad").on('click',function(e){
     }
 });
 
-    $(".btnMira").on('click',function(e){
-        e.preventDefault();
-        const contenedor = document.getElementById("marco");
-          window.history.pushState(null, '', '/secciones/Mira-lo-que-hicimos-con-todo-el-odio');
-          const ccright = window.innerWidth*2;
-          altoDinamico(1);
-          TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
-    });
 
-    $(".btnInicio").on('click',function(e){
-        e.preventDefault();
-        const contenedor = document.getElementById("marco");
-        window.history.pushState(null, '', '/secciones');
-        altoDinamico(2);
-        TweenMax.to(contenedor,1,{left:`-${ window.innerWidth}px`,ease:Power4.easeIn});
-    });
-
-
-    $(".btnConoce").on('click',function(e){
-        e.preventDefault();
-        const contenedor = document.getElementById("marco");
-        window.history.pushState(null, '', '/secciones/conoce-la-botella');
-        altoDinamico(2);
-        TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
-    });
-    $(window).resize();
 
     $("#cambio").change(function(){
         $(".fondoactivo").fadeIn(350,'swing');
@@ -127,40 +102,7 @@ $("#validarEdad").on('click',function(e){
 
     });
 
-    $("#lugares").on('change',function(){
-        let lugar = $(this).val();
 
-        let tienda="";
-        fetch('/address.json')
-        .then(res =>res.json())
-        .catch(error => console.error('error: ', error))
-        .then(data =>{
-            //this.setState({tiendas:data});
-
-        for(let i=0; i<data.length; i++){
-            if(data[i].tienda===lugar){
-
-                $.each(data[i].distrito,function(i,e){
-
-                    tienda += `<address>
-                    <strong> ${e.dist}</strong>:<span>${ e.address }</span>
-
-                </address>`;
-                if(e.address2!=""){
-                    tienda += `<address>
-                    <strong> ${e.dist}</strong>:<span>${ e.address2 }</span>
-                 </address>`;
-                }
-                });
-            }
-
-        }
-
-        $("#resultado").html(tienda);
-
-        })
-
-    });
 
     $("#lugares2").on('change',function(){
         let lugar = $(this).val();
@@ -223,46 +165,50 @@ $("#validarEdad").on('click',function(e){
        }, "Value must not equal arg.");
 
 
-    $("#formdata").validate({
+
+
+    /**send mobile */
+
+    $("#formdata2").validate({
         rules: {
-            nombres:{
+            nombres2:{
                 required:true,
                 valueNotEquals:'Nombre y apellido'
             } ,
 
-            email: {
+            email2: {
                 required: true,
                 email: true,
                 valueNotEquals:'Correo electrónico'
             },
 
-            terminos: "required"
+            terminos2: "required"
 
 
         },
         messages: {
-            nombres: "Ingrese su nombre",
+            nombres2: "Ingrese su nombre",
 
-            email: "Ingrese un correo válido",
-            terminos: "Acepte los términos y condiciones"
+            email2: "Ingrese un correo válido",
+            terminos2: "Acepte los términos y condiciones"
 
 
         }
     });
 
-    $(".btn-sendata").on('click',function(e){
+    $(".btn-sendata2").on('click',function(e){
         e.preventDefault();
-        let nombres = document.getElementById("nombres").value;
-        let email = document.getElementById('email').value;
-        let suscripcion = document.getElementById('suscripcion').value;
-        let terminos = document.getElementById('terminos').value;
+        let nombres = document.getElementById("nombres2").value;
+        let email = document.getElementById('email2').value;
+        let suscripcion = document.getElementById('suscripcion2').value;
+        let terminos = document.getElementById('terminos2').value;
         let method = document.querySelector("input[name$='_method']").value;
         let token = document.querySelector("input[name$='_token']").value;
 
 
         datos = ({'_method':method,'_token':token,'nombres':nombres,'email':email,'suscripcion':suscripcion,'terminos':terminos});
         let url = `/savedata`;
-				 if($("#formdata").valid()===true){
+				 if($("#formdata2").valid()===true){
 
                     fetch(url,{
                         method:'POST',
@@ -282,23 +228,38 @@ $("#validarEdad").on('click',function(e){
                             }
                         });
 
-
-
-
                  }else{
                      return false;
                  }
 
     });
 
-
-
+    $(".btnInicio").on('click',function(e){
+        $("#iniciomob").show();
+        $("#conocemob").hide();
+        $("#miramob").hide();
+        $(".navbar-toggler").trigger('click');
+    });
+    $(".btnConoce").on('click',function(e){
+        $("#iniciomob").hide();
+        $("#conocemob").show();
+        $("#miramob").hide();
+        $(".navbar-toggler").trigger('click');
+    });
+    $(".btnMira").on('click',function(e){
+        $("#iniciomob").hide();
+        $("#conocemob").hide();
+        $("#miramob").show();
+        $(".navbar-toggler").trigger('click');
+    });
 });
 
 $(window).on("load", function () {
     $(".loading").fadeOut(700,'swing');
     var state=false;
-
+    $("#iniciomob").show();
+    $("#conocemob").hide();
+    $("#miramob").hide();
     if(localStorage.getItem('session')){
         if(window.location.pathname==='/'){
           window.location.href='/secciones';
@@ -314,123 +275,10 @@ $(window).on("load", function () {
 
     }
 
-    const contenedor = document.getElementById("marco");
-    if(contenedor){
-    const padre = document.getElementById("contenedor");
-    let ancho = window.innerWidth;
-    let alto = window.innerHeight;
 
-    const lienzo = ancho*3;
-    const ccright = ancho*2;
-    const altoh = alto*2;
-    contenedor.style.width = `${lienzo}px`;
-    padre.style.height = `${altoh}px`;
-    contenedor.style.left=`-${ancho}px`;
-
-        if(window.location.pathname==='/secciones'){
-            altoDinamico(2);
-            TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
-        }
-        if(window.location.pathname==='/secciones/conoce-la-botella'){
-            altoDinamico(2);
-            TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
-        }
-        if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
-            altoDinamico(1);
-            TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
-        }
-    }
 });
 
-$(window).resize(function(){
 
-    const contenedor = document.getElementById("marco");
-    if(contenedor){
-    let ancho = window.innerWidth;
-    const lienzo = ancho*3;
-    const ccright = ancho*2;
-    contenedor.style.width = `${lienzo}px`;
-
-    contenedor.style.left=`-${ancho}px`;
-
-    if(window.location.pathname==='/secciones'){
-        altoDinamico(2);
-        TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
-    }
-    if(window.location.pathname==='/secciones/conoce-la-botella'){
-        altoDinamico(2);
-        TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
-    }
-    if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
-        altoDinamico(1);
-        TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
-    }
-    }
-});
-
-function altoDinamico(secciones){
-
-    const padre = document.getElementById("contenedor");
-    let alto = window.innerHeight;
-    const altoh = alto*secciones;
-    padre.style.height = `${altoh}px`;
-
-}
-//wheel page
-
-if (window.addEventListener) {
-    window.addEventListener('DOMMouseScroll', wheel, false);
-}
-window.onmousewheel = document.onmousewheel = wheel;
-
-function wheel(event) {
-    var delta = 0;
-    if (event.wheelDelta) delta = event.wheelDelta / 120;
-    else if (event.detail) delta = -event.detail / 3;
-
-    handle(delta);
-    if (event.preventDefault) event.preventDefault();
-    event.returnValue = false;
-}
-
-var goUp = true;
-var end = null;
-var interval = null;
-
-function handle(delta) {
-	var animationInterval = 20;
-  var scrollSpeed =5;
-
-	if (end == null) {
-  	end = $(window).scrollTop();
-  }
-  end -= 20 * delta;
-  goUp = delta > 0;
-  $window =  $(window);
-  if (interval == null) {
-    interval = setInterval(function () {
-      var scrollTop = $(window).scrollTop();
-      var step = Math.round((end - scrollTop) / scrollSpeed);
-      if (scrollTop <= 0 ||
-          scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
-          goUp && step > -1 ||
-          !goUp && step < 1 ) {
-        clearInterval(interval);
-        interval = null;
-        end = null;
-      }
-
-      TweenMax.to($window, 0.5, {
-        scrollTo : { y: scrollTop + step, autoKill:true },
-        ease: Power4.easeOut,
-        autoKill: true,
-        overwrite: 5,
-
- });
-
-    }, animationInterval);
-  }
-}
 
 //api youtube
 var tag = document.createElement('script');
@@ -908,12 +756,12 @@ $(document).ready(function(){
 });
 
 function reset(){
-    let rel1 = $("#nombres").data('rel');
-    $("#nombres").val(rel1);
-    let rel2 = $("#email").data('rel');
-    $("#email").val(rel2);
-    $("#suscripcion").prop("checked",false);
-    $("#terminos").prop("checked",false);
+    let rel1 = $("#nombres2").data('rel');
+    $("#nombres2").val(rel1);
+    let rel2 = $("#email2").data('rel');
+    $("#email2").val(rel2);
+    $("#suscripcion2").prop("checked",false);
+    $("#terminos2").prop("checked",false);
 }
 
 

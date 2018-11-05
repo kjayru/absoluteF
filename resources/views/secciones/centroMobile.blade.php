@@ -1,23 +1,24 @@
-<div   class="bl-centro column" id="ascenso">
+
+<div class="" id="iniciomob"  style="display:none">
+    <div  class="bl-centro column" id="ascenso">
                 <div class="lienzo ventana activado" id="pagina1">
 
                     <div class="container-fluid">
 
-                        <div class="row h-100 justify-content-center align-items-center">
+                        <div class="row h-100 justify-content-center ">
 
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                          <div class="row h-100 justify-content-center align-items-center">
-                                            <div class="col-md-3 col-8">
+                                          <div class="row h-100 justify-content-center">
+                                            <div class="col-md-3 col-7">
                                                 <img src="/images/bottle.png" alt="b2" class="img-fluid" />
                                             </div>
-                                            <div class="col-md-5 textocentro">
+                                            <div class="col-md-5 col-12 text-center textocentro">
                                                 <p>En el mundo hay mucho odio, por eso decidimos hackearlo y convertirlo
                                                     en un mensaje de amor. Únete a este movimiento y juntos hagamos de este mundo
                                                     un lugar con <span>#MasAmorMenosOdio</span>
@@ -35,11 +36,11 @@
                                           </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <div class="row h-100 justify-content-center align-items-center">
-                                                <div class="col-md-3 col-8">
+                                            <div class="row h-100 justify-content-center">
+                                                <div class="col-md-3 col-7">
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
-                                                <div class="col-md-5 textocentro">
+                                                <div class="col-md-5 col-12 text-center textocentro">
                                                     <p>Para crear la botella Absolut A Drop of Love, fuimos a manifestaciones de odio en diferentes partes del mundo y
                                                          recogimos todos los carteles de mensajes de Odio posibles. Luego, extrajimos la tinta y la transformamos
                                                           para transmitir un mensaje más poderoso: <span>El Amor</span>.
@@ -88,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-12">
                                 <div class="texto2">
                                   <p>  Con más amor en nuestras vidas
                                     el mundo puede ser un lugar mejor.
@@ -105,15 +106,8 @@
 
 
                     </div>
-                    <div id="parallax">
 
-
-                        <div class="layer layer2" data-depth="0.3">
-
-                        </div>
-                    </div>
 
                 </div>
-
-            </div>
-
+    </div>
+</div>

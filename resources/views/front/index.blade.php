@@ -5,26 +5,27 @@
 <div id="home">
                 <div class="container">
                     <div class="row h-100 justfy-content-center align-items-center">
-                        <div class="col-md-12 block_1">
+                        <div class="col-md-12 col-xs-12 block_1">
                             <h1 class="text-center">BIENVENIDO</h1>
                             <!--<p class="text-center p1">Coloca tu fecha de nacimiento y empieza a darle al mundo más
                                 amor y menos odio.
                             </p>-->
-                            <div class="row justify-content-md-center">
-                                <div class="fdatos">
-                                    <div class="box-year">
-                                        <input type="text" class="in-form" maxlength="4" id="edad" name="edad">
+                            <div class="row justify-content-center">
+                                <form id="fr-edad">
+                                    <div class="fdatos">
+                                        <div class="box-year">
+                                            <input type="text" class="in-form" maxlength="4" id="edad" name="edad">
+                                        </div>
+                                        <a class="box-btn " href="#" id="validarEdad">
+                                            OK
+                                        </a>
                                     </div>
-                                    <a class="box-btn " href="#" id="validarEdad">
-                                        OK
-                                    </a>
-                                </div>
-
+                                </form>
                             </div>
-                            <div class="row justify-content-md-center">
+                            <div class="row justify-content-center">
                                 <p>Tienes que ser mayor de 18 años</p>
                             </div>
-                            <div class="row justify-content-md-center">
+                            <div class="row justify-content-center">
                                 <div class="iremenber">
                                     <form class="form">
                                         <div class="form-check">
@@ -39,11 +40,15 @@
                         </div>
 
 
-                        <div class="col-md-12">
-                            <div class="titulo text-center">Absolut.</div>
+                        <div class="col-md-12 col-xs-12 text-center">
+
+                            <div class="titulo text-center">
+                                <img src="/images/logo-absolut.svg" alt="Absolut" class="img-fluid">
+                            </div>
+
                         </div>
 
-                         <div class="col-md-12">
+                         <div class="col-md-12 col-xs-12">
                            <!-- <div class="legal">
                                 <p>
                                   By entering this site, you are agreeing to our Terms & Conditions found here, Privacy Policy found here and Cookies Policy found here.

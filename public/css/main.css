@@ -61,10 +61,7 @@ html body  .container h1{
   line-height:50px;
   margin-bottom:0
 }
-.container {
-    max-width: 1140px;
-    position: relative;
-}
+
 #home{
     background:url('/images/back001.png') no-repeat center top;
     background-size:cover;
@@ -83,10 +80,12 @@ html body  .container h1{
     font-size: 84px;
     font-weight: 400;
 }
-#home .titulo{
+#home .titulo {
     font-family: 'Conv_AbsolutHeadline2017';
     font-size: 30px;
     text-transform: uppercase;
+    max-width: 130px;
+    display: inline-block;
 }
 .mr-auto li a {
     font-family: 'Conv_MyriadPro-Regular';
@@ -121,6 +120,7 @@ html body  .container h1{
     display: block;
     padding-bottom: 20px;
     padding-top: 56px;
+    position: relative;
 }
 .box-year ,.box-btn {
     border: 2px solid white;
@@ -138,6 +138,12 @@ html body  .container h1{
 #validarEdad:hover{
     text-decoration: none;
     text-shadow: 2px 4px black;
+}
+label#edad-error {
+    position: absolute;
+    left: 26px;
+    bottom: -7px;
+    font-size: 11px;
 }
 input#edad {
     background: transparent;
@@ -170,6 +176,9 @@ input#edad {
     background-size:cover;
     color:white;
 }
+#pagina2 .container{
+    z-index:2;
+}
 #pagina1-l{
     background: url('/images/back004.png') no-repeat center 0px;
     background-size:cover;
@@ -185,6 +194,7 @@ input#edad {
     background-size:cover;
     color:white;
 }
+
 a.navbar-brand {
     position: absolute;
     left: 50%;
@@ -235,7 +245,7 @@ a.navbar-brand {
     width: 100%;
     float: left;
     top: 0px;
-
+    position: relative;
 }
 #pagina1{
 
@@ -293,6 +303,7 @@ a.navbar-brand {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index:100;
 }
 .footer p {
     margin-bottom: 0;
@@ -582,6 +593,13 @@ p.txt-3 {
 .part2{
     height: 50vh !important;
 }
+.part2 .row{
+    height: 86%;
+}
+#pagina2-l h1 {
+    font-family: 'Conv_AbsolutHeadline2017';
+    font-size: 30px;
+}
 .cuadro {
     border: 2px solid #44ffff;
     border-radius: 10px;
@@ -610,6 +628,28 @@ p.txt-3 {
     border-radius: 0;
 }
 #lugares{
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 8px 14px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #2a78df;
+    font-family: 'Conv_AbsolutHeadline2017';
+    background-color: rgba(235,245,255,0.9);
+    -moz-appearance: none;
+    background-image: none;
+    border: none;
+    border-radius: 12px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    margin-bottom: 20px !important;
+    margin-top: 14px !important;
+}
+#lugares2{
     display: block;
     width: 100%;
     height: 36px;
@@ -670,7 +710,7 @@ div#resultado {
             transform-origin: 50% 50%;
     transition: opacity .5s linear;
     width: 100vw;
-    z-index: 2;
+    z-index: 2000;
   }
   .boxmodal.active {
     opacity: 1;
@@ -686,7 +726,7 @@ div#resultado {
     pointer-events: none;
     top: 0;
     width: 100vw;
-    z-index: 3;
+    z-index: 2003;
   }
   .ripple-container .ripple {
     -webkit-backface-visibility: hidden;
@@ -814,9 +854,14 @@ div#resultado {
     left: 49%;
     width: 185px;
     height: 517px;
-    margin-left: -127px;
+    margin-left: -167px;
     margin-top: -200px;
     padding-left: 0px;
+}
+.fondoactivo .botell {
+
+    margin-left: -39px;
+
 }
 
 @media	screen and (max-device-width: 1024px) and (orientation:portrait) {
@@ -840,12 +885,13 @@ div#resultado {
 
 @media	screen and (max-device-width: 480px) and (orientation:portrait),
 				screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:portrait) {
-	#threesixty {
-		width:320px;
-		height:200px;
-		margin-left:-160px;
-		margin-top:-100px;
-	}
+    #threesixty {
+        width: 129px;
+        height: 198px;
+        margin-left: -108px;
+        margin-top: -154px;
+    }
+
 }
 
 #threesixty_images {
@@ -936,7 +982,7 @@ div#resultado {
     width: 100%;
     height: 376px;
 
-    z-index: 10;
+    z-index: 2002;
     position: absolute;
     top: 50%;
     margin-top: 205px;
@@ -975,5 +1021,385 @@ div#resultado {
     margin-left: -50px;
   }
 
-@media (min-width: 900px){
+  div#parallax {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
 }
+
+  #particles-js, #parallax, .layer, .some-space, .some-more-space {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  #particles-js {
+    opacity: 0.6;
+  }
+
+
+
+  .some-space {
+    animation: rotate 18s 0.5s infinite linear reverse;
+  }
+
+  .some-more-space {
+    -webkit-animation: rotate 15s 0.1s infinite linear;
+            animation: rotate 15s 0.1s infinite linear;
+  }
+
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+              transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+    }
+    100% {
+      -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+              transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+              transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+    }
+    100% {
+      -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+              transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+    }
+  }
+
+.layer2{
+    background: url('/images/elementos.png') no-repeat 0px 0px;
+    width: 100%;
+    height: 100vh;
+    z-index:1;
+}
+.modalform {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+}
+.boxchild {
+    position: relative;
+    background: url(/images/bgpopup.png) no-repeat 0px 0px;
+    background-size: cover;
+    height: 329px;
+    margin-bottom: 14px;
+    color: white;
+    padding-top:120px;
+    font-size:20px;
+}
+.modalform .container {
+    max-width: 1140px;
+    position: relative;
+    height: 100vh;
+}
+a.closechild {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 7px;
+    top: 8px;
+
+}
+.col-md-4.boxchild.align-items-center p {
+    padding-top: 138px;
+    font-size: 19px;
+}
+label#terminos-error {
+    position: absolute;
+    bottom: -21px;
+    color: red;
+}
+.error {
+    color: red;
+}
+@media(max-width: 769px){
+    body {
+
+        overflow:auto;
+    }
+    div#pagina1 .container-fluid {
+        height: 90vh;
+    }
+    a.navbar-brand {
+        position: unset;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: none;
+        margin-left: 12px;
+        font-size: 32px;
+        font-family: 'Conv_AbsolutHeadline2017';
+    }
+    ul.navbar-nav.mr-auto {
+        margin-left: 14px;
+        padding-bottom: 20px;
+    }
+    #ascenso {
+        background: url(/images/back002.png) no-repeat center 0px;
+        background-size: cover;
+        color: white;
+        display: inline-block;
+        position: unset;
+    }
+    .ventana {
+        height: auto;
+        width: 100%;
+        float: left;
+        top: 0px;
+        position: relative;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    .fondoactivo .col-12 img {
+        width: 250px;
+        padding-top: 5px;
+        margin-left: 40px;
+    }
+    #home h1 {
+        font-size: 43px;
+    }
+    .footer .bloque {
+        font-size: 9pt;
+    }
+    .box-year, .box-btn {
+        width: 115px;
+    }
+    input#edad {
+        font-size: 30px;
+    }
+    #validarEdad {
+        font-size: 30px;
+    }
+    .textocentro {
+        font-size: 12px;
+        padding-top: 0px;
+        padding: 0 29px;
+        text-align: center;
+    }
+    #videoabsolute .bgif {
+        left: 0;
+
+        width: 100%;
+    }
+    .carousel-indicators {
+        bottom: 35px;
+    }
+    .btn-slide {
+        width: 280px;
+        height: 50px;
+        cursor: pointer;
+        perspective: 500px;
+        -webkit-perspective: 500px;
+        padding-left: 7px;
+        margin-left: -33%;
+    }
+    .texto-pie {
+        position: unset;
+        margin-bottom: 56px;
+        font-size: 11px;
+        text-align: center;
+    }
+    .texto2 {
+        font-size: 18px;
+        font-family: 'Conv_MyriadPro-Regular';
+        line-height: 27px;
+        text-align: center;
+    }
+    p.txt-2 {
+        font-size: 24px;
+        margin-bottom: 1px;
+    }
+    p.txt-3 {
+        font-size: 9px;
+    }
+    .mb-botella {
+        height: 350px;
+    }
+    .mb-bloque1{
+        padding-top: 30px;
+    }
+    .fondoactivo .mb-bloque1{
+    padding-top: 40px;
+    }
+    .postfeedmob .container {
+        height: 100% !important;
+    }
+    #pagina2-1 .container h1 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 50px;
+        margin-bottom: 0;
+        font-family: 'Conv_AbsolutHeadline2017';
+    }
+    .lienzo h2 {
+        font-family: 'Conv_AbsolutHeadline2017';
+        font-size: 22px;
+    }
+    .lienzo .mercados p {
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    #pagina2-l li {
+        display: inline-block;
+        max-width: 50px;
+        padding: 10px;
+    }
+    div#resultado {
+        position: relative;
+        height: 140px;
+        padding: 0 10px;
+    }
+    .tiendas address {
+        text-align: left;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+    address strong {
+        padding-right: 8px;
+    }
+    .barra-azul {
+        background: url(/images/barra.png) no-repeat 0 0;
+        margin-top: 0px;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
+    .barra-azul .text-center {
+        font-family: 'Conv_AbsolutHeadline2017';
+        font-size: 23px;
+        padding-top: 0px;
+    }
+    .barra-azul p.text-center {
+    font-size: 14px;
+    }
+    .cuadro {
+        border: 2px solid #44ffff;
+        border-radius: 10px;
+        padding: 15px 20px 35px 20px;
+        margin-top: 21px;
+        margin-bottom: 48px;
+    }
+    .bq1 {
+        padding-top: 3px;
+        color: white;
+    }
+
+    .btn-sendata2 {
+
+        background: #c43a94;
+        color: white;
+        font-family: 'Conv_AbsolutHeadline2017';
+        padding: 4px 40px;
+        border: 2px solid white;
+        border-radius: 0;
+        margin-top: 23px;
+    }
+    .postfeedmob{
+        background: url('/images/back006.png') no-repeat center 0px;
+        background-size:cover;
+        color:white;
+    }
+    #pagina1-r .bloquetexto h1 {
+        font-family: 'Conv_AbsolutHeadline2017';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 34px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #pagina1-r .bloquetexto p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #ascenso .container, #pagina1-l .container, #pagina1-r .container {
+        height: 100vh;
+    }
+    #pagina1-r .bloquemedio h3 {
+        font-family: 'Conv_AbsolutHeadline2017';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 55px;
+    }
+    .boxmodal .close {
+        background: none;
+        border: 0;
+        cursor: pointer;
+        font-size: 40px;
+        position: absolute;
+        right: 11px;
+        top: 8px;
+        color: white;
+        font-weight: lighter;
+    }
+}
+
+@media (min-width: 576px) {
+
+ }
+
+
+@media (min-width: 768px) {
+    .container {
+
+        position: relative;
+    }
+    #pagina1 .container-fluid {
+
+        height: 100vh;
+
+    }
+    .barra-azul {
+
+        background: url(/images/barra.png) repeat-x 0 67px;
+            background-size: auto auto;
+        margin-top: 0px;
+        background-size: cover;
+        padding-bottom: 20px;
+
+    }
+    .cuadro {
+
+        border: 2px solid #44ffff;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin-top: 31px;
+
+    }
+ }
+
+
+@media (min-width: 992px) {
+    .container {
+
+        position: relative;
+    }
+    .barra-azul {
+
+        background: url(/images/barra.png) repeat-x 0 67px;
+            background-size: auto auto;
+        margin-top: 0px;
+        background-size: cover;
+        padding-bottom: 20px;
+
+    }
+ }
+
+
+@media (min-width: 1200px) {
+    .container {
+
+        position: relative;
+    }
+ }
