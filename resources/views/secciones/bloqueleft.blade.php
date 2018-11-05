@@ -20,11 +20,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 texto-ab">
-                                    <p>Absolut Drop of love, mismo sabor.
-                                        pero con más amor. Una Botella de
-                                        edición limitada hecha con la tinta
-                                        extraída de mensajes de odio de
-                                        todo el mundo.
+                                    <p>Absolut A drop of Love es una botella
+                                    de edición limitada hecha con la tinta extraída de mensajes de odio de
+                                    todo el mundo y transformada en amor.
                                     </p>
                                     <div class="cambioescena">
                                         Prende el amor
@@ -50,11 +48,9 @@
 
                                 </div>
                                 <div class="col-md-4 texto-ab">
-                                    <p>Absolut Drop of love, mismo sabor.
-                                        pero con más amor. Una Botella de
-                                        edición limitada hecha con la tinta
-                                        extraída de mensajes de odio de
-                                        todo el mundo.
+                                    <p>Absolut A drop of Love es una botella
+                                    de edición limitada hecha con la tinta extraída de mensajes de odio de
+                                    todo el mundo y transformada en amor.
                                     </p>
                                     <div class="cambioescena">
                                         Prende el amor
@@ -159,7 +155,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox"  name="terminos" value="1" id="terminos"/>
                                                     <label class="form-check-label">
-                                                        Acepto los términos y condiciones y políticas de privacidad.
+                                                        Acepto los términos y condiciones y <a href="/online_privacy_policy_pernod_ricard_peru.pdf" target="_blank" class="politicas">políticas de privacidad.</a>
                                                     </label>
                                                 </div>
 

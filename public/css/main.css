@@ -61,7 +61,12 @@ html body  .container h1{
   line-height:50px;
   margin-bottom:0
 }
-
+a{
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 #home{
     background:url('/images/back001.png') no-repeat center top;
     background-size:cover;
@@ -291,9 +296,8 @@ a.navbar-brand {
 
 
   .texto2 {
-    font-size: 22px;
-    font-family: 'Conv_MyriadPro-Regular';
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 23px;
   }
 
 .textocentro {
@@ -531,8 +535,14 @@ a.navbar-brand {
     top: 50%;
     margin-top: -50px;
     text-indent: -90000px;
+    z-index: 5;
 }
-
+a.nav-link.active {
+    background: rgba(255,255,255,0.5);
+}
+a.nav-link:hover,a.nav-link:focus {
+    background: rgba(255,255,255,0.5);
+}
 p.txt-2 {
     font-size: 43px;
     font-family: 'Conv_AbsolutHeadline2017';
@@ -680,21 +690,21 @@ div#resultado {
 }
 #pagina1-r .bloquetexto h1 {
     font-family: 'Conv_AbsolutHeadline2017';
-    font-size: 53px;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 55px;
+    line-height: 34px;
 }
 #pagina1-r .bloquetexto p {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 23px;
 }
 #pagina1-r .bloquemedio p {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 23px;
 }
 #pagina1-r .bloquemedio h3 {
     font-family: 'Conv_AbsolutHeadline2017';
-    font-size: 53px;
+    font-size: 35px;
     font-weight: 600;
     line-height: 55px;
 }
@@ -1124,6 +1134,19 @@ label#terminos-error {
 .error {
     color: red;
 }
+a.politicas {
+    color: white;
+    text-decoration: underline;
+}
+.gotasvideo {
+    background: url(/images/video_gotas.png) no-repeat 0px 0px;
+    width: 570px;
+    height: 380px;
+    position: absolute;
+    top: -36px;
+    left: -51px;
+    z-index: 1;
+}
 @media(max-width: 769px){
     body {
 
@@ -1359,6 +1382,19 @@ label#terminos-error {
 
 
 @media (min-width: 768px) {
+    .textocentro {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-left: 67px;
+        padding-right: 166px;
+    }
+
+    .part1 p {
+        font-size:15px;
+    }
+    .col-md-4.texto-ab {
+        font-size: 15px;
+    }
     .ico360 {
         position: absolute;
         right: 94px;

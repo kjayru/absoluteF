@@ -173,7 +173,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox"  name="terminos2" value="1" id="terminos2"/>
                                                     <label class="form-check-label">
-                                                        Acepto los términos y condiciones y políticas de privacidad.
+                                                        Acepto los términos y condiciones y <a href="/online_privacy_policy_pernod_ricard_peru.pdf" target="_blank" class="politicas">políticas de privacidad.</a>.
                                                     </label>
                                                 </div>
                                                 <div class="text-center">

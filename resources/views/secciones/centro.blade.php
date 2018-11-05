@@ -87,8 +87,10 @@
                                 <div id="videoabsolute">
                                     <div class="bgif">
                                         <a href="#" class="modal-trigger link player"  data-modal="#modal-1">player</a>
+                                        <div class="gotasvideo"></div>
                                     </div>
                                 </div>
+
                             </div>
                             <div class="col-md-4">
                                 <div class="texto2">
