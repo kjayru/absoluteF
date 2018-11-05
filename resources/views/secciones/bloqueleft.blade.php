@@ -86,8 +86,8 @@
                                 <p>Ubícalos en todos estos establecimientos:</p>
                                     <ul>
                                     <li><img src="/images/logo_metro.svg" class="img-fluid" alt="Metro"/></li>
-                                    <li><img src="/images/logo4.png" class="img-fluid" alt="Wong"/></li>
-                                    <li><img src="/images/logo2.png" class="img-fluid" alt="PlazaVea"/></li>
+                                    <li><img src="/images/logo_wong.svg" class="img-fluid" alt="Wong"/></li>
+                                    <li><img src="/images/logo-plazavea.svg" class="img-fluid" alt="PlazaVea"/></li>
                                     <li><img src="/images/logo-vivanda.svg" class="img-fluid" alt="Vivanda"/></li>
 
                                     <li><img src="/images/logo-listo.svg" class="img-fluid" alt="Listo"/></li>
