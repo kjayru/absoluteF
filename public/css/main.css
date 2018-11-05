@@ -694,7 +694,7 @@ div#resultado {
 }
 #pagina1-r .bloquetexto h1 {
     font-family: 'Conv_AbsolutHeadline2017';
-    font-size: 35px;
+   
     font-weight: 600;
     line-height: 34px;
 }
@@ -1424,6 +1424,26 @@ a.politicas {
 
 
 @media (min-width: 768px) {
+    #pagina1-r .bloquetexto h1 {
+  
+        font-size: 50px;
+        line-height:49px;
+ 
+    }
+    #pagina1-r .bloquetexto p {
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 38px;
+    }
+    #pagina1-r .bloquemedio h3 {
+        font-size: 50px;    
+        line-height: 55px;
+    }
+    #pagina1-r .bloquemedio p {
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 39px;
+    }
     div#pagina3-1 img.img-fluid {
         height: 259px;
     }

@@ -3,12 +3,12 @@
            <div class="container">
                 <div class="row h-100 justify-content-center align-items-center part1">
 
-                        <div class="col-md-5 bloquetexto">
+                        <div class="col-md-6 bloquetexto">
                             <h1>Acabemos juntos<br/>con el odio</h1>
                             <p>
-                            ¡Únete a este movimiento y sé un hacker del amor! <br/>
-                            Cuando veas un mensaje negativo en twitter, <br/>
-                            dale <span>RT</span> con el <span>#MásAmorMenosOdio</span><br/>
+                            ¡Únete a este movimiento y sé un hacker del amor! 
+                            Cuando veas un mensaje negativo en twitter,
+                            dale <span>RT</span> con el <span>#MásAmorMenosOdio</span>
                             y juntos transformaremos el odio en amor.
                             </p>
                         </div>
