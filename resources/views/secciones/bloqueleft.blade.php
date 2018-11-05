@@ -137,8 +137,8 @@
                         <div class="row h-100 justify-content-center align-items-center">
                                 <div class="col-md-12 col-lg-12 col-xl-12 barra-azul">
                                     <div class="row justify-content-center">
-                                        <div class="col-md-2 col-lg-2 col-xl-2">
-                                            <img src="/images/botella.png" class="img-fluid"/>
+                                        <div class="col-md-2 col-lg-2 col-xl-2 text-right">
+                                            <img src="/images/botella.png" width="100"/>
                                         </div>
 
                                         <div class="col-md-9 col-lg-9 col-xl-8 bq1">
