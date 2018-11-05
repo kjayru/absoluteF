@@ -1,0 +1,2068 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n\r\n.App-logo {\r\n  -webkit-animation: App-logo-spin infinite 20s linear;\r\n          animation: App-logo-spin infinite 20s linear;\r\n  height: 40vmin;\r\n}\r\n\r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n\r\n.App-link {\r\n  color: #61dafb;\r\n}\r\n\r\n@-webkit-keyframes App-logo-spin {\r\n  from {\r\n    -webkit-transform: rotate(0deg);\r\n            transform: rotate(0deg);\r\n  }\r\n  to {\r\n    -webkit-transform: rotate(360deg);\r\n            transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n@keyframes App-logo-spin {\r\n  from {\r\n    -webkit-transform: rotate(0deg);\r\n            transform: rotate(0deg);\r\n  }\r\n  to {\r\n    -webkit-transform: rotate(360deg);\r\n            transform: rotate(360deg);\r\n  }\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Contenido/Contenido.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/Contenido/Contenido.css ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "#inicio{\r\n    background: url('/images/background.png') center center #000;\r\n    background-size: cover;\r\n    width:100%;\r\n    height:100vh;\r\n}\r\n#quehacemos{\r\n    background:#dedede;\r\n    width:100%;\r\n    height:100vh;\r\n}\r\n\r\n\r\n.btn-cotiza:hover{\r\n    background: #F8A414;\r\n}\r\np.bq1 {\r\n    padding-top: 31%;\r\n    text-align: right;\r\n    font-size: 60px;\r\n    padding-right: 50px;\r\n    line-height: 47px;\r\n}\r\np.bq2 {\r\n    font-size: 45px;\r\n    text-align: right;\r\n    padding-right: 100px;\r\n    line-height: 23px;\r\n    padding-top: 0;\r\n}\r\n.bq2 span {\r\n    font-size: 30px;\r\n}\r\n#quehacemos h1 {\r\n    padding-top: 32px;\r\n    color:#eca63f;\r\n}\r\n#quehacemos .text-left p {\r\n    font-size: 17px;\r\n    font-weight: lighter;\r\n    padding-top: 45px;\r\n}\r\n#quehacemos .text-left ul {\r\n    position: relative;\r\n    -webkit-column-count: 2;\r\n            column-count: 2;\r\n}\r\n#quehacemos .text-left ul li {\r\n    list-style: none;\r\n    line-height: 40px;\r\n    position: relative;\r\n}\r\n#quehacemos .text-left li:before {\r\n    content: ''; \r\n    width: 29px;\r\n    height: 30px;\r\n    position: absolute;\r\n    left: -37px;\r\n    top: 4px;\r\n    background-size: cover;\r\n}\r\n.li1:before {\r\n    content: '';\r\n    background: url(/images/icono1.png);\r\n}\r\n\r\n.li2:before {\r\n    content: '';\r\n    background: url(/images/icono2.png);\r\n}\r\n\r\n.li3:before {\r\n    content: '';\r\n    background: url(/images/icono3.png);\r\n}\r\n\r\na.btn.btn-default.btn-contactos {\r\n    color: #eca63f;\r\n    border: 1px solid #eca63f;\r\n    border-radius: 18px;\r\n    font-size: 20px;\r\n}\r\na.btn.btn-default.btn-contactos:hover{\r\n    background: white;\r\n}\r\n#servicios{\r\n    width:100%;\r\n    height: 100vh;\r\n    padding-top: 150px;\r\n    text-align:center;\r\n}\r\n#servicios h1{\r\n    color:#eca63f;\r\n}\r\n#servicios ul {\r\n    -webkit-column-count: 3;\r\n            column-count: 3;\r\n    list-style: none;\r\n    padding-top: 120px;\r\n}\r\n#servicios li img {\r\n    display: block;\r\n    margin: 0 auto;\r\n}\r\n\r\n#productos{\r\n    background: #0e191c;\r\n}\r\n#contactotitulo{\r\n    background: #44484b;\r\n}\r\n#contactologos{\r\n    background: #293034;\r\n}\r\ndiv#contactotitulo .titulo {\r\n    font-size: 34px;\r\n    color: white;\r\n    line-height: 40px;\r\n    font-weight: lighter;\r\n    padding-top: 14px;\r\n    padding-bottom: 14px;\r\n}\r\n.row.logos {\r\n    padding: 25px;\r\n}\r\n\r\n#mapa {\r\n\r\n    background: url(/images/mapa.png) center top;\r\n    padding-bottom: 20px;\r\n\r\n}\r\n.lienzo {\r\n    background: white;\r\n    margin-top: 22px;\r\n}\r\n.lienzo h2{\r\n    padding-top: 20px;\r\n    padding-left: 25px;\r\n    color: #3F4F58;\r\n}\r\n.lienzo address {\r\n    padding-left: 25px;\r\n    color: #A5AEB3;\r\n}\r\n.correo-contacto {\r\n\r\n    color: #A5AEB3;\r\n\r\n}\r\n.btn.btn-default.btn-contacto {\r\n\r\n    background: #F8A414;\r\n    display: block;\r\n    margin-left: 6px;\r\n    margin-right: 6px;\r\n    margin-bottom: 20px;\r\n    color:white;\r\n    text-transform: uppercase;\r\n}\r\n@media (max-width:767px){\r\n    #servicios ul {\r\n        -webkit-column-count: none !important;\r\n        column-count: none !important;\r\n        list-style: none;\r\n        padding-top: 120px;\r\n        display: inline;\r\n    }\r\n    .container {\r\n  \r\n      position: relative;\r\n  }\r\n  #servicios {\r\n    width: 100%;\r\n    padding-top: 150px;\r\n    text-align: center;\r\n    height:auto;\r\n}#quehacemos {\r\n    background: #dedede;\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n  }", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer/footer.css":
+/*!*********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/Footer/footer.css ***!
+  \*********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".page-footer{\r\n    background: #F8A414;\r\n}\r\n.ft-link {\r\n    display: block;\r\n}\r\n.ft-link li {\r\n    display: inline-block;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\r\n}\r\n.ft-link li a{\r\n    color:black;\r\n    font-size: 12px;\r\n    text-transform: uppercase;\r\n}\r\na.linked {\r\n\r\n    display: inline-block;\r\n    background: black;\r\n    width: 34px;\r\n    height: 34px;\r\n    border-radius: 50%;\r\n    padding: 3px 0 0 0px;\r\n    color: white;\r\n\r\n}\r\n.footer-copyright{\r\n    color:#8F969D;\r\n    font-size: 11px;\r\n    text-transform: uppercase;\r\n\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Roboto', sans-serif;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\r\n    monospace;\r\n}\r\n.bg-dark {\r\n  background-color: #000 !important;\r\n}\r\n.cotiza-hoy {\r\n  background: #00E73C;\r\n  color: white;\r\n  border-radius: 22px;\r\n  padding-left: 20px;\r\n  padding-right: 20px;\r\n  padding-top: 3px;\r\n  padding-bottom: 3px;\r\n  position: relative;\r\n  margin-top: 3px;\r\n  display: inline-block;\r\n}\r\n.cotiza-hoy:hover{\r\n  color: gray;\r\n  background: white;\r\n  text-decoration: none;\r\n}\r\nul.navbar-nav.only {\r\n  padding-left: 96px;\r\n}\r\n.left>div:first-child {\r\n  text-align: left;\r\n  padding-top: 131px;\r\n  padding-right: 160px;\r\n}\r\n.right>div:last-child {\r\n  text-align: left;\r\n  padding-top: 131px;\r\n  padding-left: 160px;\r\n}\r\n.product h2 {\r\n  color: #F8A414;\r\n  font-size: 35px;\r\n  padding-bottom: 14px;\r\n}\r\n.product p {\r\n  font-size: 20px;\r\n  font-weight: lighter;\r\n  line-height: 26px;\r\n  color: #A0A1A0;\r\n}\r\na.btn-cotiza {\r\n  background: #00E73C;\r\n  color: white;\r\n  font-weight: bold;\r\n  border-radius: 20px;\r\n  padding: 7px 19px 2px 19px;\r\n  position: absolute;\r\n  bottom: 30px;\r\n}\r\n.ap1:before {\r\n  content: \"\";\r\n  width: 1px;\r\n  height: 323px;\r\n  background: #F8A414;\r\n  position: absolute;\r\n  top: 88px;\r\n  left: -19px;\r\n}\r\n.ap2:before {\r\n  content: \"\";\r\n  width: 1px;\r\n  height: 323px;\r\n  background: #F8A414;\r\n  position: absolute;\r\n  top: 88px;\r\n  right: -19px;\r\n}\r\n.etiqueta{\r\n  color: #F8A414;\r\n    font-weight: bold;\r\n    font-size: 59px;\r\n    display: block;\r\n    \r\n}\r\n.left  .etiqueta{\r\n  text-align: right;\r\n}\r\n.right  .etiqueta{\r\n  text-align: left;\r\n}\r\n.op2 {\r\n  height: 590px;\r\n}\r\n.op3 img {\r\n  height: 550px;\r\n}\r\n.product img {\r\n  padding-top: 144px;\r\n}\r\n.op4 img {\r\n  height: 435px;\r\n}\r\n.op5 img {\r\n  height: 502px;\r\n}\r\n.title-prod {\r\n  background: #D8D8D8;\r\n}\r\n.title-prod h2 {\r\n  color: #F8A414;\r\n  font-size: 59px;\r\n  padding: 19px 0 4px 0;\r\n}\r\n#servicios h1 {\r\n  color: #eca63f;\r\n  font-size: 44px;\r\n}\r\ndiv#servicios .text-left {\r\n  padding-left: 83px;\r\n  padding-top: 6px;\r\n}\r\n#servicios .text-left h2 {\r\n  font-size: 45px;\r\n}\r\n#servicios .text-right {\r\n  font-size: 19px;\r\n  padding: 6px 42px 20px 136px;\r\n  text-align: left !important;\r\n  line-height: 24px;\r\n}\r\n#servicios ul li span {\r\n  font-size: 22px;\r\n}\r\n#inicio .container-fluid {\r\n  height: calc(100vh - 58px);\r\n}\r\n\r\n\r\n@media (min-width: 768px) {\r\n  .container {\r\n\r\n      position: relative;\r\n  }\r\n  .bloque25 {\r\n      background: url(/images/year25.png) no-repeat -198px 0;\r\n      height: 100vh;\r\n      display: block;\r\n      width: 100%;\r\n      background-size: cover;\r\n  }\r\n  p.bq1 {\r\n    padding-top: 43%;\r\n    text-align: right;\r\n    font-size: 41px;\r\n    padding-right: 50px;\r\n    line-height: 47px;\r\n  }\r\n  p.bq2 {\r\n    font-size: 34px;\r\n    text-align: right;\r\n    padding-right: 100px;\r\n    line-height: 23px;\r\n    padding-top: 0;\r\n  }\r\n  #servicios {\r\n    width: 100%;\r\n    height: 100vh;\r\n    padding-top: 150px;\r\n    text-align: center;\r\n    margin-bottom: 160px;\r\n  }\r\n  p.bq1 {\r\n    padding-top: 47%;\r\n  }\r\n}\r\n\r\n\r\n@media (min-width: 992px) {\r\n  .bloque25 {\r\n    background: url(/images/year25.png) no-repeat -200px 0;\r\n    height: 100vh;\r\n    display: block;\r\n    width: 100%;\r\n    background-size: cover;\r\n  }\r\n}\r\n\r\n\r\n@media (min-width: 1200px) {\r\n  .bloque25 {\r\n    background: url(/images/year25.png) no-repeat -98px 0;\r\n    height: 100vh;\r\n    display: block;\r\n    width: 100%;\r\n}\r\np.bq1 {\r\n  padding-top: 47%;\r\n}\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _logo_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./logo.svg */ "./src/logo.svg");
+/* harmony import */ var _logo_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_logo_svg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _Components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Navbar/Navbar */ "./src/Components/Navbar/Navbar.js");
+/* harmony import */ var _Components_Footer_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Components/Footer/Footer */ "./src/Components/Footer/Footer.js");
+/* harmony import */ var _Components_Contenido_Home__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Components/Contenido/Home */ "./src/Components/Contenido/Home.js");
+/* harmony import */ var _Components_Contenido_Quehacemos__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Components/Contenido/Quehacemos */ "./src/Components/Contenido/Quehacemos.js");
+/* harmony import */ var _Components_Contenido_Productos__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Components/Contenido/Productos */ "./src/Components/Contenido/Productos.js");
+/* harmony import */ var _Components_Contenido_Servicios__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Components/Contenido/Servicios */ "./src/Components/Contenido/Servicios.js");
+/* harmony import */ var _Components_Contenido_Contactos__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Components/Contenido/Contactos */ "./src/Components/Contenido/Contactos.js");
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\App.js";
+
+
+
+
+
+
+
+
+
+
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(App, _Component);
+
+  function App() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, App);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(App).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(App, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "App",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Components_Contenido_Home__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Components_Contenido_Quehacemos__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Components_Contenido_Servicios__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Components_Contenido_Productos__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Components_Contenido_Contactos__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Components_Footer_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }));
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/Components/Contenido/Contactos.js":
+/*!***********************************************!*\
+  !*** ./src/Components/Contenido/Contactos.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\Components\\Contenido\\Contactos.js";
+
+
+var Contactos =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Contactos, _Component);
+
+  function Contactos() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Contactos);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Contactos).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Contactos, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "contactotitulo",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "titulo",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, "Trabajamos de la mano con empresas como:", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }), "Arteche y Tecnolog\xEDas - EOS"))))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "contactologos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row logos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/logo1.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/logo2.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/logo3.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }))))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "mapa",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row map row justify-content-md-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-4 lienzo text-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "SIMSA"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("address", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, "Olivo 1618 Col. Moderna", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }), "Monterrey, NL M\xE9xico,", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }), "CP 64530"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "telefono",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, "+52 (81) 8372 6431", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }), "+52 (81) 8372 6439"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "mailto:webmaster@example.com",
+        className: "correo-contacto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, " ventas@simsa-mx.com")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "btn btn-default btn-contacto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, "Contactanos"))))));
+    }
+  }]);
+
+  return Contactos;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Contactos);
+
+/***/ }),
+
+/***/ "./src/Components/Contenido/Contenido.css":
+/*!************************************************!*\
+  !*** ./src/Components/Contenido/Contenido.css ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Contenido.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Contenido/Contenido.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Contenido.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Contenido/Contenido.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Contenido.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Contenido/Contenido.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/Components/Contenido/Home.js":
+/*!******************************************!*\
+  !*** ./src/Components/Contenido/Home.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Contenido_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Contenido.css */ "./src/Components/Contenido/Contenido.css");
+/* harmony import */ var _Contenido_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Contenido_css__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\Components\\Contenido\\Home.js";
+
+
+
+var Home =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Home, _Component);
+
+  function Home() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Home);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Home).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Home, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "inicio",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "logo row h-100 justify-content-center align-items-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "./images/logocentro.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }))));
+    }
+  }]);
+
+  return Home;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./src/Components/Contenido/Productos.js":
+/*!***********************************************!*\
+  !*** ./src/Components/Contenido/Productos.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\Components\\Contenido\\Productos.js";
+
+
+var Productos =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Productos, _Component);
+
+  function Productos() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Productos);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Productos).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Productos, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container-fluid title-prod",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row  justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, "Nuestros Productos"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "productos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row product left justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 ap1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "Transformadores de instrumento tipo poste"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, "Transformadores integrados de Medici\xF3n para diferentes niveles en media tensi\xF3n."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, "En rangos de corriente homologados por CFE - LAPEM tipo KM17, KM24, KM36, entre otros."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#",
+        className: "btn btn-default btn-cotiza",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, "COTIZA HOY")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5 op1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/prod1.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "etiqueta",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, "01"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row product right justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5 op2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/prod2.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "etiqueta",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "02")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 ap2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, "Transformadores de tipo pedestal"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, "Transformadores para medici\xF3n subterr\xE1neo o pedestal en media tensi\xF3n."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Con rangos homologados por CFE - LAPEM o de fabricaci\xF3n especial tipo MI17, MI24, entre otros."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#",
+        className: "btn btn-default btn-cotiza",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }, "COTIZA HOY"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row product left justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 ap1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }, "Transformadores de instrumento de alta tensi\xF3n "), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
+      }, "Transformadores de Potencial y Transformadores de corriente para medici\xF3n en alta tensi\xF3n."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      }, "Homologados por CFE y de fabricaci\xF3n especial a las necesidades del proyecto. Tipo UTE123, UTE145, UTF245, UTP245, CA123, CA245, entre otros."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#",
+        className: "btn btn-default btn-cotiza",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }, "COTIZA HOY")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5 op3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/prod3.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "etiqueta",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, "03"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row product right justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5 op4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/prod4.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "etiqueta",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, "04")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 ap2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      }, "Transformadores de instrumento para baja tensi\xF3n "), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
+      }, "Transformadores de corriente tipo dona para baja tensi\xF3n en rangos homologados por CFE - LAPEM."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#",
+        className: "btn btn-default btn-cotiza",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 90
+        },
+        __self: this
+      }, "COTIZA HOY"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row product left justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 ap1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 96
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        },
+        __self: this
+      }, "Watthor\xEDmetros"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
+      }, "Medidores residenciales, comerciales e indsutriales tipo bidireccional con capacidad de telemedici\xF3n."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 101
+        },
+        __self: this
+      }, "Homologados por CFE o para medici\xF3n interna en las formas 9S, 12S, 16S, entre otros."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#",
+        className: "btn btn-default btn-cotiza",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104
+        },
+        __self: this
+      }, "COTIZA HOY")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5 op5",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/prod5.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "etiqueta",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        },
+        __self: this
+      }, "05"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row product right justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5 op6",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 114
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/prod6.png",
+        className: "img-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 115
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "etiqueta",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 116
+        },
+        __self: this
+      }, "06")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 ap2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 118
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119
+        },
+        __self: this
+      }, "Calidad de energ\xEDa"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 120
+        },
+        __self: this
+      }, "Dimensionamiento y suministro de filtros de arm\xF3nicas y bancos de capacitores para control de factor de potencia y mejora en la calidad de energ\xEDa apegados al c\xF3digo de red de CFE."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124
+        },
+        __self: this
+      }, "Estudios y an\xE1lisis de calidad en el suministro el\xE9ctrico"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#",
+        className: "btn btn-default btn-cotiza",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126
+        },
+        __self: this
+      }, "COTIZA HOY"))))));
+    }
+  }]);
+
+  return Productos;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Productos);
+
+/***/ }),
+
+/***/ "./src/Components/Contenido/Quehacemos.js":
+/*!************************************************!*\
+  !*** ./src/Components/Contenido/Quehacemos.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\Components\\Contenido\\Quehacemos.js";
+
+
+var Quehacemos =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Quehacemos, _Component);
+
+  function Quehacemos() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Quehacemos);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Quehacemos).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Quehacemos, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "quehacemos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container-fluid",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "bloque25",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "bq1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, "Liderando"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "bq2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, "el"), " Mercado"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-4 col-sm-6 col-xs-12 text-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "\xBFQuienes somos?"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, "Servicios Integrales en Medici\xF3n"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, "Con m\xE1s de 25 a\xF1os de experiencia industria el\xE9ctrica, nos caracterizamos por asesorar a nuestros clientes en el campo de la medici\xF3n de energ\xEDa."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "li1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, "Liderazgo"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "li2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, "Servicio"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "li3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, "Transparencia")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        class: "btn btn-default btn-contactos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, "CONTACTANOS")))));
+    }
+  }]);
+
+  return Quehacemos;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Quehacemos);
+
+/***/ }),
+
+/***/ "./src/Components/Contenido/Servicios.js":
+/*!***********************************************!*\
+  !*** ./src/Components/Contenido/Servicios.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\Components\\Contenido\\Servicios.js";
+
+
+var Servicios =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Servicios, _Component);
+
+  function Servicios() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Servicios);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Servicios).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Servicios, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        id: "servicios",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 text-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, "Nuestro servicios"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, "Medici\xF3n de energ\xEDa El\xE9ctrica")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-6 text-right",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, "Ofrecemos a nuestro clientes soluciones en medici\xF3n de energ\xEDa para el \xE1rea residencial, comerial e industrial. As\xED como el dise\xF1o de redes de telemedici\xF3n distribuidas."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, "Asesorando al cliente y gestionando ante las dependencias suminstradoras de energ\xEDa para facilitar la contrataci\xF3n y alimentaci\xF3n."))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/icono4.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, "Residencial")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/icono5.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, "Comercial")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/icono6.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Industrial")))))));
+    }
+  }]);
+
+  return Servicios;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Servicios);
+
+/***/ }),
+
+/***/ "./src/Components/Footer/Footer.js":
+/*!*****************************************!*\
+  !*** ./src/Components/Footer/Footer.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer.css */ "./src/Components/Footer/footer.css");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\Components\\Footer\\Footer.js";
+
+
+
+var Footer =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Footer, _Component);
+
+  function Footer() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Footer);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Footer).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Footer, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("footer", {
+        className: "page-footer font-small  pt-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container-fluid text-center text-md-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row justify-content-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-5 mb-md-0 mb-5 text-center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#",
+        className: "linked",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("i", {
+        className: "fab fa-linkedin-in",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        className: "ft-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#productos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, "Productos")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#nosotros",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "Nosotros")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#que-hacemos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, "Que hacemos")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "#contactos",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, "Contactos")))))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "footer-copyright text-center py-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, "Copyright \xA9 2018. SIMSA All rights reserved", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }), "Design by: COBO\u2019S")));
+    }
+  }]);
+
+  return Footer;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./src/Components/Footer/footer.css":
+/*!******************************************!*\
+  !*** ./src/Components/Footer/footer.css ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./footer.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer/footer.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./footer.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer/footer.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./footer.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer/footer.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/Components/Navbar/Navbar.js":
+/*!*****************************************!*\
+  !*** ./src/Components/Navbar/Navbar.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\Components\\Navbar\\Navbar.js";
+
+
+var Navbar =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Navbar, _Component);
+
+  function Navbar() {
+    Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Navbar);
+
+    return Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Navbar).apply(this, arguments));
+  }
+
+  Object(C_proyectos_simsa_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Navbar, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("nav", {
+        className: "navbar navbar-expand-lg navbar-dark bg-dark",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "navbar-brand",
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/images/logomini.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+        className: "navbar-toggler",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#navbarSupportedContent",
+        "aria-controls": "navbarSupportedContent",
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        className: "navbar-toggler-icon",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "collapse navbar-collapse",
+        id: "navbarSupportedContent",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        className: "navbar-nav ml-auto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "nav-item active",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "nav-link",
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, "PRODUCTOS ")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "nav-link",
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, "NOSOTROS")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "nav-link",
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, "QUE HACEMOS")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "nav-link",
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, "CONTACTO"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        className: "navbar-nav only",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "cotiza-hoy",
+        href: "#",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "COTIZA HOY"))))));
+    }
+  }]);
+
+  return Navbar;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+var _jsxFileName = "C:\\proyectos\\simsa\\src\\index.js";
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_4__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/logo.svg":
+/*!**********************!*\
+  !*** ./src/logo.svg ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/logo.ee7cd8ed.svg";
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read http://bit.ly/CRA-PWA.
+var isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) { var publicUrl; }
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(function (registration) {
+    registration.onupdatefound = function () {
+      var installingWorker = registration.installing;
+
+      installingWorker.onstatechange = function () {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See http://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(function (error) {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(function (response) {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    if (response.status === 404 || response.headers.get('content-type').indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.unregister().then(function () {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(function () {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.unregister();
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\proyectos\simsa\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\proyectos\simsa\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[0,"runtime~main",1]]]);
+//# sourceMappingURL=main.chunk.js.map

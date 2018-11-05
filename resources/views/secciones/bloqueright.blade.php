@@ -22,13 +22,16 @@
                 <div class="row justify-content-center part2">
                       <div class="col-md-10 text-center bloquemedio">
 
-                        <h3>¿Como estamos hackeando el odio?</h3>
+                        <h3>¿Cómo estamos hackeando el odio?</h3>
 
                         <p>
                         Creamos el Tweetrigami, una acción que transforma los tweets de odio <br/>
 en mensajes de amor, fomentando tolerancia, constancia y calma.
                         </p>
                       </div>
+                      <div class="texto-pie">
+                                    <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
+                                </div>
                 </div>
             </div>
 

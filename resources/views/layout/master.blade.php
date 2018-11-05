@@ -11,6 +11,12 @@
         <link href="/css/vendor/perfect-scrollbar.css" rel="stylesheet">
 
         <link rel="stylesheet" href="/css/main.css?v={{ uniqid() }}">
+        <link rel="mask-icon" href="/Assets/images/favicon/safari-pinned-tab.svg" color="black" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+
     </head>
     <body>
          @yield('content')

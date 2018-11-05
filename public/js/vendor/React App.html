@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en" data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <link rel="stylesheet" href="./React App_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./React App_files/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="./React App_files/css" rel="stylesheet"> 
+  <style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.bg-dark {
+  background-color: #000 !important;
+}
+.cotiza-hoy {
+  background: #00E73C;
+  color: white;
+  border-radius: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  position: relative;
+  margin-top: 3px;
+  display: inline-block;
+}
+.cotiza-hoy:hover{
+  color: gray;
+  background: white;
+  text-decoration: none;
+}
+ul.navbar-nav.only {
+  padding-left: 96px;
+}
+.left>div:first-child {
+  text-align: left;
+  padding-top: 131px;
+  padding-right: 160px;
+}
+.right>div:last-child {
+  text-align: left;
+  padding-top: 131px;
+  padding-left: 160px;
+}
+.product h2 {
+  color: #F8A414;
+  font-size: 35px;
+  padding-bottom: 14px;
+}
+.product p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 26px;
+  color: #A0A1A0;
+}
+a.btn-cotiza {
+  background: #00E73C;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 7px 19px 2px 19px;
+  position: absolute;
+  bottom: 30px;
+}
+.ap1:before {
+  content: "";
+  width: 1px;
+  height: 323px;
+  background: #F8A414;
+  position: absolute;
+  top: 88px;
+  left: -19px;
+}
+.ap2:before {
+  content: "";
+  width: 1px;
+  height: 323px;
+  background: #F8A414;
+  position: absolute;
+  top: 88px;
+  right: -19px;
+}
+.etiqueta{
+  color: #F8A414;
+    font-weight: bold;
+    font-size: 59px;
+    display: block;
+    
+}
+.left  .etiqueta{
+  text-align: right;
+}
+.right  .etiqueta{
+  text-align: left;
+}
+.op2 {
+  height: 590px;
+}
+.op3 img {
+  height: 550px;
+}
+.product img {
+  padding-top: 144px;
+}
+.op4 img {
+  height: 435px;
+}
+.op5 img {
+  height: 502px;
+}
+.title-prod {
+  background: #D8D8D8;
+}
+.title-prod h2 {
+  color: #F8A414;
+  font-size: 59px;
+  padding: 19px 0 4px 0;
+}
+#servicios h1 {
+  color: #eca63f;
+  font-size: 44px;
+}
+div#servicios .text-left {
+  padding-left: 83px;
+  padding-top: 6px;
+}
+#servicios .text-left h2 {
+  font-size: 45px;
+}
+#servicios .text-right {
+  font-size: 19px;
+  padding: 6px 42px 20px 136px;
+  text-align: left !important;
+  line-height: 24px;
+}
+#servicios ul li span {
+  font-size: 22px;
+}
+#inicio .container-fluid {
+  height: calc(100vh - 58px);
+}
+
+
+@media (min-width: 768px) {
+  .container {
+
+      position: relative;
+  }
+  .bloque25 {
+      background: url(/images/year25.png) no-repeat -198px 0;
+      height: 100vh;
+      display: block;
+      width: 100%;
+      background-size: cover;
+  }
+  p.bq1 {
+    padding-top: 43%;
+    text-align: right;
+    font-size: 41px;
+    padding-right: 50px;
+    line-height: 47px;
+  }
+  p.bq2 {
+    font-size: 34px;
+    text-align: right;
+    padding-right: 100px;
+    line-height: 23px;
+    padding-top: 0;
+  }
+  #servicios {
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+    text-align: center;
+    margin-bottom: 160px;
+  }
+  p.bq1 {
+    padding-top: 47%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .bloque25 {
+    background: url(/images/year25.png) no-repeat -200px 0;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .bloque25 {
+    background: url(/images/year25.png) no-repeat -98px 0;
+    height: 100vh;
+    display: block;
+    width: 100%;
+}
+p.bq1 {
+  padding-top: 47%;
+}
+}</style><style type="text/css">.App {
+  text-align: center;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+</style><style type="text/css">.page-footer{
+    background: #F8A414;
+}
+.ft-link {
+    display: block;
+}
+.ft-link li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ft-link li a{
+    color:black;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+a.linked {
+
+    display: inline-block;
+    background: black;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    padding: 3px 0 0 0px;
+    color: white;
+
+}
+.footer-copyright{
+    color:#8F969D;
+    font-size: 11px;
+    text-transform: uppercase;
+
+}</style><style type="text/css">#inicio{
+    background: url('/images/background.png') center center #000;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+#quehacemos{
+    background:#dedede;
+    width:100%;
+    height:100vh;
+}
+
+
+.btn-cotiza:hover{
+    background: #F8A414;
+}
+p.bq1 {
+    padding-top: 31%;
+    text-align: right;
+    font-size: 60px;
+    padding-right: 50px;
+    line-height: 47px;
+}
+p.bq2 {
+    font-size: 45px;
+    text-align: right;
+    padding-right: 100px;
+    line-height: 23px;
+    padding-top: 0;
+}
+.bq2 span {
+    font-size: 30px;
+}
+#quehacemos h1 {
+    padding-top: 32px;
+    color:#eca63f;
+}
+#quehacemos .text-left p {
+    font-size: 17px;
+    font-weight: lighter;
+    padding-top: 45px;
+}
+#quehacemos .text-left ul {
+    position: relative;
+    -webkit-column-count: 2;
+            column-count: 2;
+}
+#quehacemos .text-left ul li {
+    list-style: none;
+    line-height: 40px;
+    position: relative;
+}
+#quehacemos .text-left li:before {
+    content: ''; 
+    width: 29px;
+    height: 30px;
+    position: absolute;
+    left: -37px;
+    top: 4px;
+    background-size: cover;
+}
+.li1:before {
+    content: '';
+    background: url(/images/icono1.png);
+}
+
+.li2:before {
+    content: '';
+    background: url(/images/icono2.png);
+}
+
+.li3:before {
+    content: '';
+    background: url(/images/icono3.png);
+}
+
+a.btn.btn-default.btn-contactos {
+    color: #eca63f;
+    border: 1px solid #eca63f;
+    border-radius: 18px;
+    font-size: 20px;
+}
+a.btn.btn-default.btn-contactos:hover{
+    background: white;
+}
+#servicios{
+    width:100%;
+    height: 100vh;
+    padding-top: 150px;
+    text-align:center;
+}
+#servicios h1{
+    color:#eca63f;
+}
+#servicios ul {
+    -webkit-column-count: 3;
+            column-count: 3;
+    list-style: none;
+    padding-top: 120px;
+}
+#servicios li img {
+    display: block;
+    margin: 0 auto;
+}
+
+#productos{
+    background: #0e191c;
+}
+#contactotitulo{
+    background: #44484b;
+}
+#contactologos{
+    background: #293034;
+}
+div#contactotitulo .titulo {
+    font-size: 34px;
+    color: white;
+    line-height: 40px;
+    font-weight: lighter;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.row.logos {
+    padding: 25px;
+}
+
+#mapa {
+
+    background: url(/images/mapa.png) center top;
+    padding-bottom: 20px;
+
+}
+.lienzo {
+    background: white;
+    margin-top: 22px;
+}
+.lienzo h2{
+    padding-top: 20px;
+    padding-left: 25px;
+    color: #3F4F58;
+}
+.lienzo address {
+    padding-left: 25px;
+    color: #A5AEB3;
+}
+.correo-contacto {
+
+    color: #A5AEB3;
+
+}
+.btn.btn-default.btn-contacto {
+
+    background: #F8A414;
+    display: block;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    color:white;
+    text-transform: uppercase;
+}
+@media (max-width:767px){
+    #servicios ul {
+        -webkit-column-count: none !important;
+        column-count: none !important;
+        list-style: none;
+        padding-top: 120px;
+        display: inline;
+    }
+    .container {
+  
+      position: relative;
+  }
+  #servicios {
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+    height:auto;
+}#quehacemos {
+    background: #dedede;
+    width: 100%;
+    height: auto;
+}
+.right>div:last-child {
+    text-align: left;
+    padding-top: 131px;
+    padding-left: 15px;
+}
+.left>div:first-child {
+    text-align: left;
+    padding-top: 131px;
+    padding-right: 10px;
+}
+  }</style><script charset="utf-8" src="./React App_files/main.3ea9307a4ed4665d998f.hot-update.js.descarga"></script><script charset="utf-8" src="./React App_files/main.c93737b3aee953aa48d6.hot-update.js.descarga"></script></head>
+  <body cz-shortcut-listen="true">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div class="App"><div><nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="http://localhost:3000/#"><img src="./React App_files/logomini.png"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto"><li class="nav-item active"><a class="nav-link" href="http://localhost:3000/#">PRODUCTOS </a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/#">NOSOTROS</a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/#">QUE HACEMOS</a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/#">CONTACTO</a></li></ul><ul class="navbar-nav only"><li><a class="cotiza-hoy" href="http://localhost:3000/#">COTIZA HOY</a></li></ul></div></nav></div><div id="inicio"><div class="container-fluid"><div class="logo row h-100 justify-content-center align-items-center"><img src="./React App_files/logocentro.png" class="img-fluid"></div></div></div><div id="quehacemos"><div class="container-fluid"><div class="row justify-content-center"><div class="col-md-5"><div class="bloque25"><p class="bq1">Liderando</p><p class="bq2"><span>el</span> Mercado</p></div></div><div class="col-md-4 col-sm-6 col-xs-12 text-left"><h1>¿Quienes somos?</h1><h3>Servicios Integrales en Medición</h3><p>Con más de 25 años de experiencia industria eléctrica, nos caracterizamos por asesorar a nuestros clientes en el campo de la medición de energía.</p><ul><li class="li1">Liderazgo</li><li class="li2">Servicio</li><li class="li3">Transparencia</li></ul><a class="btn btn-default btn-contactos">CONTACTANOS</a></div></div></div></div><div id="servicios"><div class="container"><div class="row"><div class="col-md-6 text-left"><h1>Nuestro servicios</h1><h2>Medición de energía Eléctrica</h2></div><div class="col-md-6 text-right"><p>Ofrecemos a nuestro clientes soluciones en medición de energía para el área residencial, comerial e industrial. Así como el diseño de redes de telemedición distribuidas.</p><p>Asesorando al cliente y gestionando ante las dependencias suminstradoras de energía para facilitar la contratación y alimentación.</p></div></div><div class="row"><div class="col-md-12"><ul><li><img src="./React App_files/icono4.png"><span>Residencial</span></li><li><img src="./React App_files/icono5.png"><span>Comercial</span></li><li><img src="./React App_files/icono6.png"><span>Industrial</span></li></ul></div></div></div></div><div><div class="container-fluid title-prod"><div class="row  justify-content-center"><h2>Nuestros Productos</h2></div></div><div id="productos"><div class="container"><div class="row product left justify-content-center"><div class="col-md-6 ap1"><h2>Transformadores de instrumento tipo poste</h2><p>Transformadores integrados de Medición para diferentes niveles en media tensión.</p><p>En rangos de corriente homologados por CFE - LAPEM tipo KM17, KM24, KM36, entre otros.</p><a href="http://localhost:3000/#" class="btn btn-default btn-cotiza">COTIZA HOY</a></div><div class="col-md-5 op1"><img src="./React App_files/prod1.png" class="img-fluid"><div class="etiqueta">01</div></div></div><div class="row product right justify-content-center"><div class="col-md-5 op2"><img src="./React App_files/prod2.png" class="img-fluid"><div class="etiqueta">02</div></div><div class="col-md-6 ap2"><h2>Transformadores de tipo pedestal</h2><p>Transformadores para medición subterráneo o pedestal en media tensión.</p><p>Con rangos homologados por CFE - LAPEM o de fabricación especial tipo MI17, MI24, entre otros.</p><a href="http://localhost:3000/#" class="btn btn-default btn-cotiza">COTIZA HOY</a></div></div><div class="row product left justify-content-center"><div class="col-md-6 ap1"><h2>Transformadores de instrumento de alta tensión </h2><p>Transformadores de Potencial y Transformadores de corriente para medición en alta tensión.</p><p>Homologados por CFE y de fabricación especial a las necesidades del proyecto. Tipo UTE123, UTE145, UTF245, UTP245, CA123, CA245, entre otros.</p><a href="http://localhost:3000/#" class="btn btn-default btn-cotiza">COTIZA HOY</a></div><div class="col-md-5 op3"><img src="./React App_files/prod3.png" class="img-fluid"><div class="etiqueta">03</div></div></div><div class="row product right justify-content-center"><div class="col-md-5 op4"><img src="./React App_files/prod4.png" class="img-fluid"><div class="etiqueta">04</div></div><div class="col-md-6 ap2"><h2>Transformadores de instrumento para baja tensión </h2><p>Transformadores de corriente tipo dona para baja tensión en rangos homologados por CFE - LAPEM.</p><a href="http://localhost:3000/#" class="btn btn-default btn-cotiza">COTIZA HOY</a></div></div><div class="row product left justify-content-center"><div class="col-md-6 ap1"><h2>Watthorímetros</h2><p>Medidores residenciales, comerciales e indsutriales tipo bidireccional con capacidad de telemedición.</p><p>Homologados por CFE o para medición interna en las formas 9S, 12S, 16S, entre otros.</p><a href="http://localhost:3000/#" class="btn btn-default btn-cotiza">COTIZA HOY</a></div><div class="col-md-5 op5"><img src="./React App_files/prod5.png" class="img-fluid"><div class="etiqueta">05</div></div></div><div class="row product right justify-content-center"><div class="col-md-5 op6"><img src="./React App_files/prod6.png" class="img-fluid"><div class="etiqueta">06</div></div><div class="col-md-6 ap2"><h2>Calidad de energía</h2><p>Dimensionamiento y suministro de filtros de armónicas y bancos de capacitores para control de factor de potencia y mejora en la calidad de energía apegados al código de red de CFE.</p><p>Estudios y análisis de calidad en el suministro eléctrico</p><a href="http://localhost:3000/#" class="btn btn-default btn-cotiza">COTIZA HOY</a></div></div></div></div></div><div><div id="contactotitulo"><div class="container"><div class="row"><div class="col-md-12"><div class="titulo">Trabajamos de la mano con empresas como:<br>Arteche y Tecnologías - EOS</div></div></div></div></div><div id="contactologos"><div class="container"><div class="row logos"><div class="col-md-4"><img src="./React App_files/logo1.png" class="img-fluid"></div><div class="col-md-4"><img src="./React App_files/logo2.png" class="img-fluid"></div><div class="col-md-4"><img src="./React App_files/logo3.png" class="img-fluid"></div></div></div></div><div id="mapa"><div class="container"><div class="row map row justify-content-md-center"><div class="col-md-4 lienzo text-left"><h2>SIMSA</h2><address><p>Olivo 1618 Col. Moderna<br>Monterrey, NL México,<br>CP 64530</p><div class="telefono">+52 (81) 8372 6431<br>+52 (81) 8372 6439</div><a href="mailto:webmaster@example.com" class="correo-contacto"> ventas@simsa-mx.com</a></address><a class="btn btn-default btn-contacto">Contactanos</a></div></div></div></div></div><div><footer class="page-footer font-small  pt-4"><div class="container-fluid text-center text-md-left"><div class="row justify-content-center"><div class="col-md-5 mb-md-0 mb-5 text-center"><a href="http://localhost:3000/#" class="linked"><i class="fab fa-linkedin-in"></i></a><ul class="ft-link"><li><a href="http://localhost:3000/#productos">Productos</a></li><li><a href="http://localhost:3000/#nosotros">Nosotros</a></li><li><a href="http://localhost:3000/#que-hacemos">Que hacemos</a></li><li><a href="http://localhost:3000/#contactos">Contactos</a></li></ul></div></div></div><div class="footer-copyright text-center py-3">Copyright © 2018. SIMSA All rights reserved<br>Design by: COBO’S</div></footer></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="./React App_files/jquery-3.3.1.slim.min.js.descarga" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./React App_files/popper.min.js.descarga" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="./React App_files/bootstrap.min.js.descarga" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="./React App_files/bundle.js.descarga"></script><script src="./React App_files/1.chunk.js.descarga"></script><script src="./React App_files/main.chunk.js.descarga"></script><script src="./React App_files/main.937ab260a579ee658ff3.hot-update.js.descarga"></script>
+
+</body></html>

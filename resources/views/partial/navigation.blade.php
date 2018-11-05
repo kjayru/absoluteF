@@ -8,18 +8,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link btnConoce" href="#" >Conoce la <span>botella</span> </a>
+        <a class="nav-link btnConoce" href="#" ><i class="fas fa-angle-left"></i> Conoce la <span>botella</span> </a>
       </li>
       <li class="nav-item">
         <a class="nav-link btnInicio" href="#" ><span>Inicio</span></a>
       </li>
 
     </ul>
-    <a class="navbar-brand" href="#">Absolut.</a>
+    <a class="navbar-brand" href="#"><img src="/images/logo-absolut.svg" class="img-fluid"/></a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link btnMira" href="#">Mira cómo transformamos el odio en <span>amor</span><br>
-        #MásAmorMenosOdio
+        <a class="nav-link btnMira" href="#">Mira cómo transformamos el odio en <span>amor</span> <br>
+        #MásAmorMenosOdio <i class="fas fa-angle-right"></i>
     </a>
       </li>
     </ul>

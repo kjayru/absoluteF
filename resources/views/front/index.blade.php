@@ -7,9 +7,8 @@
                     <div class="row h-100 justfy-content-center align-items-center">
                         <div class="col-md-12 col-xs-12 block_1">
                             <h1 class="text-center">BIENVENIDO</h1>
-                            <!--<p class="text-center p1">Coloca tu fecha de nacimiento y empieza a darle al mundo más
-                                amor y menos odio.
-                            </p>-->
+                            <p class="text-center p1">Tienes que ser mayor de 18 años para ingresar al sitio
+                            </p>
                             <div class="row justify-content-center">
                                 <form id="fr-edad">
                                     <div class="fdatos">
@@ -23,13 +22,13 @@
                                 </form>
                             </div>
                             <div class="row justify-content-center">
-                                <p>Tienes que ser mayor de 18 años</p>
+
                             </div>
                             <div class="row justify-content-center">
                                 <div class="iremenber">
                                     <form class="form">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="recordar"/>
+                                            <input class="form-check-input" type="checkbox" id="recordar" checked/>
                                             <label class="form-check-label" >
                                                 Recuérdame
                                             </label>

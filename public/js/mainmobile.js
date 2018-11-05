@@ -51,7 +51,7 @@ $("#fr-edad").validate({
         }
     },
     messages: {
-        edad: "Ingrese su edad",
+        edad: "Ingrese su fecha de nacimiento",
     }
 });
 
@@ -472,7 +472,7 @@ $(document).ready(function () {
 			spinner,
 
 
-			totalFrames = 50,
+			totalFrames = 60,
 
 			currentFrame = 0,
 
@@ -515,7 +515,7 @@ $(document).ready(function () {
 
 		var li = document.createElement("li");
 
-		var imageName = "/images/src/gem" + (loadedImages) + ".png";
+		var imageName = "/images/src/botella" + (loadedImages) + ".png";
 
 		var image = $('<img>').attr('src', imageName).addClass("previous-image").appendTo(li);
 

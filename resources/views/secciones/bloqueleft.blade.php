@@ -4,18 +4,20 @@
                             <div class="row h-100 justify-content-center align-items-center">
                                 <div class="col-md-4">
                                    <div class="text-absolute-left">
-                                       <p> <img src="/images/absolutesign.png" class="img-fluid"/></p>
-                                       <p class="txt-2">A drop of love</p>
-                                       <p class="txt-3">Edición limitada, sabor original.</p>
+                                       <p> <img src="/images/frase-absolutl.svg" class="img-fluid"/></p>
+
                                    </div>
                                 </div>
                                 <div class="col-md-4">
-                                <div class="threesixty" id="threesixty">
-                                    <div id="spinner">
-                                        <span>0%</span>
+                                    <div class="threesixty" id="threesixty">
+                                        <div id="spinner">
+                                            <span>0%</span>
+                                        </div>
+                                        <ol class="threesixty_images" id="threesixty_images"></ol>
                                     </div>
-                                    <ol class="threesixty_images" id="threesixty_images"></ol>
-                                </div>
+                                    <div class="ico360">
+                                        <img src="/images/360.png" alt="360" class="img-fluid">
+                                    </div>
                                 </div>
                                 <div class="col-md-4 texto-ab">
                                     <p>Absolut Drop of love, mismo sabor.
@@ -39,9 +41,8 @@
                             <div class="row h-100 justify-content-center align-items-center">
                                 <div class="col-md-4">
                                    <div class="text-absolute-left">
-                                       <p> <img src="/images/absolutesign.png" class=" img-fluid"/></p>
-                                       <p class="txt-2">A drop of love</p>
-                                       <p class="txt-3">Edición limitada, sabor original.</p>
+                                       <p> <img src="/images/frase-absolutl.svg" class=" img-fluid"/></p>
+
                                    </div>
                                 </div>
                                 <div class="col-md-4">
@@ -70,7 +71,7 @@
 
                 <div class="lienzo ventana" id="pagina2-l">
                     <div class="container part1">
-                         <div class="row h-100 justify-content-center align-items-center text-center">
+                         <div class="row h-100 justify-content-center  text-center">
                             <div class="col-md-12 text-center">
                                 <h1>Encuentra la Botella</h1>
                                 <p>Encuentra la edición limitada<br/>
@@ -82,15 +83,15 @@
                                 <h2>Supermercados y tiendas</h2>
                                 <p>Ubícalos en todos estos establecimientos:</p>
                                     <ul>
-                                    <li><img src="/images/logo5.png" class="img-fluid" alt="Metro"/></li>
+                                    <li><img src="/images/logo_metro.svg" class="img-fluid" alt="Metro"/></li>
                                     <li><img src="/images/logo4.png" class="img-fluid" alt="Wong"/></li>
                                     <li><img src="/images/logo2.png" class="img-fluid" alt="PlazaVea"/></li>
-                                    <li><img src="/images/logo1.png" class="img-fluid" alt="Vivanda"/></li>
+                                    <li><img src="/images/logo-vivanda.svg" class="img-fluid" alt="Vivanda"/></li>
 
-                                    <li><img src="/images/logo3.png" class="img-fluid" alt="Listo"/></li>
+                                    <li><img src="/images/logo-listo.svg" class="img-fluid" alt="Listo"/></li>
 
 
-                                    <li><img src="/images/tottus.png" class="img-fluid" alt="Tottus"/></li>
+                                    <li class="litottus"><img src="/images/tottus.svg" class="img-fluid" alt="Tottus"/></li>
                                     </ul>
                             </div>
                             <div class="col-md-4 tiendas">
@@ -173,7 +174,11 @@
                                 </div>
                             </div>
                         </div>
+     <div class="texto-pie">
+        <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
+    </div>
                 </div>
+
 
 
             </div>

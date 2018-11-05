@@ -112,14 +112,14 @@ html body  .container h1{
 }
 #home p.p1 {
     padding-top: 35px;
-    font-size: 25px;
+    font-size: 15px;
     padding-left: 100px;
     padding-right: 100px;
 }
 .fdatos {
     display: block;
     padding-bottom: 20px;
-    padding-top: 56px;
+    padding-top: 11px;
     position: relative;
 }
 .box-year ,.box-btn {
@@ -163,16 +163,19 @@ input#edad {
 
 }
 #ascenso{
-    background: url(/images/back002.png) no-repeat center 0px;
-    background-size: cover;
+
     color: white;
     display: block;
     top: 0px;
     position: absolute;
 }
-
+#pagina1 {
+    z-index: 10;
+    background: url(/images/back002.png) no-repeat 80% 0px;
+    background-size: cover;
+}
 #pagina2{
-    background: url('/images/back003.png') no-repeat center 0px;
+    background: url('/images/back003.png') no-repeat 80% 0px;
     background-size:cover;
     color:white;
 }
@@ -185,12 +188,12 @@ input#edad {
     color:white;
 }
 #pagina2-l{
-    background: url('/images/back005.png') no-repeat center 0px;
+    background: url('/images/back005.png') no-repeat 80% 0px;
     background-size:cover;
     color:white;
 }
 #postfeed{
-    background: url('/images/back006.png') no-repeat center 0px;
+    background: url('/images/back006.png') no-repeat 80% 0px;
     background-size:cover;
     color:white;
 }
@@ -455,7 +458,9 @@ a.navbar-brand {
     -webkit-perspective: 500px;
     padding-left: 7px;
   }
-
+.sliderurl2{
+        width: 400px !important;
+}
   .btn-slide div {
     height: 100%;
     transform-style: preserve-3d;
@@ -527,10 +532,7 @@ a.navbar-brand {
     margin-top: -50px;
     text-indent: -90000px;
 }
-.texto-pie {
-    position: absolute;
-    bottom: -130px;
-}
+
 p.txt-2 {
     font-size: 43px;
     font-family: 'Conv_AbsolutHeadline2017';
@@ -543,7 +545,8 @@ p.txt-3 {
     line-height: 8px;
 }
 .fondoactivo {
-    background: black;
+    background: url("/images/back004_on.png") center 0;
+    background-size:cover;
     position: absolute;
     top: 0;
     width: 100%;
@@ -1343,6 +1346,11 @@ label#terminos-error {
         color: white;
         font-weight: lighter;
     }
+    .ico360 {
+        position: absolute;
+        right: 94px;
+        bottom: 66px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -1351,6 +1359,39 @@ label#terminos-error {
 
 
 @media (min-width: 768px) {
+    .ico360 {
+        position: absolute;
+        right: 94px;
+        top: 148px;
+    }
+    .texto-pie {
+        position: absolute;
+        bottom: 50px;
+        right: 10px;
+         z-index: 10;
+    }
+    .litottus{
+        width: 90px;
+    }
+    a.nav-link.btnMira i {
+        position: absolute;
+        right: 0;
+        top: 21px;
+    }
+    #pagina2-l .container.part1 {
+        padding-top: 20px;
+    }
+    .tiendas {
+        padding-top: 30px;
+    }
+    .col-md-8.mercados {
+        margin-top: 30px;
+    }
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
     .container {
 
         position: relative;

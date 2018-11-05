@@ -20,7 +20,7 @@
 
                       <div class="col-12 text-center bloquemedio">
 
-                        <h3>¿Como estamos hackeando el odio?</h3>
+                        <h3>¿Cómo estamos hackeando el odio?</h3>
 
                         <p>
                         Creamos el Tweetrigami, una acción que transforma los tweets de odio <br/>

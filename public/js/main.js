@@ -51,7 +51,7 @@ $("#fr-edad").validate({
         }
     },
     messages: {
-        edad: "Ingrese su edad",
+        edad: " Ingrese su fecha de nacimiento",
     }
 });
 
@@ -124,6 +124,7 @@ $("#validarEdad").on('click',function(e){
         $("#cambio").prop(':checked',false);
         $(".p2 span").removeClass("check-activo");
         $(".p1 span").removeClass("check-activo");
+
 
     });
 
@@ -291,7 +292,18 @@ $("#validarEdad").on('click',function(e){
 
     });
 
+    $(".sliderurl1").on('click',function(){
+        const contenedor = document.getElementById("marco");
+        const ccright = window.innerWidth*2;
+        altoDinamico(1);
+        TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
+    });
 
+    $(".sliderurl2").on('click',function(){
+        const contenedor = document.getElementById("marco");
+        altoDinamico(2);
+        TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
+    });
 
 });
 
@@ -624,7 +636,7 @@ $(document).ready(function () {
 			spinner,
 
 
-			totalFrames = 50,
+			totalFrames = 60,
 
 			currentFrame = 0,
 
@@ -667,7 +679,7 @@ $(document).ready(function () {
 
 		var li = document.createElement("li");
 
-		var imageName = "/images/src/gem" + (loadedImages) + ".png";
+		var imageName = "/images/src/botella" + (loadedImages) + ".png";
 
 		var image = $('<img>').attr('src', imageName).addClass("previous-image").appendTo(li);
 
@@ -866,7 +878,14 @@ $(document).ready(function () {
 		} else {
 			return;
 		}
-	};
+    };
+
+
+    $("#cambio2").change(function(){
+        loadImage();
+        render();
+        refresh();
+    });
 });
 
 

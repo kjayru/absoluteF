@@ -18,14 +18,15 @@
                                                 <img src="/images/bottle.png" alt="b2" class="img-fluid" />
                                             </div>
                                             <div class="col-md-5 textocentro">
-                                                <p>En el mundo hay mucho odio, por eso decidimos hackearlo y convertirlo
-                                                    en un mensaje de amor. Únete a este movimiento y juntos hagamos de este mundo
-                                                    un lugar con <span>#MasAmorMenosOdio</span>
+                                                <p>En el mundo hay mucho odio. Por eso, decidimos
+                                                    hackearlo y convertirlo en un mensaje de amor.
+                                                    ¡Únete a este movimiento y juntos hagamos de
+                                                    este mundo un lugar mejor!
                                                 </p>
                                                 <p class="hash">
                                                     <span>#MasAmorMenosOdio</span>
                                                 </p>
-                                                <div class="btn-slide btn-menosOdio">
+                                                <div class="btn-slide btn-menosOdio sliderurl1">
                                                     <div>
                                                         <span>Hackea el Odio</span>
                                                         <span>Hackea el Odio</span>
@@ -40,17 +41,18 @@
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
                                                 <div class="col-md-5 textocentro">
-                                                    <p>Para crear la botella Absolut A Drop of Love, fuimos a manifestaciones de odio en diferentes partes del mundo y
-                                                         recogimos todos los carteles de mensajes de Odio posibles. Luego, extrajimos la tinta y la transformamos
-                                                          para transmitir un mensaje más poderoso: <span>El Amor</span>.
+                                                    <p>Para crear la botella Absolut A drop of Love,
+                                                        extragimos la tinta de diferentes carteles de odio
+                                                        en el mundo para transformarla y con ella transmitir
+                                                        un mensaje más poderoso:
                                                     </p>
                                                     <p class="hash">
-                                                    <span>#MasAmorMenosOdio</span>
+                                                    <span>EL AMOR.</span>
                                                     </p>
-                                                    <div class="btn-slide btn-menosOdio">
+                                                    <div class="btn-slide btn-menosOdio sliderurl2">
                                                         <div>
-                                                            <span>Hackea el Odio</span>
-                                                            <span>Hackea el Odio</span>
+                                                            <span>Conoce más del la botella</span>
+                                                            <span>Conoce más del la botella</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -91,13 +93,11 @@
                             <div class="col-md-4">
                                 <div class="texto2">
                                   <p>  Con más amor en nuestras vidas
-                                    el mundo puede ser un lugar mejor.
+                                    el mundo puede ser un lugar mejor.<br/>
                                     El amor vence al odio porque el
                                     amor es ABSOLUTO.</p>
                                 </div>
-                                <div class="texto-pie">
-                                    <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
-                                </div>
+
                             </div>
 
                         </div>
@@ -114,6 +114,9 @@
                     </div>
 
                 </div>
+                <div class="texto-pie">
+                        <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
+                    </div>
 
-            </div>
+</div>
 
