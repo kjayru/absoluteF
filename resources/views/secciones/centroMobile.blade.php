@@ -43,7 +43,7 @@
                                                 </div>
                                                 <div class="col-md-5 col-12 text-center textocentro">
                                                     <p>Para crear la botella Absolut A drop of Love,
-                                                        extragimos la tinta de diferentes carteles de odio
+                                                    extrajimos  la tinta de diferentes carteles de odio
                                                         en el mundo para transformarla y con ella transmitir
                                                         un mensaje más poderoso:
                                                     </p>
