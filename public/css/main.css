@@ -1465,12 +1465,16 @@ a.politicas {
         padding-top: 60px;
     }
     .textocentro {
-        font-size: 20px;
+        font-size: 25px;
         padding-top: 10px;
         padding-left: 67px;
         padding-right: 0px;
+        line-height: 30px;
     }
-
+    .texto2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
     .part1 p {
         font-size:15px;
     }
