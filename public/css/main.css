@@ -700,11 +700,11 @@ div#resultado {
     line-height: 34px;
 }
 #pagina1-r .bloquetexto p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 23px;
 }
 #pagina1-r .bloquemedio p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 23px;
 }
 #pagina1-r .bloquemedio h3 {
@@ -1417,17 +1417,17 @@ a.politicas {
 
 @media (min-width: 768px) {
     .textocentro {
-        font-size: 15px;
+        font-size: 20px;
         padding-top: 10px;
         padding-left: 67px;
-        padding-right: 166px;
+        padding-right: 0px;
     }
 
     .part1 p {
         font-size:15px;
     }
     .col-md-4.texto-ab {
-        font-size: 15px;
+        font-size: 20px;
     }
     .ico360 {
         position: absolute;
