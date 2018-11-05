@@ -13,9 +13,9 @@
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                          <div class="row h-100 justify-content-center align-items-center">
+                                          <div class="row justify-content-center">
                                             <div class="col-md-3 col-8">
-                                                <img src="/images/bottle.png" alt="b2" class="img-fluid" />
+                                                <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
                                             </div>
                                             <div class="col-md-5 textocentro">
                                                 <p>En el mundo hay mucho odio. Por eso, decidimos
@@ -36,8 +36,8 @@
                                           </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <div class="row h-100 justify-content-center align-items-center">
-                                                <div class="col-md-3 col-8">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-2 col-8">
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
                                                 <div class="col-md-5 textocentro">
@@ -104,7 +104,7 @@
                                   <p>  Con más amor en nuestras vidas
                                     el mundo puede ser un lugar mejor.<br/>
                                     El amor vence al odio porque el
-                                    amor es ABSOLUTO.</p>
+                                    amor es <strong>ABSOLUTO</strong>.</p>
                                 </div>
 
                             </div>

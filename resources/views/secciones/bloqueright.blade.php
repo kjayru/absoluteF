@@ -8,7 +8,9 @@
                             <p>
                             ¡Únete a este movimiento y sé un hacker del amor! 
                             Cuando veas un mensaje negativo en twitter,
-                            dale <span>RT</span> con el <span>#MásAmorMenosOdio</span>
+                            dale <strong>RT</strong> con el <br/>
+                            <strong>#MásAmorMenosOdio</strong>
+                            <br/>
                             y juntos transformaremos el odio en amor.
                             </p>
                         </div>

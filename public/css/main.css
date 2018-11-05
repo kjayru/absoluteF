@@ -1424,6 +1424,12 @@ a.politicas {
 
 
 @media (min-width: 768px) {
+    .carousel-item {
+        height: 430px;
+    }
+    strong {
+        font-family: 'Conv_Absolut-Bold';
+    }
     .um3 img.img-fluid {
         margin-top: 14px;
     }

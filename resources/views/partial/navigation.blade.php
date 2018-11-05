@@ -19,7 +19,7 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link btnMira" href="#">Mira cómo transformamos el odio en <span>amor</span> <br>
-        #MásAmorMenosOdio <i class="fas fa-angle-right"></i>
+        <strong>#MásAmorMenosOdio</strong> <i class="fas fa-angle-right"></i>
     </a>
       </li>
     </ul>
