@@ -15,8 +15,8 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                           <div class="row h-100 justify-content-center">
-                                            <div class="col-md-3 col-7">
-                                                <img src="/images/bottle.png" alt="b2" class="img-fluid" />
+                                            <div class="col-md-3 col-9">
+                                            <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
                                             </div>
                                             <div class="col-md-5 col-12 text-center textocentro">
                                                 <p>En el mundo hay mucho odio. Por eso, decidimos
@@ -38,7 +38,7 @@
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row h-100 justify-content-center">
-                                                <div class="col-md-3 col-7">
+                                                <div class="col-md-2 col-6">
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
                                                 <div class="col-md-5 col-12 text-center textocentro">
