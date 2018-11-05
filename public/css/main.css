@@ -1170,11 +1170,15 @@ a.politicas {
         padding-bottom: 20px;
     }
     #ascenso {
-        background: url(/images/back002.png) no-repeat center 0px;
-        background-size: cover;
+
         color: white;
         display: inline-block;
         position: unset;
+    }
+    #pagina1 {
+        z-index: 10;
+        background: url(/images/back002.png) no-repeat 31% 0;
+        background-size: cover;
     }
     .ventana {
         height: auto;
