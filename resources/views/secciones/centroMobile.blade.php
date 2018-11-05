@@ -52,8 +52,8 @@
                                                     </p>
                                                     <div class="btn-slide btn-menosOdio">
                                                         <div>
-                                                            <span>Conoce más del la botella</span>
-                                                            <span>Conoce más del la botella</span>
+                                                            <span>Conoce la botella</span>
+                                                            <span>Conoce la botella</span>
                                                         </div>
                                                     </div>
                                                 </div>
