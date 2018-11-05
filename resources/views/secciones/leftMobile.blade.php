@@ -101,7 +101,7 @@
                                     <li><img src="/images/logo-listo.svg" class="img-fluid" alt="Listo"/></li>
 
 
-                                    <li><img src="/images/tottus.svg" class="img-fluid" alt="Tottus"/></li>
+                                    <li class="icotottus"><img src="/images/tottus.svg" class="img-fluid" alt="Tottus"/></li>
                                     </ul>
                             </div>
                             <div class="col-md-4 col-12 tiendas">

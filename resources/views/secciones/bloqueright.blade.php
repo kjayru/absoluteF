@@ -13,7 +13,7 @@
                             </p>
                         </div>
 
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 col-lg-3  text-center">
                                 <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" class="img-fluid"/>
                         </div>
 
