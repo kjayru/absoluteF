@@ -32,15 +32,6 @@ $(document).ready(function(){
            }
     });
 
-try {
-    const ps = new PerfectScrollbar('#resultado', {
-        wheelSpeed: 2,
-        wheelPropagation: true,
-        minScrollbarLength: 20
-      });
-} catch (error) {
-   console.log("no iniciado");
-}
 
 
 $("#fr-edad").validate({
@@ -113,7 +104,7 @@ $("#validarEdad").on('click',function(e){
         e.preventDefault();
         const contenedor = document.getElementById("marco");
         window.history.pushState(null, '', '/secciones/conoce-la-botella');
-        altoDinamico(2);
+        altoDinamico(3);
         TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
         $(".nav-link").removeClass("active");
         $(this).addClass("active");
@@ -307,14 +298,14 @@ $("#validarEdad").on('click',function(e){
 
     $(".sliderurl2").on('click',function(){
         const contenedor = document.getElementById("marco");
-        altoDinamico(2);
+        altoDinamico(3);
         TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
     });
 
 });
 
 $(window).on("load", function () {
-    $(".loading").fadeOut(700,'swing');
+    $(".loading").delay(650).fadeOut(700,'swing');
     var state=false;
 
     if(localStorage.getItem('session')){
@@ -352,7 +343,7 @@ $(window).on("load", function () {
 
         }
         if(window.location.pathname==='/secciones/conoce-la-botella'){
-            altoDinamico(2);
+            altoDinamico(3);
             TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
             $(".btnConoce").addClass("active");
         }
@@ -380,7 +371,7 @@ $(window).resize(function(){
         TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
     }
     if(window.location.pathname==='/secciones/conoce-la-botella'){
-        altoDinamico(2);
+        altoDinamico(3);
         TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
     }
     if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){

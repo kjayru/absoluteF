@@ -72,9 +72,9 @@
                 </div>
 
                 <div class="lienzo ventana" id="pagina2-l">
-                    <div class="container part1">
+                    <div class="container">
                          <div class="row h-100 justify-content-center  text-center">
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-center titulo">
                                 <h1>Encuentra la Botella</h1>
                                 <p>Encuentra la edición limitada<br/>
                                 A drop of Love en cualquiera de nuestros puntos de venta y<br/>
@@ -126,8 +126,15 @@
 
 
                     </div>
-                    <div class="container-fluid part2">
-                        <div class="row align-items-end">
+                    <span class='mouse-indicator no-animation'>
+                        <span class='mouse'>
+                            <span class='wheel'></span>
+                        </span>
+                    </span>
+                </div>
+                <div class="lienzo ventana" id="pagina3-1">
+                    <div class="container">
+                        <div class="row h-100 justify-content-center align-items-center">
                                 <div class="col-md-12 col-lg-12 col-xl-12 barra-azul">
                                     <div class="row justify-content-center">
                                         <div class="col-md-3 col-lg-3 col-xl-2">
