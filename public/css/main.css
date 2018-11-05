@@ -1374,6 +1374,10 @@ a.politicas {
         right: 94px;
         bottom: 66px;
     }
+    .btn-menosOdio{
+        width: 300px !important;
+        margin-left: -40%;
+    }
 }
 
 @media (min-width: 576px) {
