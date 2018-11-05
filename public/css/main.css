@@ -37,13 +37,12 @@
 	font-style: normal;
 }
 html{
-  font-family:sans-serif;
+    font-family: 'Conv_Absolut-Medium';
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%
 }
 body{
-    font-family: 'Conv_MyriadPro-Regular';
-  font-size:14px;
+    font-family: 'Conv_Absolut-Medium';
   line-height:1.42857143;
   color:#333;
   background-color:#fff;
@@ -55,7 +54,7 @@ body{
 }
 
 html body  .container h1{
-  font-family:'Conv_Absolut-Medium','Arial','sans-serif';
+    font-family: 'Conv_Absolut-Medium';
   font-size:33px;
   font-weight:600;
   line-height:50px;
