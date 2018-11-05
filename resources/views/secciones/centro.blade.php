@@ -24,7 +24,7 @@
                                                     este mundo un lugar mejor!
                                                 </p>
                                                 <p class="hash">
-                                                    <span>#MasAmorMenosOdio</span>
+                                                    <span>#MásAmorMenosOdio</span>
                                                 </p>
                                                 <div class="btn-slide btn-menosOdio sliderurl1">
                                                     <div>
