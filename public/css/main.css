@@ -93,8 +93,7 @@ a{
     display: inline-block;
 }
 .mr-auto li a {
-    font-family: 'Conv_MyriadPro-Regular';
-    color: white !important;
+    font-family: 'Conv_Absolut-Medium';
     text-transform: uppercase;
 }
 .mr-auto li a span{
