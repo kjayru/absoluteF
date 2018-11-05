@@ -1747,7 +1747,8 @@ a.politicas {
     }
  }
 
- @media (max-height:665px) { 
+ @media screen  (max-height:665px) and (-webkit-min-device-pixel-ratio: 2)
+ and (min-resolution: 192dpi) { 
     .col-md-8.mercados {
         margin-top: 0;
     }
