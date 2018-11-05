@@ -63,6 +63,12 @@
                             </div>
                         </div>
                     </div>
+
+                    <span class='mouse-indicator no-animation'>
+                        <span class='mouse'>
+                            <span class='wheel'></span>
+                        </span>
+                    </span>
                 </div>
 
                 <div class="lienzo ventana" id="pagina2-l">
