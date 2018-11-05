@@ -590,7 +590,7 @@ p.txt-3 {
     text-transform: uppercase;
 }
 .cuadro .form-check {
-    font-size: 11px;
+    font-size: 15px;
 }
 .cuadro form.form {
     position: relative;
@@ -1448,14 +1448,16 @@ a.politicas {
         height: 259px;
     }
     div.cuadro p.text-center {
-        font-size: 20px;
+        font-size: 25px;
     }
     .bq1 {
         padding-top: 0;
     }
     .bq1 .cuadro h1 {
         font-family: 'Conv_AbsolutHeadline2017';
-        font-size: 35px;
+        font-size: 50px;
+        padding-bottom: 30px;
+        padding-top: 3px;
     }
     div#pagina2-l .container p {
         font-size: 20px;
@@ -1527,7 +1529,7 @@ a.politicas {
         border-radius: 10px;
         padding: 15px 20px 20px;
         margin-top: 29px;
-        margin-bottom: 20px;
+        margin-bottom: 23px;
     }
 
     span.mouse-indicator {
