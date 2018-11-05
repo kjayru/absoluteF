@@ -84,16 +84,16 @@
                             <div class="col-md-8 mercados">
                                 <h2>Supermercados y tiendas</h2>
                                 <p>Ubícalos en todos estos establecimientos:</p>
-                                    <ul>
-                                    <li><img src="/images/logo_metro.svg" class="img-fluid" alt="Metro"/></li>
-                                    <li><img src="/images/logo_wong.svg" class="img-fluid" alt="Wong"/></li>
-                                    <li><img src="/images/logo-plazavea.svg" class="img-fluid" alt="PlazaVea"/></li>
-                                    <li><img src="/images/logo-vivanda.svg" class="img-fluid" alt="Vivanda"/></li>
+                                    <ul class="justify-content-center align-items-center">
+                                    <li class="um1"><img src="/images/logo_metro.svg" class="img-fluid" alt="Metro"/></li>
+                                    <li class="um2"><img src="/images/logo_wong.svg" class="img-fluid" alt="Wong"/></li>
+                                    <li class="um3"><img src="/images/logo-plazavea.svg" class="img-fluid" alt="PlazaVea"/></li>
+                                    <li class="um4"><img src="/images/logo-vivanda.svg" class="img-fluid" alt="Vivanda"/></li>
 
-                                    <li><img src="/images/logo-listo.svg" class="img-fluid" alt="Listo"/></li>
+                                    <li class="um5"><img src="/images/logo-listo.svg" class="img-fluid" alt="Listo"/></li>
 
 
-                                    <li class="litottus"><img src="/images/tottus.svg" class="img-fluid" alt="Tottus"/></li>
+                                    <li class="um6"><img src="/images/tottus.svg" class="img-fluid" alt="Tottus"/></li>
                                     </ul>
                             </div>
                             <div class="col-md-4 tiendas">

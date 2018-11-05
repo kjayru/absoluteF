@@ -1424,6 +1424,39 @@ a.politicas {
 
 
 @media (min-width: 768px) {
+    .um3 img.img-fluid {
+        margin-top: 14px;
+    }
+    .um4 img.img-fluid {
+        margin-top: 20px;
+    }
+    .um6 img.img-fluid {
+        margin-top: 33px;
+    }
+    #pagina2-l h1 {
+  
+        font-size: 50px;
+        padding-bottom: 35px;
+    }
+    .lienzo h2 {
+      
+        font-size: 50px;
+    }
+    #pagina2-l ul {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        background: #ebf5ff;
+        border-radius: 20px;
+        box-shadow: 1px 14px rgba(176,9,116,0.2);
+        columns: 3;
+    }
+    #pagina2-l li {
+        display: block;
+        padding: 21px 10px 0 10px;
+        position: relative;
+    }
+    
     #pagina1-r .bloquetexto h1 {
   
         font-size: 50px;
