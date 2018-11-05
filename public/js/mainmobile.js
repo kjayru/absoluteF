@@ -252,6 +252,19 @@ $("#validarEdad").on('click',function(e){
         $("#miramob").show();
         $(".navbar-toggler").trigger('click');
     });
+
+    $(".mbslide1").click(function(){
+        $("#iniciomob").hide();
+        $("#conocemob").hide();
+        $("#miramob").show();
+
+    });
+
+    $(".mbslide2").click(function(){
+        $("#iniciomob").hide();
+        $("#conocemob").show();
+        $("#miramob").hide();
+    });
 });
 
 $(window).on("load", function () {

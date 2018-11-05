@@ -27,7 +27,7 @@
                                                 <p class="hash">
                                                     <span>#MásAmorMenosOdio</span>
                                                 </p>
-                                                <div class="btn-slide btn-menosOdio">
+                                                <div class="btn-slide btn-menosOdio mbslide1">
                                                     <div>
                                                         <span>Hackea el Odio</span>
                                                         <span>Hackea el Odio</span>
@@ -50,7 +50,7 @@
                                                     <p class="hash">
                                                     <span>EL AMOR.</span>
                                                     </p>
-                                                    <div class="btn-slide btn-menosOdio">
+                                                    <div class="btn-slide btn-menosOdio mbslide2">
                                                         <div>
                                                             <span>Conoce la botella</span>
                                                             <span>Conoce la botella</span>
