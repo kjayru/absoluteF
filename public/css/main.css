@@ -42,7 +42,7 @@ html{
   -webkit-text-size-adjust:100%
 }
 body{
-  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Conv_MyriadPro-Regular';
   font-size:14px;
   line-height:1.42857143;
   color:#333;
@@ -568,10 +568,10 @@ p.txt-3 {
     font-size: 30px;
 }
 .lienzo .mercados p {
-    text-transform: uppercase;
+    text-transform: none;
 }
 .tiendas p{
-    text-transform: uppercase;
+    text-transform: none;
 }
 .tiendas address {
     text-align: left;
