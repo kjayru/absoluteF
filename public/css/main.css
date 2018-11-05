@@ -1472,12 +1472,11 @@ a.politicas {
 
     }
     .cuadro {
-
         border: 2px solid #44ffff;
         border-radius: 10px;
-        padding: 15px 20px;
-        margin-top: 31px;
-
+        padding: 15px 20px 20px;
+        margin-top: 29px;
+        margin-bottom: 20px;
     }
  }
 
