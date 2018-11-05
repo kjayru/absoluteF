@@ -15,7 +15,7 @@
       </li>
 
     </ul>
-    <a class="navbar-brand" href="#"><img src="/images/logo-absolut.svg" class="img-fluid"/></a>
+    <a class="navbar-brand" href="/secciones"><img src="/images/logo-absolut.svg" class="img-fluid"/></a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link btnMira" href="#">Mira cómo transformamos el odio en <span>amor</span> <br>
