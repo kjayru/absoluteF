@@ -137,11 +137,11 @@
                         <div class="row h-100 justify-content-center align-items-center">
                                 <div class="col-md-12 col-lg-12 col-xl-12 barra-azul">
                                     <div class="row justify-content-center">
-                                        <div class="col-md-3 col-lg-3 col-xl-2">
+                                        <div class="col-md-2 col-lg-2 col-xl-2">
                                             <img src="/images/botella.png" class="img-fluid"/>
                                         </div>
 
-                                        <div class="col-md-9 col-lg-7 col-xl-5 bq1">
+                                        <div class="col-md-9 col-lg-9 col-xl-8 bq1">
                                             <div class="cuadro">
                                             <h1 class="text-center">Absolut a drop of Love</h1>
                                             <p class="text-center">Coloca tus datos y obtén acceso a

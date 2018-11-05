@@ -1416,6 +1416,9 @@ a.politicas {
 
 
 @media (min-width: 768px) {
+    div#pagina3-1 img.img-fluid {
+        height: 259px;
+    }
     div.cuadro p.text-center {
         font-size: 20px;
     }
@@ -1822,4 +1825,5 @@ a.politicas {
         padding: 5px;
     
     }
+
   }
