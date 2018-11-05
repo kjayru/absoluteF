@@ -1180,6 +1180,27 @@ a.politicas {
         background: url(/images/back002.png) no-repeat 31% 0;
         background-size: cover;
     }
+    #pagina2 {
+        background: url(/images/backvideomob.png) no-repeat 80% 0px;
+        background-size: cover;
+        color: white;
+    }
+    #pagina2 .container {
+        height: calc( 100vh - 50px) !important;
+    }
+    #videoabsolute {
+        background: url(/images/video.png) no-repeat 0px 0px;
+        height: 230px;
+        width: 338px;
+        background-size: contain;
+        margin-top: 23px;
+    }
+    #videoabsolute .bgif {
+        left: 47px;
+        width: 247px;
+        height: 136px;
+        top: 26px;
+    }
     .ventana {
         height: auto;
         width: 100%;
@@ -1215,11 +1236,7 @@ a.politicas {
         padding: 0 29px;
         text-align: center;
     }
-    #videoabsolute .bgif {
-        left: 0;
 
-        width: 100%;
-    }
     .carousel-indicators {
         bottom: 35px;
     }
