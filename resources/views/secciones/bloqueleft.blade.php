@@ -76,9 +76,10 @@
                          <div class="row h-100 justify-content-center  text-center">
                             <div class="col-md-12 text-center titulo">
                                 <h1>Encuentra la Botella</h1>
-                                <p>Encuentra la edición limitada<br/>
-                                A drop of Love en cualquiera de nuestros puntos de venta y<br/>
-                                brindemos con amor.
+
+                                <p>Obtén la botella de edición <br>
+                                    limitada <strong>A DROP OF LOVE</strong> <br>
+                                    en cualquiera de nuestros puntos de venta y brindemos con amor.
                                 </p>
                             </div>
                             <div class="col-md-8 mercados">
@@ -105,7 +106,7 @@
                                     <div class="form-group">
 
                                         <select class="form-control" id="lugares" >
-                                            <option>Seleccione</option>
+                                            <option>Seleccionar Licoreria</option>
                                             <option value="Mimar">Mimar</option>
                                             <option value="Sumon">Sumon</option>
                                             <option value="Nuevo Mundo">Nuevo Mundo</option>
