@@ -1248,7 +1248,7 @@ a.politicas {
     .textocentro {
         font-size: 12px;
         padding: 20px 72px 0;
-        text-align: justify !important;
+        text-align: center !important;
         }
     .textocentro .hash{
         text-align: center !important;
