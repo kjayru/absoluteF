@@ -79,7 +79,8 @@
 
                                 <p>Obtén la botella de edición <br>
                                     limitada <strong>A DROP OF LOVE</strong> <br>
-                                    en cualquiera de nuestros puntos de venta y brindemos con amor.
+                                    en cualquiera de nuestros puntos de<br>
+                                     venta y brindemos con amor.
                                 </p>
                             </div>
                             <div class="col-md-8 mercados">

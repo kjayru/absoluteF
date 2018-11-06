@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Absolut A drop of Love</title>
+        <title>ABSOLUT A DROP OF LOVE</title>
         <meta name="description" content="tinta extraída de mensajes de odio de todo el mundo y transformada en amor."/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/vendor/bootstrap.min.css" >
-       
+
         <link rel="stylesheet" href="/css/main.css?v={{ uniqid() }}">
         <link rel="mask-icon" href="/Assets/images/favicon/safari-pinned-tab.svg" color="black" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
@@ -44,7 +44,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
         <script src="/js/vendor/jquery.validate.min.js"></script>
-        
+
         <script src="/js/vendor/jquery.threesixty.min.js"></script>
         <script src="/js/vendor/heartcode-canvasloader-min.js"></script>
         <script src="/js/vendor/jquery.parallax.js"></script>

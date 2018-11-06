@@ -86,7 +86,8 @@
                                 <h1>Encuentra la Botella</h1>
                                 <p>Obtén la botella de edición limitada <br>
                                     <strong>A DROP OF LOVE</strong> <br>
-                                     en cualquiera de nuestros puntos de venta y brindemos con amor.
+                                     en cualquiera de nuestros puntos <br>
+                                     de venta y brindemos con amor.
                                 </p>
                             </div>
                             <div class="col-md-8 col-12 mercados">
