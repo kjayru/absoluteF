@@ -15,7 +15,7 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                           <div class="row h-100 justify-content-center">
-                                            <div class="col-md-3 col-9">
+                                            <div class="col-md-3 col-7">
                                             <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
                                             </div>
                                             <div class="col-md-5 col-12 text-center textocentro">
@@ -27,18 +27,19 @@
                                                 <p class="hash">
                                                     <strong>#MásAmorMenosOdio</strong>
                                                 </p>
-                                                <div class="btn-slide btn-menosOdio mbslide1">
-                                                    <div>
-                                                        <span>Hackea el Odio</span>
-                                                        <span>Hackea el Odio</span>
-                                                    </div>
+
+                                            </div>
+                                            <div class="btn-slide btn-menosOdio mbslide1">
+                                                <div>
+                                                    <span>Hackea el Odio</span>
+                                                    <span>Hackea el Odio</span>
                                                 </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row h-100 justify-content-center">
-                                                <div class="col-md-2 col-6">
+                                                <div class="col-md-2 col-5">
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
                                                 <div class="col-md-5 col-12 text-center textocentro">
@@ -50,11 +51,12 @@
                                                     <p class="hash">
                                                     <span>El Amor.</span>
                                                     </p>
-                                                    <div class="btn-slide btn-menosOdio mbslide2">
-                                                        <div>
-                                                            <span>Conoce la botella</span>
-                                                            <span>Conoce la botella</span>
-                                                        </div>
+
+                                                </div>
+                                                <div class="btn-slide btn-menosOdio mbslide2">
+                                                    <div>
+                                                        <span>Conoce la botella</span>
+                                                        <span>Conoce la botella</span>
                                                     </div>
                                                 </div>
                                             </div>
