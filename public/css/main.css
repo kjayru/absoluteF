@@ -1131,7 +1131,18 @@ a.politicas {
     z-index: 1;
 }
 @media(max-width: 769px){
-
+    .carousel-item {
+        position: relative;
+        display: none;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        padding: 20px;
+        }
     #ascenso .container, #pagina1-l .container, #pagina2-l .container, #pagina3-1 .container, #pagina1-r .container {
         height: 100vh;
         }
