@@ -73,16 +73,17 @@
 
                 <div class="lienzo ventana" id="pagina2-l">
                     <div class="container">
-                         <div class="row h-100 justify-content-center  text-center">
+                         <div class="row h-100 justify-content-center  align-items-center  text-center">
                             <div class="col-md-12 text-center titulo">
                                 <h1>Encuentra la Botella</h1>
 
-                                <p>Obtén la botella de edición <br>
-                                    limitada <strong>A DROP OF LOVE</strong> <br>
+                                <p>Obtén la botella de edición
+                                    limitada <strong>A DROP OF LOVE</strong>
                                     en cualquiera de nuestros puntos de<br>
                                      venta y brindemos con amor.
                                 </p>
                             </div>
+
                             <div class="col-md-8 mercados">
                                 <h2>Supermercados y tiendas</h2>
                                 <p>Ubícalos en todos estos establecimientos:</p>

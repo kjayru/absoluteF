@@ -1,6 +1,8 @@
 $(document).ready(function(){
+    $window =  $(window);
     $("#edad").numeric();
     $("#edad").val("YYYY");
+
     $("#edad").focus(function(){
 
         if( $(this).val()=="YYYY"){
@@ -84,7 +86,13 @@ $("#validarEdad").on('click',function(e){
           window.history.pushState(null, '', '/secciones/Mira-lo-que-hicimos-con-todo-el-odio');
           const ccright = window.innerWidth*2;
           altoDinamico(1);
-          TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
+
+            /*TweenMax.to(contenedor,1,{top:0,ease:Power4.easeOut,onComplete:function(){
+
+            }});*/
+
+            TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
+
           $(".nav-link").removeClass("active");
           $(this).addClass("active");
     });
@@ -94,7 +102,9 @@ $("#validarEdad").on('click',function(e){
         const contenedor = document.getElementById("marco");
         window.history.pushState(null, '', '/secciones');
         altoDinamico(2);
-        TweenMax.to(contenedor,1,{left:`-${ window.innerWidth}px`,ease:Power4.easeIn});
+            TweenMax.to(contenedor,1,{left:`-${ window.innerWidth}px`,ease:Power4.easeIn});
+
+
         $(".nav-link").removeClass("active");
         $(this).addClass("active");
     });
@@ -105,7 +115,10 @@ $("#validarEdad").on('click',function(e){
         const contenedor = document.getElementById("marco");
         window.history.pushState(null, '', '/secciones/conoce-la-botella');
         altoDinamico(3);
-        TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
+
+            TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
+
+
         $(".nav-link").removeClass("active");
         $(this).addClass("active");
     });
@@ -384,10 +397,27 @@ $(window).resize(function(){
 });
 
 function altoDinamico(secciones){
-
+    let valor = secciones;
+    let alto=0;
+    let altoh=0;
+    let ventana=window.innerHeight;
     const padre = document.getElementById("contenedor");
-    let alto = window.innerHeight;
-    const altoh = alto*secciones;
+
+    if(secciones===1){
+         alto = ventana-59;
+          altoh = alto*valor;
+    }
+     if(secciones===2){
+        alto = ventana-60;
+         altoh = alto*valor;
+    }
+     if(secciones===3){
+        alto = ventana-75;
+         altoh = alto*valor;
+    }
+
+  console.log(`numero ${valor} ventana ${ventana} total ${altoh} seccion ${alto}`);
+
     padre.style.height = `${altoh}px`;
 
 }
@@ -440,8 +470,7 @@ function handle(delta) {
         ease: Power4.easeOut,
         autoKill: true,
         overwrite: 5,
-
- });
+        });
 
     }, animationInterval);
   }

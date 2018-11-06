@@ -6,11 +6,11 @@
                         <div class="col-md-6 bloquetexto">
                             <h1>Acabemos juntos<br/>con el odio</h1>
                             <p>
-                            ¡Únete a este movimiento y sé un hacker del amor! 
+                            ¡Únete a este movimiento y sé un hacker del amor!
                             Cuando veas un mensaje negativo en twitter,
-                            dale <strong>RT</strong> con el <br/>
+                            dale <strong>RT</strong> con el
                             <strong>#MásAmorMenosOdio</strong>
-                            <br/>
+
                             y juntos transformaremos el odio en amor.
                             </p>
                         </div>
@@ -31,7 +31,7 @@
 en mensajes de amor, fomentando tolerancia, constancia y calma.
                         </p>
                       </div>
-                      
+
                 </div>
             </div>
             <div class="texto-pie">
