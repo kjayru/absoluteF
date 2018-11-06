@@ -32,7 +32,7 @@
                                         todo el mundo y transformada en amor.
                                     </p>
                                     <div class="cambioescena">
-                                        Prende el amor
+                                        Haz clic y prende el amor
                                         <label class="switch p1">
                                         <input type="checkbox" id="cambio"/>
                                         <span class="slider round"></span>
@@ -67,7 +67,7 @@
                                         todo el mundo y transformada en amor.
                                     </p>
                                     <div class="cambioescena">
-                                        Prende el amor
+                                        Haz clic y prende el amor
                                         <label class="switch p2">
                                         <input type="checkbox" id="cambio2"/>
                                         <span class="slider round"></span>
