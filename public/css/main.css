@@ -567,6 +567,7 @@ p.txt-3 {
 .tiendas address {
     text-align: left;
     margin-bottom: 0px;
+    font-size: 13px;
 }
 .tiendas address span{
     text-transform: uppercase;
@@ -1266,6 +1267,7 @@ a.politicas {
         font-size: 11px;
         text-align: center;
     }
+
     .texto2 {
         font-size: 18px;
         font-family: 'Conv_MyriadPro-Regular';
@@ -1555,8 +1557,7 @@ a.politicas {
         padding: 16px 32px;
     }
     .lienzo h2 {
-
-        font-size: 50px;
+        font-size: 30px;
     }
     #pagina2-l ul {
         list-style: none;

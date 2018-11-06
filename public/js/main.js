@@ -85,13 +85,14 @@ $("#validarEdad").on('click',function(e){
         const contenedor = document.getElementById("marco");
           window.history.pushState(null, '', '/secciones/Mira-lo-que-hicimos-con-todo-el-odio');
           const ccright = window.innerWidth*2;
-          altoDinamico(1);
 
             /*TweenMax.to(contenedor,1,{top:0,ease:Power4.easeOut,onComplete:function(){
 
             }});*/
 
-            TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
+            TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn,onComplete:function(){
+                altoDinamico(1);
+            }});
 
           $(".nav-link").removeClass("active");
           $(this).addClass("active");
@@ -101,8 +102,10 @@ $("#validarEdad").on('click',function(e){
         e.preventDefault();
         const contenedor = document.getElementById("marco");
         window.history.pushState(null, '', '/secciones');
-        altoDinamico(2);
-            TweenMax.to(contenedor,1,{left:`-${ window.innerWidth}px`,ease:Power4.easeIn});
+
+            TweenMax.to(contenedor,1,{left:`-${ window.innerWidth}px`,ease:Power4.easeIn,onComplete:function(){
+                altoDinamico(2);
+            }});
 
 
         $(".nav-link").removeClass("active");
@@ -114,9 +117,11 @@ $("#validarEdad").on('click',function(e){
         e.preventDefault();
         const contenedor = document.getElementById("marco");
         window.history.pushState(null, '', '/secciones/conoce-la-botella');
-        altoDinamico(3);
 
-            TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
+
+            TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn,onComplete:function(){
+                altoDinamico(3);
+            }});
 
 
         $(".nav-link").removeClass("active");
