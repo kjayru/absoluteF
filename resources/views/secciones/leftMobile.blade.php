@@ -27,9 +27,9 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-12 texto-ab text-center">
-                                    <p>Absolut A drop of Love es una botella
+                                    <p><strong>ABSOLUTE A DROP OF LOVE</strong>es una botella
                                         de edición limitada hecha con la tinta extraída de mensajes de odio de
-                                        todo el mundo y transformada en amor.
+                                        todo el mundo y transformada en <strong>AMOR</strong>.
                                     </p>
                                     <div class="cambioescena">
                                         Haz clic y prende el amor
@@ -62,9 +62,9 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-12 texto-ab text-center">
-                                    <p>Absolut A drop of Love es una botella
+                                    <p><strong>ABSOLUTE A DROP OF LOVE</strong>es una botella
                                         de edición limitada hecha con la tinta extraída de mensajes de odio de
-                                        todo el mundo y transformada en amor.
+                                        todo el mundo y transformada en <strong>AMOR</strong>.
                                     </p>
                                     <div class="cambioescena">
                                         Haz clic y prende el amor
