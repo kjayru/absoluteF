@@ -1131,6 +1131,11 @@ a.politicas {
     z-index: 1;
 }
 @media(max-width: 769px){
+
+    #ascenso .container, #pagina1-l .container, #pagina2-l .container, #pagina3-1 .container, #pagina1-r .container {
+        height: 100vh;
+        }
+
     .bg-dark {
         background: url(/images/barrahead.png) no-repeat center 0px;
         background-size: cover;
@@ -1201,7 +1206,8 @@ a.politicas {
         top: 0px;
         position: relative;
         padding-bottom: 30px;
-        padding-top: 10px;
+        padding-top: 0;
+
     }
     .fondoactivo .col-12 img {
         width: 250px;
