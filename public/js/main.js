@@ -154,12 +154,12 @@ $("#validarEdad").on('click',function(e){
                 $.each(data[i].distrito,function(i,e){
 
                     tienda += `<address>
-                    <strong> ${e.dist}</strong>:<span>${ e.address }</span>
+                    <strong> ${e.dist}</strong>: <span>${ e.address }</span>
 
                 </address>`;
                 if(e.address2!=""){
                     tienda += `<address>
-                    <strong> ${e.dist}</strong>:<span>${ e.address2 }</span>
+                    <strong> ${e.dist}</strong>: <span>${ e.address2 }</span>
                  </address>`;
                 }
                 });
