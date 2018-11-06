@@ -1139,6 +1139,7 @@ a.politicas {
         left: 0;
         z-index: 28;
         width: 100%;
+        height: auto;
     }
     body {
 
