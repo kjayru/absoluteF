@@ -13,7 +13,7 @@
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                          <div class="row justify-content-center">
+                                          <div class="row justify-content-center align-items-center">
                                             <div class="col-md-3 col-8">
                                                 <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
                                             </div>
@@ -36,8 +36,8 @@
                                           </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <div class="row justify-content-center">
-                                                <div class="col-md-2 col-8">
+                                            <div class="row justify-content-center align-items-center">
+                                                <div class="col-md-3 col-8">
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
                                                 <div class="col-md-5 textocentro">

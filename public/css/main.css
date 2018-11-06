@@ -332,19 +332,7 @@ a.navbar-brand {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-#pagina2-l ul {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    background: #ebf5ff;
-    border-radius: 20px;
-    box-shadow: 1px 14px rgba(176,9,116,0.2);
-}
-#pagina2-l li {
-    display: inline-block;
-    max-width: 95px;
-    padding: 10px;
-}
+
 
 
 .bloquemedio {
@@ -493,7 +481,7 @@ a.navbar-brand {
     box-sizing: border-box;
     border: 3px solid #fff;
     font-family: 'Conv_Absolut-Bold';
-    line-height: 41px;
+    line-height: 48px;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
@@ -546,12 +534,12 @@ a.navbar-brand {
     text-indent: -90000px;
     z-index: 5;
 }
-a.nav-link.active {
+/*a.nav-link.active {
     background: rgba(255,255,255,0.5);
 }
 a.nav-link:hover,a.nav-link:focus {
     background: rgba(255,255,255,0.5);
-}
+}*/
 p.txt-2 {
     font-size: 43px;
     font-family: 'Conv_AbsolutHeadline2017';
@@ -883,8 +871,8 @@ div#resultado {
 
 @media	screen and (max-device-width: 1024px) and (orientation:portrait) {
 	#threesixty {
-		width:720px;
-		height:450px;
+		width: 185px;
+        height: 225px;
 		margin-left:-360px;
 		margin-top:-225px;
 	}
@@ -893,10 +881,10 @@ div#resultado {
 @media	screen and (max-device-width: 480px) and (orientation:landscape),
 				screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
 	#threesixty {
-		width:360px;
-		height:225px;
-		margin-left:-180px;
-		margin-top:-113px;
+		width: 185px;
+        height: 225px;
+        margin-left: -167px;
+        margin-top: -196px;
 	}
 }
 
@@ -1432,6 +1420,13 @@ a.politicas {
     .icotottus{
         width: 50px;
     }
+    .mercados ul{
+        background: #ebf5ff;
+        padding-left: 0;
+        border-radius: 30px;
+    }
+
+
 }
 
 @media (min-width: 576px) {
@@ -1440,8 +1435,111 @@ a.politicas {
 
 
 @media (min-width: 768px) {
+    .nav-item a.active{
+        background: rgba(235,245,255,0.3) !important;
+        color: #fff !important;
+    }
+
+    .btn-effect{
+
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .btn-effect {
+            color: #fff;
+          }
+          .btn-effect span {
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background-color: rgba(235,245,255,0.3) !important;
+            transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            z-index: -1;
+          }
+          .btn-effect:hover {
+            color: #fff !important;
+          }
+          .btn-effect:hover span {
+            width: 225%;
+            height: 562.5px;
+          }
+          .btn-effect:active {
+            background-color: #fff !important;
+          }
+
+
+    @-webkit-keyframes criss-cross-left {
+        0% {
+          left: -20px;
+        }
+        50% {
+          left: 50%;
+          width: 20px;
+          height: 20px;
+        }
+        100% {
+          left: 50%;
+          width: 375px;
+          height: 375px;
+        }
+      }
+
+      @keyframes criss-cross-left {
+        0% {
+          left: -20px;
+        }
+        50% {
+          left: 50%;
+          width: 20px;
+          height: 20px;
+        }
+        100% {
+          left: 50%;
+          width: 375px;
+          height: 375px;
+        }
+      }
+      @-webkit-keyframes criss-cross-right {
+        0% {
+          right: -20px;
+        }
+        50% {
+          right: 50%;
+          width: 20px;
+          height: 20px;
+        }
+        100% {
+          right: 50%;
+          width: 375px;
+          height: 375px;
+        }
+      }
+      @keyframes criss-cross-right {
+        0% {
+          right: -20px;
+        }
+        50% {
+          right: 50%;
+          width: 20px;
+          height: 20px;
+        }
+        100% {
+          right: 50%;
+          width: 375px;
+          height: 375px;
+        }
+      }
+
+
     .carousel-item {
-        height: 430px;
+        height: 443px;
     }
     strong {
         font-family: 'Conv_Absolut-Bold';
@@ -1455,10 +1553,19 @@ a.politicas {
     .um6 img.img-fluid {
         margin-top: 33px;
     }
-    #pagina2-l h1 {
-
-        font-size: 50px;
-        padding-bottom: 35px;
+    #pagina2-l .mercados  ul {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        width: 80%;
+        background: #ebf5ff;
+        border-radius: 20px;
+        box-shadow: 1px 14px rgba(176,9,116,0.2);
+    }
+    .mercados ul li {
+        display: inline-block;
+        width: 180px;
+        padding: 18px 20px;
     }
     .lienzo h2 {
 
@@ -1468,16 +1575,12 @@ a.politicas {
         list-style: none;
         padding: 0;
         display: inline-block;
+        width: 100%;
         background: #ebf5ff;
         border-radius: 20px;
         box-shadow: 1px 14px rgba(176,9,116,0.2);
-        columns: 3;
     }
-    #pagina2-l li {
-        display: block;
-        padding: 21px 10px 0 10px;
-        position: relative;
-    }
+
 
     #pagina1-r .bloquetexto h1 {
 
@@ -1486,7 +1589,7 @@ a.politicas {
 
     }
     #pagina1-r .bloquetexto p {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 30px;
         padding-top: 38px;
     }
@@ -1495,7 +1598,7 @@ a.politicas {
         line-height: 55px;
     }
     #pagina1-r .bloquemedio p {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 30px;
         padding-top: 39px;
     }
@@ -1503,7 +1606,7 @@ a.politicas {
         height: 259px;
     }
     div.cuadro p.text-center {
-        font-size: 25px;
+        font-size: 20px;
     }
     .bq1 {
         padding-top: 0;
@@ -1522,14 +1625,14 @@ a.politicas {
         padding-top: 60px;
     }
     .textocentro {
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 10px;
         padding-left: 67px;
         padding-right: 0px;
         line-height: 30px;
     }
     .texto2 {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 30px;
     }
     .part1 p {
@@ -1569,7 +1672,7 @@ a.politicas {
     .carousel-indicators {
         position: absolute;
         right: 0;
-        bottom: 50px;
+        bottom: 0;
     }
     .container {
 
@@ -1588,9 +1691,12 @@ a.politicas {
     }
 
     span.mouse-indicator {
-        position: absolute;
-        bottom: 214px;
-        right: 81px;
+
+            position: absolute;
+            bottom: 214px;
+            left: 50%;
+            margin-left: -10px;
+
     }
     .mouse-indicator {
         -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1843,77 +1949,3 @@ a.politicas {
         position: relative;
     }
  }
-
- @media screen(max-height:665px) and (-webkit-min-device-pixel-ratio: 2)
- and (min-resolution: 192dpi)
- {
-    .col-md-8.mercados {
-        margin-top: 0;
-    }
-    .tiendas {
-        padding-top: 0;
-    }
-    .part1 p {
-        font-size: 12px;
-        line-height: 14px;
-    }
-    .cuadro {
-        border: 2px solid #44ffff;
-        border-radius: 10px;
-        padding: 6px 20px 20px;
-        margin-top: 0px;
-        margin-bottom: 20px;
-    }
-    #pagina2-l h1 {
-        font-family: 'Conv_AbsolutHeadline2017';
-        font-size: 23px;
-    }
-    .cuadro p.text-center {
-        margin-bottom: 2px;
-        margin-top: -10px;
-    }
-    .barra-azul {
-        background: url(/images/barra.png) repeat-x 0 36px;
-            background-size: auto auto;
-        background-size: auto auto;
-        margin-top: 0px;
-        background-size: cover;
-        padding-bottom: 20px;
-    }
-    .footer {
-
-        padding-top: 0;
-        background: black;
-        position: unset;
-        bottom: 0;
-        width: 100%;
-        z-index: 100;
-
-    }
-    .texto-pie {
-
-        position: absolute;
-        bottom: 0;
-        right: 10px;
-        z-index: 10;
-
-    }
-    div#resultado {
-
-        position: relative;
-        height: 61px;
-
-    }
-    .ps {
-
-        overflow: hidden !important;
-        overflow-anchor: none;
-        -ms-overflow-style: none;
-        touch-action: auto;
-        -ms-touch-action: auto;
-        border: 1px white dotted;
-        padding: 5px;
-
-    }
-
-  }
