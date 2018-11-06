@@ -86,10 +86,6 @@ $("#validarEdad").on('click',function(e){
           window.history.pushState(null, '', '/secciones/Mira-lo-que-hicimos-con-todo-el-odio');
           const ccright = window.innerWidth*2;
 
-            /*TweenMax.to(contenedor,1,{top:0,ease:Power4.easeOut,onComplete:function(){
-
-            }});*/
-
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn,onComplete:function(){
                 altoDinamico(1);
             }});
@@ -106,7 +102,6 @@ $("#validarEdad").on('click',function(e){
             TweenMax.to(contenedor,1,{left:`-${ window.innerWidth}px`,ease:Power4.easeIn,onComplete:function(){
                 altoDinamico(2);
             }});
-
 
         $(".nav-link").removeClass("active");
         $(this).addClass("active");
@@ -421,7 +416,6 @@ function altoDinamico(secciones){
          altoh = alto*valor;
     }
 
-  console.log(`numero ${valor} ventana ${ventana} total ${altoh} seccion ${alto}`);
 
     padre.style.height = `${altoh}px`;
 

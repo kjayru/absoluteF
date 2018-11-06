@@ -546,7 +546,7 @@ p.txt-3 {
     line-height: 8px;
 }
 .fondoactivo {
-    background: url("/images/back004_on.png") center 0;
+     background: url("/images/back004_on.png") center 0;
     background-size:cover;
     position: absolute;
     top: 0;
@@ -854,15 +854,11 @@ div#resultado {
     left: 49%;
     width: 185px;
     height: 517px;
-    margin-left: -167px;
+    margin-left: -127px;
     margin-top: -200px;
     padding-left: 0px;
 }
-.fondoactivo .botell {
-
-    margin-left: -39px;
-
-}
+.fondoactivo .botell {margin-left: -1px;}
 
 @media	screen and (max-device-width: 1024px) and (orientation:portrait) {
 	#threesixty {
@@ -877,9 +873,9 @@ div#resultado {
 				screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
 	#threesixty {
 		width: 185px;
-        height: 225px;
-        margin-left: -167px;
-        margin-top: -196px;
+		height: 225px;
+		margin-left: -127px;
+		margin-top: -196px;
 	}
 }
 
@@ -1629,7 +1625,7 @@ a.politicas {
     }
     .ico360 {
         position: absolute;
-        right: 94px;
+        right: 74px;
         top: 148px;
     }
     .texto-pie {
@@ -1637,6 +1633,7 @@ a.politicas {
         bottom: 0px;
         right: 10px;
         z-index: 10;
+        font-size: 11px;
     }
     .litottus{
         width: 90px;
