@@ -1265,6 +1265,15 @@ a.politicas {
         padding-left: 7px;
         margin: 0 auto;
     }
+    .btnmobslide{
+        background: #c43a94;
+        display: inline-block;
+        color: white;
+        border: 3px solid white;
+        padding: 7px 18px;
+        text-transform: uppercase;
+        font-family: 'Conv_Absolut-Bold';
+    }
     .texto-pie {
         position: unset;
         margin-bottom: 56px;

@@ -29,12 +29,11 @@
                                                 </p>
 
                                             </div>
-                                            <div class="btn-slide btn-menosOdio mbslide1">
-                                                <div>
+                                            <a href="#" class="btnmobslide mbslide1">
+
                                                     <span>Hackea el Odio</span>
-                                                    <span>Hackea el Odio</span>
-                                                </div>
-                                            </div>
+
+                                            </a>
                                           </div>
                                         </div>
                                         <div class="carousel-item">
@@ -53,12 +52,11 @@
                                                     </p>
 
                                                 </div>
-                                                <div class="btn-slide btn-menosOdio mbslide2">
-                                                    <div>
+                                                <a class="btnmobslide mbslide2">
+
                                                         <span>Conoce la botella</span>
-                                                        <span>Conoce la botella</span>
-                                                    </div>
-                                                </div>
+
+                                                </a>
                                             </div>
                                         </div>
 
