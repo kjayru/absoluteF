@@ -18,13 +18,13 @@
                                                 <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
                                             </div>
                                             <div class="col-md-5 textocentro">
-                                                <p>En el mundo hay mucho odio. Por eso, decidimos
-                                                    hackearlo y convertirlo en un mensaje de amor.
+                                                <p>En el mundo hay mucho <strong>odio</strong>. Por eso, decidimos
+                                                    <strong>hackearlo y convertirlo en un mensaje de amor</strong>.
                                                     ¡Únete a este movimiento y juntos hagamos de
                                                     este mundo un lugar mejor!
                                                 </p>
                                                 <p class="hash">
-                                                    <span>#MásAmorMenosOdio</span>
+                                                    <strong>#MásAmorMenosOdio</strong>
                                                 </p>
                                                 <div class="btn-slide btn-menosOdio sliderurl1">
                                                     <div>
@@ -102,9 +102,9 @@
                             <div class="col-md-4">
                                 <div class="texto2">
                                   <p>  Con más amor en nuestras vidas
-                                    el mundo puede ser un lugar mejor.<br/>
-                                    El amor vence al odio porque el
-                                    amor es <strong>ABSOLUTO</strong>.</p>
+                                    <strong>el mundo puede ser un lugar mejor</strong><br/>
+                                    El amor vence al odio porque
+                                    <strong> el amor es ABSOLUTO</strong>.</p>
                                 </div>
 
                             </div>
