@@ -42,13 +42,13 @@
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
                                                 <div class="col-md-5 col-12 text-center textocentro">
-                                                    <p>Para crear la botella Absolut A drop of Love,
+                                                    <p>Para crear la botella <strong>ABSOLUT A DROP OF LOVE</strong>,
                                                     extrajimos  la tinta de diferentes carteles de odio
                                                         en el mundo para transformarla y con ella transmitir
                                                         un mensaje más poderoso:
                                                     </p>
                                                     <p class="hash">
-                                                    <span>EL AMOR.</span>
+                                                    <span>El Amor.</span>
                                                     </p>
                                                     <div class="btn-slide btn-menosOdio mbslide2">
                                                         <div>
