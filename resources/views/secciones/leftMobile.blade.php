@@ -143,7 +143,7 @@
                                         <div class="col-12">
                                         <h1 class="text-center">Absolut a drop of Love</h1>
                                         </div>
-                                        <div class="col-7">
+                                        <div class="col-5">
                                             <img src="/images/botella.png" class="img-fluid"/>
                                         </div>
                                         <p class="text-center">Coloca tus datos y obtén acceso a<br/>
