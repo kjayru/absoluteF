@@ -1274,6 +1274,10 @@ a.politicas {
         text-transform: uppercase;
         font-family: 'Conv_Absolut-Bold';
     }
+    .btnmobslide:hover,.btnmobslide:focus{
+        color:white;
+        text-decoration: underline;
+    }
     .texto-pie {
         position: unset;
         margin-bottom: 56px;
