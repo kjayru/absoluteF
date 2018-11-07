@@ -332,7 +332,7 @@ $("#validarEdad").on('click',function(e){
     });
 
 
-    $('.text-absolute-left').parallax("50%", 0.4);
+
 
 });
 

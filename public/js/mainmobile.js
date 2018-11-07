@@ -1,5 +1,20 @@
 $(document).ready(function(){
     $(".loading").show().delay(650).fadeOut(1200,'swing');
+    if(localStorage.getItem('session')){
+        if(window.location.pathname==='/'){
+          window.location.href='/secciones';
+        }
+
+    }else
+    {
+
+        if(window.location.pathname!='/'){
+
+            window.location.href='/';
+        }
+
+    }
+
     $("#edad").numeric();
     $("#edad").val("YYYY");
     $("#edad").focus(function(){
@@ -121,12 +136,12 @@ $("#validarEdad").on('click',function(e){
                 $.each(data[i].distrito,function(i,e){
 
                     tienda += `<address>
-                    <strong> ${e.dist}</strong>:<span>${ e.address }</span>
+                    <strong> ${e.dist}</strong>: <span>${ e.address }</span>
 
                 </address>`;
                 if(e.address2!=""){
                     tienda += `<address>
-                    <strong> ${e.dist}</strong>:<span>${ e.address2 }</span>
+                    <strong> ${e.dist}</strong>: <span>${ e.address2 }</span>
                  </address>`;
                 }
                 });
@@ -254,18 +269,23 @@ $("#validarEdad").on('click',function(e){
         $(".navbar-toggler").trigger('click');
     });
 
-    $(".mbslide1").click(function(){
+    $(document).on('click touchstart tap','.mbslide1',function(e){
+        e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").hide();
         $("#miramob").show();
 
     });
 
-    $(".mbslide2").click(function(){
+    $(document).on('click touchstart tap','.mbslide2',function(e){
+        e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").show();
         $("#miramob").hide();
     });
+
+
+
 });
 
 $(window).on("load", function () {
@@ -320,13 +340,12 @@ function onPlayerReady() {
 
 
   //modal
- let mod = document.querySelector(".modal-trigger");
- if(mod){
- mod.addEventListener('click',function(e){
-     e.preventDefault();
-     onPlayerReady();
- });
-}
+
+$(document).on("click touchstart tap", ".modal-trigger", function (e){
+    e.preventDefault();
+    onPlayerReady();
+});
+
   var _createClass = function () {
       function defineProperties(target, props)
       {
