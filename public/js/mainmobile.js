@@ -250,21 +250,21 @@ $("#validarEdad").on('click',function(e){
 
     });
 
-    $(".btnInicio").on('click',function(e){
+    $(document).on('click touchstart tap','.btnInicio',function(e){
         e.preventDefault();
         $("#iniciomob").show();
         $("#conocemob").hide();
         $("#miramob").hide();
         $(".navbar-toggler").trigger('click');
     });
-    $(".btnConoce").on('click',function(e){
+    $(document).on('click touchstart tap','.btnConoce',function(e){
         e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").show();
         $("#miramob").hide();
         $(".navbar-toggler").trigger('click');
     });
-    $(".btnMira").on('click',function(e){
+    $(document).on('click touchstart tap','.btnMira',function(e){
         e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").hide();
