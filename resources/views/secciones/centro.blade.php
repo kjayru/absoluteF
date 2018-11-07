@@ -102,7 +102,7 @@
                             <div class="col-md-4">
                                 <div class="texto2">
                                   <p>  Con más amor en nuestras vidas
-                                    <strong>el mundo puede ser un lugar mejor</strong><br/>
+                                    <strong>el mundo puede ser un lugar mejor</strong>.<br/>
                                     El amor vence al odio porque
                                     <strong> el amor es ABSOLUTO</strong>.</p>
                                 </div>
