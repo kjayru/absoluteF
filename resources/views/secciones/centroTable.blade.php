@@ -1,5 +1,5 @@
 
-<div class="" id="iniciomob">
+<div class="" id="iniciomob" >
     <div  class="bl-centro column" id="ascenso">
                 <div class="lienzo ventana activado" id="pagina1">
 
@@ -15,10 +15,10 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                           <div class="row h-100 justify-content-center">
-                                            <div class=" col-7">
+                                            <div class="col-sm-4 col-7">
                                             <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
                                             </div>
-                                            <div class=" col-12 text-center textocentro">
+                                            <div class="col-sm-10 col-12 text-center textocentro">
                                                 <p>En el mundo hay mucho <strong>odio</strong>. Por eso, decidimos
                                                     <strong>hackearlo y convertirlo en un mensaje de amor</strong>.
                                                     ¡Únete a este movimiento y juntos hagamos de
@@ -38,10 +38,10 @@
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row h-100 justify-content-center">
-                                                <div class=" col-7">
+                                                <div class="col-sm-4 col-7">
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
-                                                <div class=" col-12 text-center textocentro">
+                                                <div class="col-sm-10 col-12 text-center textocentro">
                                                     <p>Para crear la botella <strong>ABSOLUT A DROP OF LOVE</strong>,
                                                     extrajimos  la tinta de diferentes carteles de odio
                                                         en el mundo para transformarla y con ella transmitir
@@ -84,14 +84,14 @@
                     <div class="container">
 
                         <div class="row h-100 justify-content-center align-items-center">
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 <div id="videoabsolute">
                                     <div class="bgif">
                                         <a href="#" class="modal-trigger link player"  data-modal="#modal-1">player</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-12">
+                            <div class="col-md-10">
                                 <div class="texto2">
                                   <p>  Con más amor en nuestras vidas
                                     <strong>el mundo puede ser un lugar mejor</strong>.<br/>

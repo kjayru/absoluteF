@@ -349,7 +349,7 @@ function onPlayerReady() {
 
   //modal
 
-$(document).on("click touchstart tap", ".modal-trigger", function (e){
+$(document).on("click touchstart", ".modal-trigger", function (e){
     e.preventDefault();
     onPlayerReady();
 });

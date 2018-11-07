@@ -55,9 +55,9 @@
 @endmobile
 @tablet
 @include('partial.navigationMobile')
-@include('secciones.centroMobile')
-@include('secciones.leftMobile')
-@include('secciones.rightMobile')
+@include('secciones.centroTable')
+@include('secciones.leftTable')
+@include('secciones.rightTable')
 <div  id="modal-1" class="boxmodal" >
                 <div class="container-fluid">
                     <div class="row justify-content-center item-align-center">

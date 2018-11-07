@@ -53,8 +53,8 @@
                                     <p class="txt-3">Edición limitada, sabor original.</p>
                                 </div>
                             </div>
-                            <div class="row mb-botella">
-                                <div class="col-12">
+                            <div class="row mb-botella justify-content-center">
+                                <div class="col-md-5 text-center">
 
                                     <img src="/images/botella_on.png" class="img-fluid"/>
 
@@ -90,7 +90,7 @@
                                      de venta y brindemos con amor.
                                 </p>
                             </div>
-                            <div class="col-md-8 col-12 mercados">
+                            <div class="col-md-10 col-12 mercados">
                                 <h2>Supermercados y tiendas</h2>
                                 <p>Ubícalos en todos estos establecimientos:</p>
                                     <ul>
@@ -105,7 +105,7 @@
                                     <li class="icotottus"><img src="/images/tottus.svg" class="img-fluid" alt="Tottus"/></li>
                                     </ul>
                             </div>
-                            <div class="col-md-4 col-12 tiendas">
+                            <div class="col-md-6 col-12 tiendas">
                                 <h2>Licorerías</h2>
                                 <p>Ubícalos en las siguientes licorerías:</p>
 
@@ -135,9 +135,9 @@
 
 
                     </div>
-                    <div class="container-fluid ">
-                        <div class="row">
-                                <div class="col-12 barra-azul">
+                    <div class="container-fluid barra-azul">
+                        <div class="row h-100 justify-content-center">
+                                <div class="col-md-8">
                                 <div class="cuadro">
                                     <div class="row justify-content-center">
                                         <div class="col-12">

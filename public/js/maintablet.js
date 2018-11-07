@@ -4,6 +4,9 @@ $(document).ready(function(){
         $("#conocemob").hide();
         $("#miramob").hide();
     });
+    $('.carousel').carousel({
+        interval: 0
+      })
     if(localStorage.getItem('session')){
         if(window.location.pathname==='/'){
           window.location.href='/secciones';
