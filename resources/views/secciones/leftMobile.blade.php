@@ -114,7 +114,7 @@
                                     <div class="form-group">
 
                                         <select class="form-control" id="lugares2" >
-                                            <option>Seleccionar Licoreria</option>
+                                            <option>Seleccionar Licorería</option>
                                             <option value="Mimar">Mimar</option>
                                             <option value="Sumon">Sumon</option>
                                             <option value="Nuevo Mundo">Nuevo Mundo</option>
