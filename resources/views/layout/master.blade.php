@@ -8,7 +8,7 @@
         <meta name="description" content="ABSOLUT A DROP OF LOVE te invita a crear un mundo con #MásAmorMenosOdio."/>
 
         <meta property="og:url" content="{{env('APP_URL')}}" />
-        <meta property="og:type" content="web" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="ABSOLUT A DROP OF LOVE" />
         <meta property="og:description" content="ABSOLUT A DROP OF LOVE te invita a crear un mundo con #MásAmorMenosOdio." />
         <meta property="og:image" content="{{env('APP_URL')}}/compartir.png" />
