@@ -546,7 +546,7 @@ p.txt-3 {
     line-height: 8px;
 }
 .fondoactivo {
-     background: url("/images/back004_on.png") center 0;
+    background: url("/images/back004_on.png") center 0;
     background-size:cover;
     position: absolute;
     top: 0;
@@ -1176,7 +1176,7 @@ a.politicas {
         left: 0;
         z-index: 28;
         width: 100%;
-        height: auto;
+        height: 56px;
     }
     body {
 
@@ -1192,9 +1192,9 @@ a.politicas {
         width: 160px;
         text-align: none;
         margin-left: 12px;
-        font-size: 32px;
-        font-family: 'Conv_AbsolutHeadline2017';
-    }
+
+
+        }
     ul.navbar-nav.mr-auto {
         margin-left: 14px;
         padding-bottom: 20px;
