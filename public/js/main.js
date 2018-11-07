@@ -715,7 +715,7 @@ $(document).ready(function () {
 		spinner.setDensity(90);
 		spinner.setRange(1);
 		spinner.setSpeed(4);
-		spinner.setColor("#333333");
+		spinner.setColor("#ffffff");
 
 		spinner.show();
 

@@ -84,9 +84,9 @@
                          <div class="row h-100 justify-content-center align-items-center text-center">
                             <div class="col-md-12 col-12 text-center">
                                 <h1>Encuentra la Botella</h1>
-                                <p>Obtén la botella de edición limitada <br>
-                                    <strong>A DROP OF LOVE</strong> <br>
-                                     en cualquiera de nuestros puntos <br>
+                                <p>Obtén la botella de edición limitada
+                                    <strong>A DROP OF LOVE</strong>
+                                     en cualquiera de nuestros puntos
                                      de venta y brindemos con amor.
                                 </p>
                             </div>

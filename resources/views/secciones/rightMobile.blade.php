@@ -25,8 +25,8 @@
                         <h3>¿Cómo estamos hackeando el odio?</h3>
 
                         <p>
-                        Creamos el Tweetrigami, una acción que transforma los tweets de odio <br/>
-en mensajes de amor, fomentando tolerancia, constancia y calma.
+                        Creamos el Tweetrigami, una acción que transforma los tweets de odio
+                        en mensajes de amor, fomentando tolerancia, constancia y calma.
                         </p>
                       </div>
                 </div>
