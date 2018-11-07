@@ -52,6 +52,7 @@
 
                 </div>
 </div>
+
 @endhandheld
  @include('partial.footer')
  @include('partial.scriptseccion')

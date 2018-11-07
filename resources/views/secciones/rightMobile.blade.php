@@ -6,11 +6,13 @@
                         <div class="col-12 bloquetexto">
                             <h1>Acabemos juntos<br/>con el odio</h1>
                             <p>
-                            ¡Únete a este movimiento y sé un hacker del amor! <br/>
-                            Cuando veas un mensaje negativo en twitter, <br/>
-                            dale <span>RT</span> con el <span>#MásAmorMenosOdio</span><br/>
-                            y juntos transformaremos el odio en amor.
-                            </p>
+                                ¡Únete a este movimiento y sé un hacker del amor!
+                                Cuando veas un mensaje negativo en twitter,
+                                dale <strong>RT</strong> con el
+                                <strong>#MásAmorMenosOdio</strong>
+
+                                y juntos transformaremos el odio en amor.
+                                </p>
                         </div>
 
                         <div class="col-12 text-center">
@@ -29,6 +31,8 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                       </div>
                 </div>
             </div>
-
+            <div class="texto-pie">
+                    <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
+                </div>
         </div>
     </div>

@@ -27,7 +27,7 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-12 texto-ab text-center">
-                                    <p><strong>ABSOLUTE A DROP OF LOVE</strong>es una botella
+                                    <p><strong>ABSOLUTE A DROP OF LOVE</strong> es una botella
                                         de edición limitada hecha con la tinta extraída de mensajes de odio de
                                         todo el mundo y transformada en <strong>AMOR</strong>.
                                     </p>
@@ -62,7 +62,7 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-12 texto-ab text-center">
-                                    <p><strong>ABSOLUTE A DROP OF LOVE</strong>es una botella
+                                    <p><strong>ABSOLUTE A DROP OF LOVE</strong> es una botella
                                         de edición limitada hecha con la tinta extraída de mensajes de odio de
                                         todo el mundo y transformada en <strong>AMOR</strong>.
                                     </p>
@@ -143,7 +143,7 @@
                                         <div class="col-12">
                                         <h1 class="text-center">Absolut a drop of Love</h1>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-3">
                                             <img src="/images/botella.png" class="img-fluid"/>
                                         </div>
                                         <div class="col-12">
@@ -191,10 +191,15 @@
                                 </div>
                             </div>
                         </div>
+
+                <div class="texto-pie">
+                        <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
+                </div>
                 </div>
 
-
             </div>
+
+
             <div class="modalform" style="display:none;">
                 <div class="container">
                     <div class="row h-100 justify-content-center align-items-center">
@@ -205,6 +210,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
 
