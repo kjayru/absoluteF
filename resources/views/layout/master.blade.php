@@ -11,7 +11,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="ABSOLUT A DROP OF LOVE" />
         <meta property="og:description" content="ABSOLUT A DROP OF LOVE te invita a crear un mundo con #MásAmorMenosOdio." />
-        <
+
         <meta property="fb:app_id" content="1019609948211695"/>
         <meta property="og:image" content="{{env('APP_URL')}}/compartir.png" />
         <meta property="og:image:secure_url" content="{{env('APP_URL')}}/compartir.png" />
@@ -43,7 +43,7 @@
         @endtablet
 
 
-    <link rel="mask-icon" href="/Assets/images/favicon/safari-pinned-tab.svg" color="black" />
+
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
