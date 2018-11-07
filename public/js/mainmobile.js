@@ -251,18 +251,21 @@ $("#validarEdad").on('click',function(e){
     });
 
     $(".btnInicio").on('click',function(e){
+        e.preventDefault();
         $("#iniciomob").show();
         $("#conocemob").hide();
         $("#miramob").hide();
         $(".navbar-toggler").trigger('click');
     });
     $(".btnConoce").on('click',function(e){
+        e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").show();
         $("#miramob").hide();
         $(".navbar-toggler").trigger('click');
     });
     $(".btnMira").on('click',function(e){
+        e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").hide();
         $("#miramob").show();
