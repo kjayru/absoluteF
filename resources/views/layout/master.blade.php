@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        title>ABSOLUT A DROP OF LOVE</title>
+        <title>ABSOLUT A DROP OF LOVE</title>
         <meta name="description" content="ABSOLUT A DROP OF LOVE te invita a crear un mundo con #MásAmorMenosOdio."/>
 
         <meta property="og:url" content="{{env('APP_URL')}}" />
