@@ -11,7 +11,7 @@
         <meta property="og:type" content="web" />
         <meta property="og:title" content="ABSOLUT A DROP OF LOVE" />
         <meta property="og:description" content="ABSOLUT A DROP OF LOVE te invita a crear un mundo con #MásAmorMenosOdio." />
-        <meta property="og:image" content="{{env('APP_URL')}}/images/compartir.png" />
+        <meta property="og:image" content="{{env('APP_URL')}}/compartir.png" />
         <meta property="fb:app_id" content="1019609948211695"/>
 
 
@@ -21,7 +21,7 @@
         <meta name="twitter:domain" content="{{env('APP_URL')}}" />
         <meta name="twitter:title" content="ABSOLUT A DROP OF LOVE" />
         <meta name="twitter:description" content="Hackea el odio y haz del mundo un lugar con #MásAmorMenosOdio." />
-        <meta name="twitter:image" content="{{env('APP_URL')}}/images/compartir.png" />
+        <meta name="twitter:image" content="{{env('APP_URL')}}/compartir.png" />
         <meta property="twitter:account_id" content="1047879628038311936" />
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
