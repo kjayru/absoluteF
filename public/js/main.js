@@ -1,4 +1,20 @@
 $(document).ready(function(){
+    $(".loading").show().delay(650).fadeOut(1200,'swing');
+    if(localStorage.getItem('session')){
+        if(window.location.pathname==='/'){
+          window.location.href='/secciones';
+        }
+
+    }else
+    {
+
+        if(window.location.pathname!='/'){
+
+            window.location.href='/';
+        }
+
+    }
+
     $window =  $(window);
     $("#edad").numeric();
     $("#edad").val("YYYY");
@@ -317,11 +333,12 @@ $("#validarEdad").on('click',function(e){
 
 
     $('.text-absolute-left').parallax("50%", 0.4);
+
 });
 
 $(window).on("load", function () {
-    $(".loading").delay(650).fadeOut(700,'swing');
-    var state=false;
+
+
 
     if(localStorage.getItem('session')){
         if(window.location.pathname==='/'){

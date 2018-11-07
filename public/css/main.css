@@ -1142,9 +1142,10 @@ a.politicas {
         -webkit-perspective: 1000px;
         perspective: 1000px;
         padding: 20px;
+        height: 500px;
         }
     #ascenso .container, #pagina1-l .container, #pagina2-l .container, #pagina3-1 .container, #pagina1-r .container {
-        height: 100vh;
+        height: auto;
         }
 
     .bg-dark {
@@ -1162,7 +1163,7 @@ a.politicas {
         overflow:auto;
     }
     div#pagina1 .container-fluid {
-        height: 90vh;
+        height: auto;
     }
     a.navbar-brand {
         position: unset;
@@ -1195,7 +1196,7 @@ a.politicas {
         color: white;
     }
     #pagina2 .container {
-        height: calc( 100vh - 50px) !important;
+        height: auto;
     }
     #videoabsolute {
         background: url(/images/video.png) no-repeat 0px 0px;
@@ -1243,7 +1244,7 @@ a.politicas {
 
 
     .textocentro {
-        font-size: 12px;
+        font-size: 13px;
         padding: 20px 72px 0;
         text-align: center !important;
         }
@@ -1251,7 +1252,7 @@ a.politicas {
         text-align: center !important;
        }
     .carousel-indicators {
-        bottom: 35px;
+        bottom: -7px;
     }
     .btn-slide {
         width: 280px;
@@ -1264,7 +1265,7 @@ a.politicas {
     }
     .btnmobslide{
         background: #c43a94;
-        display: inline-block;
+        display: inline-table;
         color: white;
         border: 3px solid white;
         padding: 7px 18px;
@@ -1393,19 +1394,19 @@ a.politicas {
         padding-top: 20px;
     }
     #pagina1-r .bloquetexto p {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 20px;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 20px;padding-bottom: 30px;
     }
     #ascenso .container, #pagina1-l .container, #pagina1-r .container {
-        height: calc( 100vh - 115px);
+        height: auto;
     }
     #pagina1-r .bloquemedio h3 {
         font-family: 'Conv_AbsolutHeadline2017';
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 600;
-        line-height: 55px;
+        line-height: 34px;padding-top: 43px;
     }
     .boxmodal .close {
         background: none;
@@ -1952,3 +1953,4 @@ a.politicas {
         position: relative;
     }
  }
+

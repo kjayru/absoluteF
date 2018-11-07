@@ -15,10 +15,10 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                           <div class="row h-100 justify-content-center">
-                                            <div class="col-md-3 col-7">
+                                            <div class=" col-7">
                                             <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
                                             </div>
-                                            <div class="col-md-5 col-12 text-center textocentro">
+                                            <div class=" col-12 text-center textocentro">
                                                 <p>En el mundo hay mucho <strong>odio</strong>. Por eso, decidimos
                                                     <strong>hackearlo y convertirlo en un mensaje de amor</strong>.
                                                     ¡Únete a este movimiento y juntos hagamos de
@@ -38,10 +38,10 @@
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row h-100 justify-content-center">
-                                                <div class="col-md-2 col-5">
+                                                <div class=" col-7">
                                                     <img src="/images/bottle.png" alt="b1" class="img-fluid" />
                                                 </div>
-                                                <div class="col-md-5 col-12 text-center textocentro">
+                                                <div class=" col-12 text-center textocentro">
                                                     <p>Para crear la botella <strong>ABSOLUT A DROP OF LOVE</strong>,
                                                     extrajimos  la tinta de diferentes carteles de odio
                                                         en el mundo para transformarla y con ella transmitir

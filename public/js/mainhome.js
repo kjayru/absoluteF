@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $(".loading").show();
     $window =  $(window);
     $("#edad").numeric();
     $("#edad").val("YYYY");
