@@ -236,13 +236,13 @@ a.navbar-brand {
     overflow: hidden;
 
 }
+
 #contenedor>ul {
     position: relative;
     width: 100%;
     height: 100vh;
-
     display: inline-flex;
-    padding: 60px 0px;
+    padding: 39px 0px;
 }
 
 #contenedor>ul>li {
