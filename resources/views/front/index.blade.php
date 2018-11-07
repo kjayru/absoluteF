@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.masterhome')
 @section('content')
 
 
@@ -63,4 +63,5 @@
                 </div>
             </div>
             @include('partial.footer')
+            @include('partial.scripthome')
 @endsection

@@ -40,12 +40,9 @@
         </div>
 
 
-        @desktop
-        <script src="/js/main.js?v={{ uniqid() }}"></script>
-        @enddesktop
-        @handheld
-        <script src="/js/mainmobile.js?v={{ uniqid() }}"></script>
-        @endhandheld
+
+        <script src="/js/mainhome.js?v={{ uniqid() }}"></script>
+
 
     </body>
 </html>

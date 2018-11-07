@@ -1211,7 +1211,7 @@ a.politicas {
         top: 26px;
     }
     .ventana {
-        height: 100vh;
+        height: auto;
         width: 100%;
         float: left;
         top: 0px;
