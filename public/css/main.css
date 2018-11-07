@@ -1137,12 +1137,12 @@ a.politicas {
         padding-top: 40px;
         padding-bottom: 0px;
         }
-        div#pagina2-l p {
-            line-height: 24px;
-            font-size: 20px;
-            padding-bottom: 17px;
-            padding-top: 17px;
-            }
+    div#pagina2-l p {
+        line-height: 24px;
+        font-size: 17px;
+        padding-bottom: 17px;
+        padding-top: 17px;
+        }
     #pagina2-l .barra-azul h1 {
         font-family: 'Conv_AbsolutHeadline2017';
         font-size: 40px;
