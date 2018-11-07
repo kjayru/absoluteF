@@ -1130,6 +1130,7 @@ a.politicas {
     left: -51px;
     z-index: 1;
 }
+
 @media(max-width: 769px){
     #pagina2-l h1 {
         font-family: 'Conv_AbsolutHeadline2017';
@@ -1177,6 +1178,7 @@ a.politicas {
         z-index: 28;
         width: 100%;
         height: auto;
+        padding: 0;
     }
     body {
 
@@ -1498,6 +1500,28 @@ a.politicas {
 
     }
 
+}
+@media(max-width: 320px){
+    .footer .bloque {
+        font-size: 7pt !important;
+    }
+    #home .container {
+        height: inset;
+        margin-bottom: 30px;
+    }
+    #videoabsolute {
+        background: url(/images/video.png) no-repeat 0px 0px;
+        height: 200px;
+        width: 290px;
+        background-size: contain;
+        margin-top: 23px;
+    }
+    #videoabsolute .bgif {
+        left: 40px;
+        width: 212px;
+        height: 118px;
+        top: 22px;
+    }
 }
 
 @media (min-width: 576px) {

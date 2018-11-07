@@ -4,7 +4,6 @@ $(document).ready(function(){
         $("#conocemob").hide();
         $("#miramob").hide();
     });
-
     if(localStorage.getItem('session')){
         if(window.location.pathname==='/'){
           window.location.href='/secciones';
@@ -12,7 +11,6 @@ $(document).ready(function(){
 
     }else
     {
-
         if(window.location.pathname!='/'){
 
             window.location.href='/';

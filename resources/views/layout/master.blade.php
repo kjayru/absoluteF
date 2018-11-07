@@ -43,9 +43,12 @@
         @desktop
         <script src="/js/main.js?v={{ uniqid() }}"></script>
         @enddesktop
-        @handheld
+        @mobile
         <script src="/js/mainmobile.js?v={{ uniqid() }}"></script>
-        @endhandheld
+        @endmobile
+        @tablet
+        <script src="/js/maintablet.js?v={{ uniqid() }}"></script>
+        @endtablet
 
     </body>
 </html>
