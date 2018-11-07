@@ -1138,7 +1138,7 @@ a.politicas {
         padding-bottom: 30px;
         }
         div#pagina2-l p {
-            line-height: 30px;
+            line-height: 24px;
             font-size: 20px;
             padding-bottom: 30px;
             padding-top: 30px;
@@ -1314,8 +1314,8 @@ a.politicas {
         color: white;
         }
     .texto2 {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 24px;
         text-align: center;
         padding-bottom: 30px;
         padding-top: 30px;
@@ -1332,8 +1332,8 @@ a.politicas {
         background-size: cover;
         }
     .col-12.texto-ab.text-center {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 24px;
         }
     p.txt-2 {
         font-size: 24px;
@@ -1367,7 +1367,7 @@ a.politicas {
         }
 
     .lienzo .mercados p {
-        text-transform: uppercase;
+        text-transform: unset;
         font-size: 12px;
         padding-top: 10px;
     }
@@ -1442,14 +1442,14 @@ a.politicas {
         padding-top: 20px;
     }
     #pagina1-r .bloquetexto p {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 24px;
         text-align: center;
         padding-top: 20px;padding-bottom: 30px;
     }
     #pagina1-r .bloquemedio p {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 24px;
         padding-top: 30px;
         }
     #ascenso .container, #pagina1-l .container, #pagina1-r .container {
@@ -2008,4 +2008,5 @@ a.politicas {
         position: relative;
     }
  }
+
 
