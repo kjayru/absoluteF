@@ -11,8 +11,15 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="ABSOLUT A DROP OF LOVE" />
         <meta property="og:description" content="ABSOLUT A DROP OF LOVE te invita a crear un mundo con #MásAmorMenosOdio." />
-        <meta property="og:image" content="{{env('APP_URL')}}/compartir.png" />
+
         <meta property="fb:app_id" content="1019609948211695"/>
+
+        <meta property="og:image" content="{{env('APP_URL')}}/compartir.png" />
+        <meta property="og:image:secure_url" content="{{env('APP_URL')}}/compartir.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="ABSOLUT A DROP OF LOVE" />
 
 
         <meta name="twitter:card" content="summary_large_image" />
