@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $(".loading").show().delay(650).fadeOut(1200,'swing');
     $("#edad").numeric();
     $("#edad").val("YYYY");
     $("#edad").focus(function(){
