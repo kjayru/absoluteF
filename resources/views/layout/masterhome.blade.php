@@ -11,6 +11,14 @@
 
         <link rel="stylesheet" href="/css/main.css?v={{ uniqid() }}">
         <link rel="mask-icon" href="/Assets/images/favicon/safari-pinned-tab.svg" color="black" />
+
+        <meta property="og:url" content="{{env('APP_URL')}}" />
+        <meta property="og:type" content="web" />
+        <meta property="og:title" content="ABSOLUT A DROP OF LOVE" />
+        <meta property="og:description" content="tinta extraída de mensajes de odio de todo el mundo y transformada en amor." />
+        <meta property="og:image" content="{{env('APP_URL')}}/images/compartir.png" />
+        <meta property="fb:app_id" content="1019609948211695"/>
+
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">

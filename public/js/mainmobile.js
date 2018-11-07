@@ -45,6 +45,9 @@ $(document).ready(function(){
         if( $(this).val()==holder){
             $(this).val('');
         }
+
+
+
     });
     $(".cuadro input.form-control").blur(function(){
         let holder = $(this).data('rel');
@@ -53,15 +56,7 @@ $(document).ready(function(){
            }
     });
 
-try {
-    const ps = new PerfectScrollbar('#resultado', {
-        wheelSpeed: 2,
-        wheelPropagation: true,
-        minScrollbarLength: 20
-      });
-} catch (error) {
-   console.log("no iniciado");
-}
+
 
 
 $("#fr-edad").validate({
@@ -140,14 +135,9 @@ $("#validarEdad").on('click',function(e){
 
                 $.each(data[i].distrito,function(i,e){
 
-                    tienda += `<address>
-                    <strong> ${e.dist}</strong>: <span>${ e.address }</span>
-
-                </address>`;
+                    tienda += `<address><strong>${e.dist}</strong>:  <span>${ e.address }</span></address>`;
                 if(e.address2!=""){
-                    tienda += `<address>
-                    <strong> ${e.dist}</strong>: <span>${ e.address2 }</span>
-                 </address>`;
+                    tienda += `<address><strong>${e.dist}</strong>:  <span>${ e.address2 }</span></address>`;
                 }
                 });
             }
@@ -255,21 +245,21 @@ $("#validarEdad").on('click',function(e){
 
     });
 
-    $(document).on('click touchstart tap','.btnInicio',function(e){
+    $('.btnInicio').on('click touchstart tap',function(e){
         e.preventDefault();
         $("#iniciomob").show();
         $("#conocemob").hide();
         $("#miramob").hide();
         $(".navbar-toggler").trigger('click');
     });
-    $(document).on('click touchstart tap','.btnConoce',function(e){
+    $('.btnConoce').on('click touchstart tap',function(e){
         e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").show();
         $("#miramob").hide();
         $(".navbar-toggler").trigger('click');
     });
-    $(document).on('click touchstart tap','.btnMira',function(e){
+    $('.btnMira').on('click touchstart tap',function(e){
         e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").hide();
@@ -277,7 +267,7 @@ $("#validarEdad").on('click',function(e){
         $(".navbar-toggler").trigger('click');
     });
 
-    $(document).on('click touchstart tap','.mbslide1',function(e){
+    $('.mbslide1').on('click touchstart tap',function(e){
         e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").hide();
@@ -285,7 +275,7 @@ $("#validarEdad").on('click',function(e){
 
     });
 
-    $(document).on('click touchstart tap','.mbslide2',function(e){
+    $('.mbslide2').on('click touchstart tap',function(e){
         e.preventDefault();
         $("#iniciomob").hide();
         $("#conocemob").show();
@@ -349,7 +339,7 @@ function onPlayerReady() {
 
   //modal
 
-$(document).on("click touchstart", ".modal-trigger", function (e){
+$( ".modal-trigger").on("click touchstart", function (e){
     e.preventDefault();
     onPlayerReady();
 });
@@ -394,7 +384,7 @@ $(document).on("click touchstart", ".modal-trigger", function (e){
         close.innerHTML = 'close';
         close.classList.add('close');
         modal.appendChild(close);
-        close.addEventListener('click', function (evt) {return _this._closeModal(evt, modal);}, false);
+        close.addEventListener('click touchstart', function (evt) {return _this._closeModal(evt, modal);}, false);
       });
 
       this._setRippleSize();
@@ -412,7 +402,7 @@ $(document).on("click touchstart", ".modal-trigger", function (e){
 
       {var _this2 = this;
         window.addEventListener('resize', function () {return _this2._setRippleSize();}, false);
-        document.body.addEventListener('click', function (evt) {return _this2._handleClicks(evt);}, false);
+        document.body.addEventListener('click touchstart', function (evt) {return _this2._handleClicks(evt);}, false);
       } }, { key: '_handleClicks', value: function _handleClicks(
 
       evt) {

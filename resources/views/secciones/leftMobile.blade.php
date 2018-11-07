@@ -156,14 +156,14 @@
 
 
                                             <form class="form" id="formdata2">
-                                            <input type="hidden" name='_method' value="POST" id="method">
+                                            <input type="hidden" name='_method' value="POST" id="method" />
                                              @csrf
                                                 <div class="row align-items-start">
                                                     <div class="form-group col-12">
                                                         <input type="text" class="form-control" name="nombres2" maxlength="50" id="nombres2" data-rel="Nombre y apellido"/>
                                                     </div>
                                                     <div class="form-group col-12">
-                                                        <input type="text" class="form-control" name="email2" id="email2" maxlength="50" data-rel="Correo electrónico"/>
+                                                        <input type="email" class="form-control" name="email2" id="email2" maxlength="50" data-rel="Correo electrónico"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-check">

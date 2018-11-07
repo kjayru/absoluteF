@@ -1500,6 +1500,7 @@ a.politicas {
 
     }
 
+body.iosBugFixCaret.modal-open { position: fixed; width: 100%; }
 }
 @media(max-width: 320px){
     .footer .bloque {

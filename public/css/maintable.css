@@ -1131,7 +1131,7 @@ a.politicas {
     z-index: 1;
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1020px){
     #pagina2-l h1 {
         font-family: 'Conv_AbsolutHeadline2017';
         font-size: 40px;
