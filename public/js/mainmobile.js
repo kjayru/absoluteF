@@ -461,8 +461,7 @@ var _createClass = function () {
     { key: '_handleClicks', value: function _handleClicks(evt)
      {
       var target = evt.target;
-      console.log(target);
-      debugger
+
       this.animationStart = 0;
 
       if (target.classList.contains(this.triggerClass)) {
