@@ -985,7 +985,7 @@ div#resultado {
     width: 200px;
     height: 200px;
     padding: 10px;
-    background: url('/images/load1.svg');
+    background: url('/images/load1.svg') no-repeat;
 		-webkit-animation: gifbotella 4s infinite linear;
 		animation: gifbotella 4s infinite linear;
         border: solid 0px #ccc;
