@@ -352,9 +352,17 @@ function onYouTubeIframeAPIReady() {
   function PlayerReady2(){
 
       player2.playVideo();
+      var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+      if (requestFullScreen) {
+        requestFullScreen.bind(iframe)();
+      }
   }
   function stopVideo2(){
       player2.stopVideo();
+      var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+      if (requestFullScreen) {
+        requestFullScreen.bind(iframe)();
+      }
   }
 
 
