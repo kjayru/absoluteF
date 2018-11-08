@@ -16,7 +16,12 @@
                         </div>
 
                         <div class="col-12 text-center">
-                                <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" class="img-fluid"/>
+                            <div class="videoplayer2">
+                                <div class="bgif2">
+                                    <a href="#" class=" modal-trigger link players2" data-modal="#modal-2">player </a>
+                                    <div class="player2"></div>
+                                </div>
+                            </div>
                         </div>
 
 

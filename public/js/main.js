@@ -229,8 +229,9 @@ $("#validarEdad").on('click',function(e){
 
         $(".boxmodal").removeClass('active');
             stopVideo();
-
+            stopVideo2();
     });
+
 
 
 
@@ -499,6 +500,8 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
+var player2;
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '360',
@@ -506,6 +509,14 @@ function onYouTubeIframeAPIReady() {
     videoId: 'y0MOF0b8yq8',
     playerVars: {'showinfo':0, 'controls': 0,'modestbranding':0,'playsinline':0,'rel':0,'iv_load_policy': 3 },
   });
+
+
+  player2= new YT.Player('player2',{
+    height:'360',
+    width:'640',
+    videoId:'at1ZNjcf-NA',
+    playerVars: {'showinfo':0, 'controls': 0,'modestbranding':0,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+});
 }
 function onPlayerReady() {
     player.playVideo();
@@ -517,14 +528,37 @@ function onPlayerReady() {
   }
 
 
+
+
+function PlayerReady2(){
+
+    player2.playVideo();
+}
+function stopVideo2(){
+    player2.stopVideo();
+}
+
   //modal
- let mod = document.querySelector(".modal-trigger");
+ let mod = document.querySelector(".player");
  if(mod){
  mod.addEventListener('click',function(e){
      e.preventDefault();
      onPlayerReady();
  });
 }
+
+
+let mod2 = document.querySelector(".players2");
+if(mod2){
+mod2.addEventListener('click',function(e){
+    e.preventDefault();
+    PlayerReady2();
+});
+}
+
+
+
+
   var _createClass = function () {
       function defineProperties(target, props)
       {
@@ -542,7 +576,11 @@ function onPlayerReady() {
                         }}
                         var RippleModal = function () {
 
-    function RippleModal() {var _this = this;var triggerClass = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'modal-trigger';var modalClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'modal';_classCallCheck(this, RippleModal);
+    function RippleModal() {
+        var _this = this;
+        var triggerClass = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'modal-trigger';
+        var modalClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'boxmodal';
+        _classCallCheck(this, RippleModal);
       this.triggerClass = triggerClass;
       var $body = document.body;
 
@@ -562,7 +600,7 @@ function onPlayerReady() {
 
       this.modals.map(function (modal) {
         var close = document.createElement('button');
-        close.innerHTML = 'close';
+        close.innerHTML = ' <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>';
         close.classList.add('close');
         modal.appendChild(close);
         close.addEventListener('click', function (evt) {return _this._closeModal(evt, modal);}, false);
@@ -570,8 +608,9 @@ function onPlayerReady() {
 
       this._setRippleSize();
       this._initEvents();
-    }_createClass(RippleModal, [{ key: '_setRippleSize', value: function _setRippleSize()
+    }
 
+    _createClass(RippleModal, [{ key: '_setRippleSize', value: function _setRippleSize()
       {
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -579,14 +618,17 @@ function onPlayerReady() {
 
         this.ripple.style.width = s + 'px';
         this.ripple.style.height = s + 'px';
-      } }, { key: '_initEvents', value: function _initEvents()
+      } },
+      { key: '_initEvents', value: function _initEvents()
 
       {var _this2 = this;
         window.addEventListener('resize', function () {return _this2._setRippleSize();}, false);
-        document.body.addEventListener('click', function (evt) {return _this2._handleClicks(evt);}, false);
-      } }, { key: '_handleClicks', value: function _handleClicks(
-
-      evt) {
+        document.body.addEventListener('click', function (evt) {
+            return _this2._handleClicks(evt);
+        }, false);
+      } },
+      { key: '_handleClicks', value: function _handleClicks(evt)
+       {
         var target = evt.target;
         this.animationStart = 0;
 
@@ -624,7 +666,10 @@ function onPlayerReady() {
       evt, modal) {
         evt.preventDefault();
         modal.classList.remove('active');
-      } }]);return RippleModal;}();
+      } }]);
+
+      return RippleModal;
+    }();
 
 
   (function () {

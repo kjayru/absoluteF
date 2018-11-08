@@ -54,11 +54,9 @@
          @yield('content')
         <div class="loading">
             <div class="container">
-                <div class="row justify-content-align align-items-center">
-                    <div class="preloader">
-                        <div class="circle circle1"></div>
-                             <div class="circle circle2"></div>
-                        <div class="circle circle3"></div>
+                <div class="row h-100 justify-content-align align-items-center">
+                    <div class="botellas">
+
                     </div>
                 </div>
             </div>
