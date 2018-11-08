@@ -1,5 +1,5 @@
 
-<div class="" id="iniciomob">
+<div class="" id="iniciomob" style="display:none">
     <div  class="bl-centro column" id="ascenso">
                 <div class="lienzo ventana activado" id="pagina1">
 

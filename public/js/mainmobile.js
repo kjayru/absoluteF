@@ -326,7 +326,8 @@ function onYouTubeIframeAPIReady() {
       height: '360',
       width: '640',
       videoId: 'y0MOF0b8yq8',
-      playerVars: {'showinfo':0, 'controls': 0,'modestbranding':0,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+      playerVars: {'showinfo':0, 'controls': 0,'modestbranding':1,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+
     });
 
 
@@ -334,11 +335,27 @@ function onYouTubeIframeAPIReady() {
       height:'360',
       width:'640',
       videoId:'at1ZNjcf-NA',
-      playerVars: {'showinfo':0, 'controls': 0,'modestbranding':0,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+      playerVars: {'showinfo':0, 'controls': 0,'modestbranding':1,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+
   });
   }
+
+  function onPlayerReady(event) {
+    var player = event.target;
+    iframe = $('#player');
+    setupListener();
+  }
+
+  function setupListener (){
+    $('button').addEventListener('click', playFullscreen);
+    }
+
   function onPlayerReady() {
       player.playVideo();
+      var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+      if (requestFullScreen) {
+        requestFullScreen.bind(iframe)();
+      }
     }
     var done = false;
 
@@ -359,10 +376,7 @@ function onYouTubeIframeAPIReady() {
   }
   function stopVideo2(){
       player2.stopVideo();
-      var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
-      if (requestFullScreen) {
-        requestFullScreen.bind(iframe)();
-      }
+
   }
 
 
