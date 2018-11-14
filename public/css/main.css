@@ -39,7 +39,10 @@
 html{
     font-family: 'Conv_Absolut-Medium';
   -ms-text-size-adjust:100%;
-  -webkit-text-size-adjust:100%
+  -webkit-text-size-adjust:100%;
+  background: url('/images/back003.png') no-repeat 80% 0px;
+    background-size:cover;
+    height: 100vh;
 }
 body{
     font-family: 'Conv_Absolut-Medium';
@@ -51,8 +54,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url('/images/back003.png') no-repeat 80% 0px;
-    background-size:cover;
+
 }
 
 html body  .container h1{
@@ -546,7 +548,7 @@ p.txt-3 {
     line-height: 8px;
 }
 .fondoactivo {
-    background: url("/images/back004_on.png") center 0;
+    background: url(/images/back004_on.png?v=1) center 0;
     background-size:cover;
     position: absolute;
     top: 0;
@@ -939,6 +941,22 @@ div#resultado {
 	margin-top:-0.3em;
 }
 
+
+.infinito {
+    height: 600px;
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.infinito .contenedorman {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+
 .loading {
     width: 100%;
     height: 100vh;
@@ -1164,6 +1182,57 @@ a.politicas {
     left: -51px;
     z-index: 1;
 }
+
+/*infinity*/
+.grid {
+    max-width: 1200px;
+
+  }
+
+  /* reveal grid after images loaded */
+  .grid.are-images-unloaded {
+    opacity: 0;
+  }
+
+  .grid__item,
+  .grid__col-sizer {
+    width: 32%;
+  }
+
+  .grid__gutter-sizer { width: 2%; }
+
+  /* hide by default */
+  .grid.are-images-unloaded .image-grid__item {
+    opacity: 0;
+  }
+
+  .grid__item {
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  .grid__item--height1 { height: 140px; background: #EA0; }
+  .grid__item--height2 { height: 220px; background: #C25; }
+  .grid__item--height3 { height: 300px; background: #19F; }
+
+  .grid__item--width2 { width: 66%; }
+
+  .grid__item img {
+    display: block;
+    max-width: 100%;
+  }
+
+
+  .page-load-status {
+    display: none;
+    padding-top: 20px;
+    border-top: 1px solid #DDD;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+
 
 @media(max-width: 769px){
     #pagina2-l h1 {

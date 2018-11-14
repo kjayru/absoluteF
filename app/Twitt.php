@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Slogan extends Model
+class Twitt extends Model
 {
-    //
+
 }

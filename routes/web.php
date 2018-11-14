@@ -15,3 +15,6 @@ Route::get('/', 'HomeController@index');
 Route::get('/secciones','HomeController@secciones');
 Route::get('/secciones/{any}','HomeController@secciones');
 Route::post('/savedata','HomeController@store');
+Route::get('/getdata','HomeController@getdata');
+Route::get('/getDataTwitterUrl','HomeController@getDataTwitterUrl');
+Route::get('/getdemoview/{id?}','HomeController@demoview');

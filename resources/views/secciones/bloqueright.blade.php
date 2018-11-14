@@ -40,8 +40,67 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
 
                 </div>
             </div>
-            <div class="texto-pie">
-                <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
-            </div>
+
+
         </div>
-    </div>
+
+        <div class=" infinito" id="pagina2-r">
+            <div class="container">
+
+                <div class="h-100 row">
+
+                    <div class="contenedorman" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
+                        <div class="grid are-images-unloaded">
+                            <div class="grid__col-sizer"></div>
+                            <div class="grid__gutter-sizer"></div>
+                            <div class="grid__item grid__item--height2"></div>
+                            <div class="grid__item grid__item--width2">
+                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                            </div>
+                            <div class="grid__item grid__item--height3"></div>
+                            <div class="grid__item grid__item--height1"></div>
+                            <div class="grid__item grid__item--height2"></div>
+                            <div class="grid__item">
+                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look out" />
+                            </div>
+
+                            <div class="grid__item grid__item--height1"></div>
+                            <div class="grid__item grid__item--height3"></div>
+                            <div class="grid__item grid__item--height1"></div>
+                            <div class="grid__item grid__item--height3"></div>
+                            <div class="grid__item grid__item--height1"></div>
+                            <div class="grid__item grid__item--height1"></div>
+                            <div class="grid__item grid__item--width2">
+                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/raspberries.jpg" alt="rasberries" />
+                            </div>
+                            <div class="grid__item grid__item--height2"></div>
+                            <div class="grid__item grid__item--height2"></div>
+                            <div class="grid__item grid__item--height3"></div>
+                            <div class="grid__item grid__item--height1"></div>
+                            <div class="grid__item grid__item--height2"></div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="page-load-status">
+                        <div class="loader-ellips infinite-scroll-request">
+                          <span class="loader-ellips__dot"></span>
+                          <span class="loader-ellips__dot"></span>
+                          <span class="loader-ellips__dot"></span>
+                          <span class="loader-ellips__dot"></span>
+                        </div>
+                        <p class="infinite-scroll-last">End of content</p>
+                        <p class="infinite-scroll-error">No more pages to load</p>
+                    </div>
+            </div>
+
+        </div>
+
+        <!--<div class="texto-pie">
+            <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
+        </div>-->
+</div>

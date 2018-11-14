@@ -1,18 +1,16 @@
 $(document).ready(function(){
-    $(".loading").show().delay(650).fadeOut(1200,'swing');
+    $(".loading").show().delay(1200).fadeOut(700,'swing');
+    $('#app').delay(1200).fadeIn(250,'swing');
     if(localStorage.getItem('session')){
         if(window.location.pathname==='/'){
           window.location.href='/secciones';
         }
-
     }else
     {
-
         if(window.location.pathname!='/'){
 
             window.location.href='/';
         }
-
     }
 
     $window =  $(window);
@@ -103,7 +101,7 @@ $("#validarEdad").on('click',function(e){
           const ccright = window.innerWidth*2;
 
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn,onComplete:function(){
-                altoDinamico(1);
+                altoDinamico(2);
             }});
 
           $(".nav-link").removeClass("active");
@@ -335,57 +333,94 @@ $("#validarEdad").on('click',function(e){
 
 
 
+
+
+
+
 });
 
 $(window).on("load", function () {
 
+    var $grid = $('.grid').masonry({
+        itemSelector: 'none', // select none at first
+        columnWidth: '.grid__col-sizer',
+        gutter: '.grid__gutter-sizer',
+        percentPosition: true,
+        stagger: 30,
+        // nicer reveal transition
+        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+    });
 
+    // get Masonry instance
+    var msnry = $grid.data('masonry');
 
-    if(localStorage.getItem('session')){
-        if(window.location.pathname==='/'){
-          window.location.href='/secciones';
+    // initial items reveal
+    $grid.imagesLoaded( function() {
+        $grid.removeClass('are-images-unloaded');
+        $grid.masonry( 'option', { itemSelector: '.grid__item' });
+        var $items = $grid.find('.grid__item');
+        $grid.masonry( 'appended', $items );
+    });
+
+    var nextPages = [
+        '1',
+        '2',
+        '3',
+        '4'
+    ];
+    let page = $(".contenedorman").data('pages');
+    function getPath() {
+        var slug = nextPages[ this.loadCount ];
+
+        if(slug == page){
+            $(".grid").css('height','6000px');
         }
+        if ( slug ) {
 
-    }else
-    {
-
-        if(window.location.pathname!='/'){
-
-            window.location.href='/';
-        }
-
-    }
-
-    const contenedor = document.getElementById("marco");
-    if(contenedor){
-    const padre = document.getElementById("contenedor");
-    let ancho = window.innerWidth;
-    let alto = window.innerHeight;
-
-    const lienzo = ancho*3;
-    const ccright = ancho*2;
-    const altoh = alto*2;
-    contenedor.style.width = `${lienzo}px`;
-    padre.style.height = `${altoh}px`;
-    contenedor.style.left=`-${ancho}px`;
-
-        if(window.location.pathname==='/secciones'){
-            altoDinamico(2);
-            TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
-            $(".btnInicio").addClass("active");
-
-        }
-        if(window.location.pathname==='/secciones/conoce-la-botella'){
-            altoDinamico(3);
-            TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
-            $(".btnConoce").addClass("active");
-        }
-        if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
-            altoDinamico(1);
-            TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
-            $(".btnMira").addClass("active");
+        return `https://absolutef.test/getdemoview/?page=${slug}`;
         }
     }
+
+
+
+
+    $grid.infiniteScroll({
+        path: getPath,
+        append: '.grid__item',
+        outlayer: msnry,
+        status: '.page-load-status',
+    });
+
+
+
+    const container = document.querySelector('.contenedorman');
+    container.scrollTop = 0;
+
+    const ps = new PerfectScrollbar(container,{
+        wheelSpeed: 0.2,
+        suppressScrollY:false,
+        loadOnScroll:false
+    });
+
+
+
+    container.addEventListener('ps-y-reach-end', (event) => {
+        console.log(event);
+            $grid.infiniteScroll('loadNextPage');
+
+            $grid.infiniteScroll( 'option', {
+              loadOnScroll: true,
+              outlayer: msnry,
+              history: false
+            });
+           let acgrid =  $(".grid").height();
+           let imsize = acgrid - 100;
+           //$(".grid").css('height',imsize);
+
+
+      });
+
 });
 
 $(window).resize(function(){
@@ -408,7 +443,7 @@ $(window).resize(function(){
         TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
     }
     if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
-        altoDinamico(1);
+        altoDinamico(2);
         TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
     }
     }
@@ -1054,3 +1089,35 @@ function reset(){
   });
 
 eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(2($){$.c.f=2(p){p=$.d({g:"!@#$%^&*()+=[]\\\\\\\';,/{}|\\":<>?~`.- ",4:"",9:""},p);7 3.b(2(){5(p.G)p.4+="Q";5(p.w)p.4+="n";s=p.9.z(\'\');x(i=0;i<s.y;i++)5(p.g.h(s[i])!=-1)s[i]="\\\\"+s[i];p.9=s.O(\'|\');6 l=N M(p.9,\'E\');6 a=p.g+p.4;a=a.H(l,\'\');$(3).J(2(e){5(!e.r)k=o.q(e.K);L k=o.q(e.r);5(a.h(k)!=-1)e.j();5(e.u&&k==\'v\')e.j()});$(3).B(\'D\',2(){7 F})})};$.c.I=2(p){6 8="n";8+=8.P();p=$.d({4:8},p);7 3.b(2(){$(3).f(p)})};$.c.t=2(p){6 m="A";p=$.d({4:m},p);7 3.b(2(){$(3).f(p)})}})(C);',53,53,'||function|this|nchars|if|var|return|az|allow|ch|each|fn|extend||alphanumeric|ichars|indexOf||preventDefault||reg|nm|abcdefghijklmnopqrstuvwxyz|String||fromCharCode|charCode||alpha|ctrlKey||allcaps|for|length|split|1234567890|bind|jQuery|contextmenu|gi|false|nocaps|replace|numeric|keypress|which|else|RegExp|new|join|toUpperCase|ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('|'),0,{}));
+
+
+
+      // init Masonry
+/*
+    var $grid = $('.grid').masonry({
+        itemSelector: 'none', // select none at first
+        columnWidth: '.grid__col-sizer',
+        gutter: '.grid__gutter-sizer',
+        percentPosition: true,
+        stagger: 30,
+        // nicer reveal transition
+        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+    });
+
+    // get Masonry instance
+    var msnry = $grid.data('masonry');
+
+    // initial items reveal
+    $grid.imagesLoaded( function() {
+        $grid.removeClass('are-images-unloaded');
+        $grid.masonry( 'option', { itemSelector: '.grid__item' });
+        var $items = $grid.find('.grid__item');
+        $grid.masonry( 'appended', $items );
+    });
+
+
+
+    */
+
+

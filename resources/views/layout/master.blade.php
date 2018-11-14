@@ -59,7 +59,9 @@
     </script>
     </head>
     <body>
+        <div id="app" style="display: none;">
          @yield('content')
+        </div>
         <div class="loading">
             <div class="container">
                 <div class="row h-100 justify-content-align align-items-center">

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Register;
+use App\Twitt;
+
 class HomeController extends Controller
 {
     /**
@@ -19,7 +22,12 @@ class HomeController extends Controller
 
     public function secciones(){
 
-        return view('front.secciones');
+        $twitts = DB::table('twitts')->paginate(6);
+        $paginador = $twitts->count();
+        $total = $twitts->total();
+        $paginas = $twitts->lastPage();
+        $actual = $twitts->currentPage();
+        return view('front.secciones',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual]);
     }
     /**
      * Show the form for creating a new resource.
@@ -44,48 +52,80 @@ class HomeController extends Controller
         return response()->json(['rpta'=>'ok']);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
+
+    public function getDataTwitterUrl(){
+
+       // $url = file_get_contents("https://oonucvrznj.execute-api.us-east-1.amazonaws.com/Prod/tweets",true);
+        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/",true);
+
+
+         $twitts = json_decode($url, true);
+         //dd($twitts);
+         // dd($twitts['data']);
+
+          foreach($twitts['data'] as $g){
+
+                    //print_r($g['text']);
+                    $existe = Twitt::where('tweetLocalCreationDate',$g['tweetLocalCreationDate'])->count();
+
+                    //insert table
+                    if($existe==0){
+                        $tw = new Twitt();
+
+                    $tw->createdAt = $g['createdAt'];
+                    $tw->text = $g['text'];
+                    $tw->fullText = $g['fullText'];
+                    $tw->displayTextRange = serialize($g['displayTextRange']);
+                    $tw->safeDisplayTextRange = serialize($g['safeDisplayTextRange']);
+                    $tw->source = $g['source'];
+                    $tw->truncated = $g['truncated'];
+                    $tw->replyCount = $g['replyCount'];
+
+                    $tw->inReplyToStatusId = $g['inReplyToStatusId'];
+
+                    $tw->inReplyToStatusIdStr = $g['inReplyToStatusIdStr'];
+                    $tw->inReplyToUserId = $g['inReplyToUserId'];
+                    $tw->inReplyToUserIdStr = $g['inReplyToUserIdStr'];
+                    $tw->inReplyToScreenName = $g['inReplyToScreenName'];
+                    $tw->createdBy = serialize($g['createdBy']);
+
+                    $tw->retweetCount = $g['retweetCount'];
+                    $tw->favorited = $g['favorited'];
+                    $tw->favoriteCount = $g['favoriteCount'];
+                    $tw->retweeted = $g['retweeted'];
+                    $tw->possiblySensitive = $g['possiblySensitive'];
+
+                    $tw->tweetLocalCreationDate = $g['tweetLocalCreationDate'];
+                    $tw->isRetweet = $g['isRetweet'];
+                    $tw->quoteCount = $g['quoteCount'];
+                    $tw->quotedStatusId = $g['quotedStatusId'];
+                    $tw->quotedStatusIdStr = $g['quotedStatusIdStr'];
+
+                    $tw->isTweetPublished = $g['isTweetPublished'];
+                    $tw->isTweetDestroyed = $g['isTweetDestroyed'];
+                    $tw->url = $g['url'];
+                    $tw->id = $g['id'];
+                    $tw->idStr = $g['idStr'];
+
+                    $tw->save();
+                    }
+
+
+          }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+
+    public function getdata(){
+        $twitts = Twitt::paginate(10);
+
+        return response()->json($twitts);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+    public function demoview(){
+
+        $twitts = DB::table('twitts')->paginate(6);
+
+        return view('front.pagedemo',['twitts'=>$twitts,'total'=>$twitts->total()]);
     }
 }
