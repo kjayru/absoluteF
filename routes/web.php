@@ -18,3 +18,4 @@ Route::post('/savedata','HomeController@store');
 Route::get('/getdata','HomeController@getdata');
 Route::get('/getDataTwitterUrl','HomeController@getDataTwitterUrl');
 Route::get('/getdemoview/{id?}','HomeController@demoview');
+Route::get('/getDataExcel','ExcelController@index');
