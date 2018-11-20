@@ -76,7 +76,7 @@
 
         <script>
             const pages = '{{$paginas}}';
-
+            const pageurl = "{{env('APP_URL')}}";
         </script>
         @desktop
         <script src="/js/main.js?v={{ uniqid() }}"></script>

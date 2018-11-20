@@ -24,12 +24,13 @@ class HomeController extends Controller
 
     public function secciones(){
 
-        $twitts = DB::table('twitts')->paginate(20);
+        $posts = Twitt::inRandomOrder()->limit(10)->get();
+        $twitts = DB::table('twitts')->paginate(10);
         $paginador = $twitts->count();
         $total = $twitts->total();
         $paginas = $twitts->lastPage();
         $actual = $twitts->currentPage();
-        return view('front.secciones',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual]);
+        return view('front.secciones',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual,'twitts'=>$posts]);
     }
     /**
      * Show the form for creating a new resource.
@@ -126,7 +127,7 @@ class HomeController extends Controller
 
     public function demoview(){
 
-        $twitts = DB::table('twitts')->paginate(20);
+        $twitts = DB::table('twitts')->paginate(10);
 
 
         return view('front.pagedemo',['twitts'=>$twitts,'total'=>$twitts->total()]);

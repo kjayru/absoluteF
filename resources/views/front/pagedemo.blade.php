@@ -69,23 +69,20 @@
   @foreach($twitts as $k => $tw )
 
  @php
- $op = rand(1, 3);
-
- $valor = $op%2;
-
-
-   $st = 'height';
+ $op = rand(1, 4);
 
  @endphp
- @if(fmod($k, 3) == 0)
+ @if(fmod($k, 4) == 0)
 
   <div class="grid__item grid__item--width2">
     <div class="box">
 
-        <video  controls>
-            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
 
-        </video>
+        <div class="grid__item grid__item--width2">
+                <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
+
+                </div>
+        </div>
 
     </div>
 </div>

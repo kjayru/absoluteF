@@ -1182,6 +1182,30 @@ a.politicas {
     z-index: 1;
 }
 
+.buscar {
+    display: block;
+    width: 100%;
+}
+.fitros.text-center {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+input#usuario {
+    border: 2px solid white;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+}
+.btn-senduser{
+    right: 0px;
+    background: #c43a94;
+    color: white;
+    font-family: 'Conv_AbsolutHeadline2017';
+    padding: 5px 40px;
+    border: 2px solid white;
+    border-radius: 0;
+    margin-left: -2px;
+}
 /*infinity*/
 .grid {
     max-width: 1200px;
@@ -1195,7 +1219,7 @@ a.politicas {
 
   .grid__item,
   .grid__col-sizer {
-    width: 22%;
+    width: 17%;
   }
 
 
@@ -1224,8 +1248,8 @@ a.politicas {
     }
 
   .grid__item--width2 {
-    width: 46%;
-    height: 515px;
+    width: 34%;
+    height: 376px;
     }
   .page-load-status {
     display: none;

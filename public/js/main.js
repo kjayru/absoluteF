@@ -332,7 +332,19 @@ $("#validarEdad").on('click',function(e){
 
 
 });
+    var nextPages = [];
 
+    for(var i=1;i<pages ;i++){
+        nextPages.push(i);
+    }
+
+    function getPath() {
+        var slug = nextPages[ this.loadCount ];
+        console.log('Don: '+slug);
+        if ( slug ) {
+        return `${pageurl}/getdemoview/?page=${slug}`;
+        }
+    }
 $(window).on("load", function () {
 
     var $grid = $('.grid').masonry({
@@ -345,6 +357,8 @@ $(window).on("load", function () {
         visibleStyle: { transform: 'translateY(0)', opacity: 1 },
         hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
     });
+
+
 
     // get Masonry instance
     var msnry = $grid.data('masonry');
@@ -359,24 +373,7 @@ $(window).on("load", function () {
 
 
 
-    var nextPages = [];
 
-    for(var i=1;i<pages ;i++){
-        nextPages.push(i);
-    }
-
-
-    let page = $(".contenedorman").data('pages');
-    function getPath() {
-        var slug = nextPages[ this.loadCount ];
-
-        if(slug == page){
-            //$(".grid").css('height','6000px');
-        }
-        if ( slug ) {
-        return `http://absolut.kjayru.com/getdemoview/?page=${slug}`;
-        }
-    }
 
     $grid.infiniteScroll({
         path: getPath,
@@ -399,19 +396,22 @@ $(window).on("load", function () {
                 updateOnContentResize: true
             },
             onBeforeUpdate: function(){
-                $(".mCSB_container").css('top','-800px');
+               // $(".mCSB_container").css('top','-800px');
 
             },
             onTotalScroll: function(){
-                $grid.infiniteScroll('destroy');
 
+               // $grid.infiniteScroll('destroy');
 
                 $grid.infiniteScroll( 'option', {
                   loadOnScroll: true,
                   outlayer: msnry,
                   history: false
                 });
+
                 $grid.infiniteScroll('loadNextPage');
+                msnry.reloadItems();
+                msnry.layout();
             }
 
         }
@@ -1090,31 +1090,6 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 
 
 
-      // init Masonry
-/*
-    var $grid = $('.grid').masonry({
-        itemSelector: 'none', // select none at first
-        columnWidth: '.grid__col-sizer',
-        gutter: '.grid__gutter-sizer',
-        percentPosition: true,
-        stagger: 30,
-        // nicer reveal transition
-        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
-    });
-
-    // get Masonry instance
-    var msnry = $grid.data('masonry');
-
-    // initial items reveal
-    $grid.imagesLoaded( function() {
-        $grid.removeClass('are-images-unloaded');
-        $grid.masonry( 'option', { itemSelector: '.grid__item' });
-        var $items = $grid.find('.grid__item');
-        $grid.masonry( 'appended', $items );
-    });
-
-*/
 
 
 
