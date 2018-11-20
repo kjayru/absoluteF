@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Register;
 use App\Twitt;
+use App\Video;
 
 class HomeController extends Controller
 {
@@ -16,13 +17,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         return view('front.index');
     }
 
 
     public function secciones(){
 
-        $twitts = DB::table('twitts')->paginate(6);
+        $twitts = DB::table('twitts')->paginate(20);
         $paginador = $twitts->count();
         $total = $twitts->total();
         $paginas = $twitts->lastPage();
@@ -56,7 +58,7 @@ class HomeController extends Controller
     public function getDataTwitterUrl(){
 
        // $url = file_get_contents("https://oonucvrznj.execute-api.us-east-1.amazonaws.com/Prod/tweets",true);
-        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/",true);
+        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/hacked/?limite=1000",true);
 
 
          $twitts = json_decode($url, true);
@@ -124,8 +126,30 @@ class HomeController extends Controller
 
     public function demoview(){
 
-        $twitts = DB::table('twitts')->paginate(6);
+        $twitts = DB::table('twitts')->paginate(20);
+
 
         return view('front.pagedemo',['twitts'=>$twitts,'total'=>$twitts->total()]);
+
+
+    }
+
+
+    public static function filtro($id){
+        $url = "https://s3.amazonaws.com/arquea-absolute-dev/output/".$id.".mp4";
+
+        $headers = get_headers($url);
+
+        $part = explode(" ",$headers[0]);
+
+
+        if($part[1]=='200'){
+            echo $id." existe video<br>";
+            $video = new Video();
+
+        }
+
+//echo "id: ".$id."<br>";
     }
 }
+

@@ -289,7 +289,10 @@ a.navbar-brand {
     padding-top: 40px;
 }
 
-
+.grid video {
+    width: 100%;
+    display: block;
+}
 .box {
     -webkit-transform: translate(0, 0);
     -webkit-transition: -webkit-transform 500ms;
@@ -940,10 +943,7 @@ div#resultado {
 	line-height:0.6em;
 	margin-top:-0.3em;
 }
-
-
 .infinito {
-    height: 600px;
     display: block;
     float: left;
     position: relative;
@@ -951,12 +951,11 @@ div#resultado {
 }
 .infinito .contenedorman {
     width: 100%;
-    height: 600px;
+    height: 1120px;
     position: relative;
     overflow: hidden;
+
 }
-
-
 .loading {
     width: 100%;
     height: 100vh;
@@ -1191,13 +1190,14 @@ a.politicas {
 
   /* reveal grid after images loaded */
   .grid.are-images-unloaded {
-    opacity: 0;
+    opacity: 1;
   }
 
   .grid__item,
   .grid__col-sizer {
-    width: 32%;
+    width: 22%;
   }
+
 
   .grid__gutter-sizer { width: 2%; }
 
@@ -1209,20 +1209,24 @@ a.politicas {
   .grid__item {
     margin-bottom: 20px;
     float: left;
+    position: relative;
   }
-
-  .grid__item--height1 { height: 140px; background: #EA0; }
-  .grid__item--height2 { height: 220px; background: #C25; }
-  .grid__item--height3 { height: 300px; background: #19F; }
-
-  .grid__item--width2 { width: 66%; }
-
-  .grid__item img {
+  .grid__item  video {
     display: block;
-    max-width: 100%;
+    width: 100% !important ;
   }
 
+  .grid__item--height1 {
+      height: 370px;
+     }
+  .grid__item--height2 {
+      height: 252px;
+    }
 
+  .grid__item--width2 {
+    width: 46%;
+    height: 515px;
+    }
   .page-load-status {
     display: none;
     padding-top: 20px;
@@ -1232,8 +1236,38 @@ a.politicas {
     margin: 0 auto;
 }
 
+.grid .box{
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
-
+.infinito{
+    min-height: 800px;
+    background: url('/images/back006.png') no-repeat 80% 0px;
+    background-size:cover;
+}
+.infinito p.text-center {
+    display: block;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.infinito .contador.text-center {
+    display: block;
+    width: 100%;
+    font-size: 100px;
+    line-height: 65px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.infinito .hash.text-center {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
 @media(max-width: 769px){
     #pagina2-l h1 {
         font-family: 'Conv_AbsolutHeadline2017';
@@ -1643,6 +1677,9 @@ a.politicas {
     }
 }
 @media(max-width: 320px){
+    #contenedor{
+        background: url(/images/back006.png) no-repeat 80% 0px;
+    }
     .footer .bloque {
         font-size: 7pt !important;
     }

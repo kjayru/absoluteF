@@ -7,6 +7,6 @@
 <script src="/js/vendor/jquery.threesixty.min.js"></script>
 <script src="/js/vendor/heartcode-canvasloader-min.js"></script>
 <script src="/js/vendor/jquery.parallax.js"></script>
-<script src="/js/vendor/perfect-scrollbar.js"></script>
+<script src="/js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>

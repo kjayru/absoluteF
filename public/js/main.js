@@ -101,7 +101,7 @@ $("#validarEdad").on('click',function(e){
           const ccright = window.innerWidth*2;
 
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn,onComplete:function(){
-                altoDinamico(2);
+                altoDinamico(3);
             }});
 
           $(".nav-link").removeClass("active");
@@ -331,12 +331,6 @@ $("#validarEdad").on('click',function(e){
     });
 
 
-
-
-
-
-
-
 });
 
 $(window).on("load", function () {
@@ -363,18 +357,21 @@ $(window).on("load", function () {
         $grid.masonry( 'appended', $items );
     });
 
-    var nextPages = [
-        '1',
-        '2',
-        '3',
-        '4'
-    ];
+
+
+    var nextPages = [];
+
+    for(var i=1;i<pages ;i++){
+        nextPages.push(i);
+    }
+
+
     let page = $(".contenedorman").data('pages');
     function getPath() {
         var slug = nextPages[ this.loadCount ];
 
         if(slug == page){
-            $(".grid").css('height','6000px');
+            //$(".grid").css('height','6000px');
         }
         if ( slug ) {
 
@@ -382,46 +379,51 @@ $(window).on("load", function () {
         }
     }
 
-
-
-
     $grid.infiniteScroll({
         path: getPath,
         append: '.grid__item',
         outlayer: msnry,
+        history: false,
         status: '.page-load-status',
     });
 
 
+    $(".content").mCustomScrollbar({
 
-    const container = document.querySelector('.contenedorman');
-    container.scrollTop = 0;
+        scrollInertia:0,
+		setTop: 0,
+		setHeight: 1200,
 
-    const ps = new PerfectScrollbar(container,{
-        wheelSpeed: 0.2,
-        suppressScrollY:false,
-        loadOnScroll:false
+        callbacks: {
+            onCreate: function(){
+
+            },
+            advanced:{
+
+                updateOnContentResize: true
+            },
+            onBeforeUpdate: function(){
+                $(".mCSB_container").css('top','-800px');
+
+            },
+            onTotalScroll: function(){
+                $grid.infiniteScroll('destroy');
+
+
+                $grid.infiniteScroll( 'option', {
+                  loadOnScroll: true,
+                  outlayer: msnry,
+                  history: false
+                });
+                $grid.infiniteScroll('loadNextPage');
+            }
+
+        }
     });
-
-
-
-    container.addEventListener('ps-y-reach-end', (event) => {
-        console.log(event);
-            $grid.infiniteScroll('loadNextPage');
-
-            $grid.infiniteScroll( 'option', {
-              loadOnScroll: true,
-              outlayer: msnry,
-              history: false
-            });
-           let acgrid =  $(".grid").height();
-           let imsize = acgrid - 100;
-           //$(".grid").css('height',imsize);
-
-
-      });
-
 });
+
+
+
 
 $(window).resize(function(){
 
@@ -434,18 +436,18 @@ $(window).resize(function(){
 
     contenedor.style.left=`-${ancho}px`;
 
-    if(window.location.pathname==='/secciones'){
-        altoDinamico(2);
-        TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
-    }
-    if(window.location.pathname==='/secciones/conoce-la-botella'){
-        altoDinamico(3);
-        TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
-    }
-    if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
-        altoDinamico(2);
-        TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
-    }
+        if(window.location.pathname==='/secciones'){
+            altoDinamico(2);
+            TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
+        }
+        if(window.location.pathname==='/secciones/conoce-la-botella'){
+            altoDinamico(3);
+            TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
+        }
+        if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
+            altoDinamico(3);
+            TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
+        }
     }
 });
 
@@ -1116,8 +1118,10 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
         $grid.masonry( 'appended', $items );
     });
 
+*/
 
 
-    */
+
+
 
 

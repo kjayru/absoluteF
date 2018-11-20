@@ -59,6 +59,8 @@
 
 <body translate="no" >
 
+
+
 <!-- ramdon width 2 and height 1-->
 <div class="grid are-images-unloaded">
   <div class="grid__col-sizer"></div>
@@ -71,19 +73,34 @@
 
  $valor = $op%2;
 
- if($valor==0){
-   $st = 'width';
- }else{
+
    $st = 'height';
- }
+
  @endphp
-  <div class="grid__item grid__item--{{$st}}{{$op}}">
-        <div class="box">
-            {{$tw->fullText }}
-        </div>
-  </div>
+ @if(fmod($k, 3) == 0)
 
+  <div class="grid__item grid__item--width2">
+    <div class="box">
 
+        <video  controls>
+            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+</div>
+@else
+<div class="grid__item grid__item--height2">
+    <div class="box">
+
+        <video  controls>
+            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+
+          </video>
+
+    </div>
+</div>
+@endif
   @endforeach
 </div>
 

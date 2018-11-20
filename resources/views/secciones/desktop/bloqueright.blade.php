@@ -36,6 +36,7 @@
                         Creamos el Tweetrigami, una acción que transforma los tweets de odio <br/>
 en mensajes de amor, fomentando tolerancia, constancia y calma.
                         </p>
+
                       </div>
 
                 </div>
@@ -47,37 +48,70 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
         <div class=" infinito" id="pagina2-r">
             <div class="container">
 
-                <div class="h-100 row">
+                <div class="row">
+                    <p class="text-center">Tweets de odio hackeados y convertidos en amor:</p>
+                    <div class="contador text-center">00429</div>
+                    <div class="hash text-center">#MásAmorMenosO</div>
+                    <div class="contenedorman content " data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
 
-                    <div class="contenedorman" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
+
                         <div class="grid are-images-unloaded">
+
+
                             <div class="grid__col-sizer"></div>
                             <div class="grid__gutter-sizer"></div>
-                            <div class="grid__item grid__item--height2"></div>
                             <div class="grid__item grid__item--width2">
-                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                                <div class="box" style="background:url(/images/scroll-bt3.png); background-size:cover;">
+
+                                </div>
                             </div>
-                            <div class="grid__item grid__item--height3"></div>
-                            <div class="grid__item grid__item--height1"></div>
-                            <div class="grid__item grid__item--height2"></div>
-                            <div class="grid__item">
-                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look out" />
+                            <div class="grid__item grid__item--height2">
+                                <div class="box">
+                                    <video controls="">
+                                        <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/1062859856766554112.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="grid__item grid__item--height2">
+                                <div class="box">
+                                <video  controls="">
+                                    <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/1061263275432820736.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                            </div>
+                            <div class="grid__item grid__item--height2">
+                                <div class="box">
+                                <video controls="">
+                                    <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/1061281818417209345.mp4" type="video/mp4">
+                                  </video>
+                                </div>
                             </div>
 
-                            <div class="grid__item grid__item--height1"></div>
-                            <div class="grid__item grid__item--height3"></div>
-                            <div class="grid__item grid__item--height1"></div>
-                            <div class="grid__item grid__item--height3"></div>
-                            <div class="grid__item grid__item--height1"></div>
-                            <div class="grid__item grid__item--height1"></div>
+
                             <div class="grid__item grid__item--width2">
-                              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/raspberries.jpg" alt="rasberries" />
+                                <div class="box" style="background:url(/images/scroll-bt1.png); background-size:cover;">
+
+                                </div>
                             </div>
-                            <div class="grid__item grid__item--height2"></div>
-                            <div class="grid__item grid__item--height2"></div>
-                            <div class="grid__item grid__item--height3"></div>
-                            <div class="grid__item grid__item--height1"></div>
-                            <div class="grid__item grid__item--height2"></div>
+
+
+                            <div class="grid__item grid__item--height2">
+                                <div class="box">
+                                <video controls="">
+                                    <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/1061281818417209345.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                            </div>
+
+                            <div class="grid__item grid__item--height2">
+                                <div class="box">
+                                <video controls="">
+                                    <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/1062859856766554112.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                            </div>
+
+
 
 
 

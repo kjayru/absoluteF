@@ -7,8 +7,8 @@
 
    <div id="contenedor">
             <ul id="marco">
-              <li>@include('secciones.bloqueleft')</li>
-               <li>@include('secciones.centro')
+              <li>@include('secciones.desktop.bloqueleft')</li>
+               <li>@include('secciones.desktop.centro')
 
 
                <div  id="modal-1" class="boxmodal" >
@@ -28,7 +28,7 @@
 
 
                </li>
-               <li id="postfeed">@include('secciones.bloqueright')
+               <li id="postfeed">@include('secciones.desktop.bloqueright')
 
 
                 <div  id="modal-2" class="boxmodal" >
@@ -55,9 +55,9 @@
  @mobile
  @include('partial.navigationMobile')
 <div class="d-block d-sm-none">
-    @include('secciones.centroMobile')
-    @include('secciones.leftMobile')
-    @include('secciones.rightMobile')
+    @include('secciones.mobile.centroMobile')
+    @include('secciones.mobile.leftMobile')
+    @include('secciones.mobile.rightMobile')
         <div  id="modal-1" class="boxmodal" >
             <div class="container-fluid">
                 <div class="row justify-content-center item-align-center">
@@ -87,9 +87,9 @@
 @endmobile
 @tablet
 @include('partial.navigationMobile')
-@include('secciones.centroTable')
-@include('secciones.leftTable')
-@include('secciones.rightTable')
+@include('secciones.tablet.centroTable')
+@include('secciones.tablet.leftTable')
+@include('secciones.tablet.rightTable')
 <div  id="modal-1" class="boxmodal" >
                 <div class="container-fluid">
                     <div class="row justify-content-center item-align-center">
