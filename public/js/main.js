@@ -375,7 +375,7 @@ $(window).on("load", function () {
         }
         if ( slug ) {
 
-        return `https://absolutef.test/getdemoview/?page=${slug}`;
+        return `http://absolut.kjayru.com/getdemoview/?page=${slug}`;
         }
     }
 
