@@ -1195,6 +1195,9 @@ input#usuario {
     border-radius: 0;
     background: transparent;
     outline: none;
+    color: white;
+    font-family: 'Conv_AbsolutHeadline2017';
+    text-align: center;
 }
 .btn-senduser{
     right: 0px;

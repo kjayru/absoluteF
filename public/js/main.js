@@ -47,7 +47,24 @@ $(document).ready(function(){
             $(this).val(holder);
            }
     });
+//usuario
+$(".buscar input.form-control").each(function(){
+    let holder = $(this).data('rel');
 
+    $(this).val(holder);
+});
+$(".buscar input.form-control").focus(function(){
+    let holder = $(this).data('rel');
+    if( $(this).val()==holder){
+        $(this).val('');
+    }
+});
+$(".buscar input.form-control").blur(function(){
+    let holder = $(this).data('rel');
+    if($(this).val()==='' || $(this).val()===holder){
+        $(this).val(holder);
+       }
+});
 
 
 $("#fr-edad").validate({
