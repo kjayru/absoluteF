@@ -374,7 +374,6 @@ $(window).on("load", function () {
             //$(".grid").css('height','6000px');
         }
         if ( slug ) {
-
         return `http://absolut.kjayru.com/getdemoview/?page=${slug}`;
         }
     }
@@ -387,13 +386,10 @@ $(window).on("load", function () {
         status: '.page-load-status',
     });
 
-
     $(".content").mCustomScrollbar({
-
         scrollInertia:0,
 		setTop: 0,
 		setHeight: 1200,
-
         callbacks: {
             onCreate: function(){
 
