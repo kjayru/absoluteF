@@ -42,7 +42,11 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                 </div>
             </div>
 
-
+            <span class='mouse-indicator no-animation'>
+                <span class='mouse'>
+                    <span class='wheel'></span>
+                </span>
+            </span>
         </div>
 
         <div class=" infinito" id="pagina2-r">
@@ -50,7 +54,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
 
                 <div class="row justify-content-center">
                     <p class="text-center">Tweets de odio hackeados y convertidos en amor:</p>
-                    <div class="contador text-center">00429</div>
+                    <div class="contador text-center">{{ $cantidad }}</div>
                     <div class="hash text-center">#MásAmorMenosOdio</div>
                     <div class="buscar text-center">
                            <p>Busca tu tweet</p>
@@ -65,7 +69,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                            </form>
 
                     </div>
-                    <div class="fitros text-center">
+                    <div class="fitros text-center" style="display:none;">
                             <h4>Filtrar por:</h4>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="matrimonio" >
@@ -139,11 +143,12 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                         </div>
                     </div>
 
-
+                <div class="content2" data-mcs-theme="dark">
                     <div id="grid3" class="grid3" style="display:none;">
                         <div class="grid-sizer"></div>
                         <div class="grid-item"></div>
                     </div>
+                </div>
 
                     <div id="grid2" class="grid2" style="display:none;">
                         <div class="grid-sizer"></div>

@@ -30,7 +30,8 @@ class HomeController extends Controller
         $total = $twitts->total();
         $paginas = $twitts->lastPage();
         $actual = $twitts->currentPage();
-        return view('front.secciones',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual,'twitts'=>$posts]);
+        $cantidad = Twitt::count();
+        return view('front.secciones',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual,'twitts'=>$posts,'cantidad'=>$cantidad]);
     }
     /**
      * Show the form for creating a new resource.

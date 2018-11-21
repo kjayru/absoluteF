@@ -416,7 +416,7 @@ $(window).on("load", function () {
     $(".content").mCustomScrollbar({
         scrollInertia:0,
 		setTop: 0,
-		setHeight: 1200,
+		setHeight: 1000,
         callbacks: {
             onCreate: function(){
 
@@ -1147,28 +1147,7 @@ function getPath3(filtro) {
 
 function general(){
 
-    /*var $grid = $('.grid').masonry({
-        itemSelector: 'none', // select none at first
-        columnWidth: '.grid__col-sizer',
-        gutter: '.grid__gutter-sizer',
-        percentPosition: true,
-        stagger: 30,
-        // nicer reveal transition
-        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
-    });
 
-    // get Masonry instance
-    var msnry = $grid.data('masonry');
-
-    // initial items reveal
-    $grid.imagesLoaded( function() {
-        $grid.removeClass('are-images-unloaded');
-        $grid.masonry( 'option', { itemSelector: '.grid__item' });
-        var $items = $grid.find('.grid__item');
-        $grid.masonry( 'appended', $items );
-    });
-*/
 $('.grid').infiniteScroll({
         path: getPath,
         append: '.grid__item',
@@ -1226,6 +1205,12 @@ function filtros(filtro){
 
 $(document).ready(function(e){
 
+    $(".content2").mCustomScrollbar({
+        scrollInertia:0,
+		setTop: 0,
+        setHeight: 1050
+    });
+
     $("#usuario").focus(function(){
         $(".form-check-input").each(function(){
             $(this).prop('checked',false);
@@ -1233,7 +1218,7 @@ $(document).ready(function(e){
     });
     $("#btn-buscar").click(function(e){
         e.preventDefault();
-
+        $(".grid3").masonry('destroy');
         $(".contenedorman").hide();
         let usuario = $("#usuario").val();
         $("#grid2").hide();
@@ -1243,8 +1228,57 @@ $(document).ready(function(e){
         $("#grid7").hide();
         $("#grid3").fadeIn(350,'swing');
 
-      // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
-      let ihtm ='';
+       let ihtm='';
+
+      $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`, function(response) {
+           // console.log(response.data);
+            $.each(response.data,function(i,e){
+                console.log(e);
+                let resto = i % 3;
+                if(resto===0){
+                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }
+
+            })
+
+            $(".grid3").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid3').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
+
+
+      /*let ihtm ='';
        const pathurl = `/getusuario/${usuario}`;
        fetch(pathurl,{
             mode: 'cors',
@@ -1295,13 +1329,13 @@ $(document).ready(function(e){
                       console.log(elems);
                    });
 
-        });
+        });*/
 
 
     });
 
     $("#matrimonio").change(function(){
-
+        $(".grid2").masonry('destroy');
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1319,15 +1353,64 @@ $(document).ready(function(e){
 
         $(".grid2").fadeIn(350,'swing');
 
+        $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
 
-          let ihtm ='';
-           const pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`;
-          //const pathurl = `/getcategoria/${filtro}`;
+            $.each(response,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
+                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }
+
+            })
+
+            $(".grid2").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid2').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
+
+        /*let ihtm ='';
+        const pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`;
+         // const pathurl = `/getcategoria/${filtro}`;
 
           fetch(pathurl,{
+            method: 'GET',
             mode: 'cors',
             headers: {
-                'Access-Control-Allow-Origin':'*'
+                'Access-Control-Allow-Origin':'*',
+                'Access-Control-Allow-Headers': 'Content-Type',
+                'Access-Control-Allow-Methods':'GET'
             }
           }).then(res=>res.json())
             .catch(error=> console.error('error',error))
@@ -1360,22 +1443,9 @@ $(document).ready(function(e){
 
                 $(".grid2").append(ihtm).promise().done(function(){
 
-                   /* var $grid2 = $('.grid2').masonry({
-                        columnWidth: '.grid-sizer',
-                        itemSelector: '.grid-item',
 
-                        percentPosition: true,
-                        gutter: 30,
-                        initLayout: false
-                      });
 
-                      $grid2.on( 'layoutComplete', function( event, items ) {
-                        console.log( items.length );
-                      });
-                      // trigger initial layout
-                      $grid2.masonry();*/
-
-                      var $grid =  $('.grid2').masonry({
+                     var $grid =  $('.grid2').masonry({
                         // options
 
                         columnWidth: '.grid-sizer',
@@ -1390,7 +1460,7 @@ $(document).ready(function(e){
 
                 });
             })
-
+            */
 
        }
 
@@ -1398,7 +1468,7 @@ $(document).ready(function(e){
     //racismo
 
     $("#racismo").change(function(){
-
+        $(".grid4").masonry('destroy');
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1481,7 +1551,7 @@ $(document).ready(function(e){
     //peruchile
 
     $("#peruchile").change(function(){
-
+        $(".grid5").masonry('destroy');
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1565,7 +1635,7 @@ $(document).ready(function(e){
     //OTROS
 
     $("#otros").change(function(){
-
+        $(".grid6").masonry('destroy');
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
