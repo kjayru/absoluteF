@@ -1320,9 +1320,9 @@ $(document).ready(function(e){
         $(".grid2").fadeIn(350,'swing');
 
 
-          let ihtm2 ='';
-          // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
-          const pathurl = `/getcategoria/${filtro}`;
+          let ihtm ='';
+           const pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`;
+          //const pathurl = `/getcategoria/${filtro}`;
 
           fetch(pathurl,{
             mode: 'cors',
@@ -1337,16 +1337,16 @@ $(document).ready(function(e){
 
                     let resto = i % 3;
                     if(resto===0){
-                    ihtm2+=`<div class="grid-item2  grid-item--width2">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+                        ihtm+=`<div class="grid-item  grid-item--width2">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                                 </video>
                             </div>
                         </div>`;
                     }else{
-                        ihtm2+=`<div class="grid-item2">
+                        ihtm+=`<div class="grid-item">
                             <div class="box">
                                 <video controls="">
                                     <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
@@ -1358,27 +1358,35 @@ $(document).ready(function(e){
 
                 })
 
-                $(".grid2").append(ihtm2).promise().done(function(){
+                $(".grid2").append(ihtm).promise().done(function(){
 
-                    var $grid2 = $('.grid2').masonry({
-                        columnWidth: '.grid-sizer2',
-                        itemSelector: '.grid-item2',
+                   /* var $grid2 = $('.grid2').masonry({
+                        columnWidth: '.grid-sizer',
+                        itemSelector: '.grid-item',
 
                         percentPosition: true,
                         gutter: 30,
                         initLayout: false
                       });
 
-
-
-
-
-
                       $grid2.on( 'layoutComplete', function( event, items ) {
                         console.log( items.length );
                       });
                       // trigger initial layout
-                      $grid2.masonry();
+                      $grid2.masonry();*/
+
+                      var $grid =  $('.grid2').masonry({
+                        // options
+
+                        columnWidth: '.grid-sizer',
+                        itemSelector: '.grid-item',
+                        percentPosition: true,
+                        gutter: 30
+                      });
+
+                      $grid.masonry();
+                      $grid.masonry('layout');
+                      $grid.masonry('reloadItems');
 
                 });
             })
