@@ -1116,6 +1116,11 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 
 
 
+$(document).ready(function(e){
+    $(".btn-senduser").click(function(){
+
+    });
+});
 
 
 

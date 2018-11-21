@@ -108,6 +108,7 @@
                                 <div class="box">
                                     <video controls="" >
                                         <source src="//s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+                                        <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.webm" type="video/webm">
                                     </video>
                                 </div>
                             </div>
