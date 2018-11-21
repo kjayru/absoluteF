@@ -92,7 +92,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
 
                             <div class="grid__col-sizer"></div>
                             <div class="grid__gutter-sizer"></div>
-                        ramdon
+
                         @foreach($twitts as $key => $tw)
                         @php
                            $op = rand(1, 4);
@@ -129,11 +129,11 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                         <p class="infinite-scroll-last">End of content</p>
                         <p class="infinite-scroll-error">No more pages to load</p>
                     </div>
-            </div>
+                </div>
 
-        </div>
+         </div>
 
         <!--<div class="texto-pie">
             <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
         </div>-->
-</div>
+        </div>

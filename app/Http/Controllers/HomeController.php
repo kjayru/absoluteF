@@ -135,22 +135,30 @@ class HomeController extends Controller
 
     }
 
+    public function getUsuario($usuario){
 
-    public static function filtro($id){
-        $url = "https://s3.amazonaws.com/arquea-absolute-dev/output/".$id.".mp4";
+        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$usuario."?limite=20");
 
-        $headers = get_headers($url);
+        $twitts = json_decode($url, true);
+         //dd($twitts);
+         // dd($twitts['data']);
 
-        $part = explode(" ",$headers[0]);
+        $userdata = $twitts['data'];
 
+        return view('front.usertwitt',['twitts'=>$userdata]);
+    }
 
-        if($part[1]=='200'){
-            echo $id." existe video<br>";
-            $video = new Video();
+    public function getCategoria($usuario){
 
-        }
+        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$usuario."?limite=20");
 
-//echo "id: ".$id."<br>";
+        $twitts = json_decode($url, true);
+         //dd($twitts);
+         // dd($twitts['data']);
+
+        $userdata = $twitts['data'];
+
+        return view('front.usertwitt',['twitts'=>$userdata]);
     }
 }
 

@@ -19,3 +19,5 @@ Route::get('/getdata','HomeController@getdata');
 Route::get('/getDataTwitterUrl','HomeController@getDataTwitterUrl');
 Route::get('/getdemoview/{id?}','HomeController@demoview');
 Route::get('/getDataExcel','ExcelController@index');
+Route::get('/getusuario/{any}','HomeController@getUsuario');
+Route::get('/getcategoria/{any}','HomeController@getCategoria');

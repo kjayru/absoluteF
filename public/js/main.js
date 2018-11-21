@@ -8,7 +8,6 @@ $(document).ready(function(){
     }else
     {
         if(window.location.pathname!='/'){
-
             window.location.href='/';
         }
     }
@@ -362,6 +361,26 @@ $("#validarEdad").on('click',function(e){
         return `${pageurl}/getdemoview/?page=${slug}`;
         }
     }
+
+    //filtro
+    function getPath2() {
+        var slug = nextPages[ this.loadCount ];
+        console.log('Don: '+slug);
+        if ( slug ) {
+        return `${pageurl}/getdemoview/?page=${slug}`;
+        }
+    }
+
+    //usuario
+    function getPath3() {
+        var slug = nextPages[ this.loadCount ];
+        console.log('Don: '+slug);
+        if ( slug ) {
+        return `${pageurl}/getdemoview/?page=${slug}`;
+        }
+    }
+
+
 $(window).on("load", function () {
 
     var $grid = $('.grid').masonry({
@@ -375,8 +394,6 @@ $(window).on("load", function () {
         hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
     });
 
-
-
     // get Masonry instance
     var msnry = $grid.data('masonry');
 
@@ -387,10 +404,6 @@ $(window).on("load", function () {
         var $items = $grid.find('.grid__item');
         $grid.masonry( 'appended', $items );
     });
-
-
-
-
 
     $grid.infiniteScroll({
         path: getPath,
@@ -413,13 +426,9 @@ $(window).on("load", function () {
                 updateOnContentResize: true
             },
             onBeforeUpdate: function(){
-               // $(".mCSB_container").css('top','-800px');
 
             },
             onTotalScroll: function(){
-
-               // $grid.infiniteScroll('destroy');
-
                 $grid.infiniteScroll( 'option', {
                   loadOnScroll: true,
                   outlayer: msnry,
