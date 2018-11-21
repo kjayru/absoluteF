@@ -119,7 +119,7 @@ class HomeController extends Controller
 
 
     public function getdata(){
-        $twitts = Twitt::paginate(10);
+        $twitts =Twitt::inRandomOrder()->limit(20)->get();
 
         return response()->json($twitts);
     }
@@ -137,28 +137,32 @@ class HomeController extends Controller
 
     public function getUsuario($usuario){
 
-        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$usuario."?limite=20");
+       // $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$usuario."?limite=20");
 
-        $twitts = json_decode($url, true);
+       // $twitts = json_decode($url, true);
          //dd($twitts);
          // dd($twitts['data']);
 
-        $userdata = $twitts['data'];
+        //$userdata = $twitts['data'];
 
-        return view('front.usertwitt',['twitts'=>$userdata]);
+        $userdata = Twitt::inRandomOrder()->limit(20)->get();
+        //dd($userdata->items());
+        return response()->json($userdata);
     }
 
-    public function getCategoria($usuario){
+    public function getCategoria($filtro){
 
-        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$usuario."?limite=20");
+        // $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$filtro."?limite=20");
 
-        $twitts = json_decode($url, true);
+       // $twitts = json_decode($url, true);
          //dd($twitts);
          // dd($twitts['data']);
 
-        $userdata = $twitts['data'];
+        //$userdata = $twitts['data'];
 
-        return view('front.usertwitt',['twitts'=>$userdata]);
+        $userdata = Twitt::inRandomOrder()->limit(20)->get();
+
+        return response()->json($userdata);
     }
 }
 

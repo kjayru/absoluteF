@@ -59,9 +59,9 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                                <input type="text" name="usuario" class="form-control" id="usuario" data-rel="INGRESAR USUARIO">
                             </div>
 
-                               <button id="btn-buscar" class="btn btn-senduser mb-2">
+                               <a href="#" id="btn-buscar" class="btn btn-senduser mb-2">
                                    Buscar
-                               </button>
+                               </a>
                            </form>
 
                     </div>
@@ -139,6 +139,33 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                         </div>
                     </div>
 
+
+                    <div id="grid3" class="grid3" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
+                    <div id="grid2" class="grid2" style="display:none;">
+                        <div class="grid-sizer2"></div>
+                        <div class="grid-item2"></div>
+                    </div>
+
+                    <div id="grid4" class="grid4" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
+                    <div id="grid5" class="grid5" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
+
+                    <div id="grid6" class="grid6" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
                     <div class="page-load-status">
                         <div class="loader-ellips infinite-scroll-request">
                           <span class="loader-ellips__dot"></span>
@@ -146,8 +173,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                           <span class="loader-ellips__dot"></span>
                           <span class="loader-ellips__dot"></span>
                         </div>
-                        <p class="infinite-scroll-last">End of content</p>
-                        <p class="infinite-scroll-error">No more pages to load</p>
+
                     </div>
                 </div>
 
