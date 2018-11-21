@@ -1771,11 +1771,18 @@ input#usuario {
     }
 
     button.view-more-button {
-        background: white;
-        border-radius: 7px;
+
+
         display: block;
         margin: 0 auto;
         margin-bottom: 67px;
+
+        background: #c43a94;
+        color: white;
+        font-family: 'Conv_AbsolutHeadline2017';
+        padding: 4px 40px;
+        border: 2px solid white;
+        border-radius: 0;
     }
 }
 @media(max-width: 320px){
