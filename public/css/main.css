@@ -511,7 +511,7 @@ a.navbar-brand {
   }
 
   #videoabsolute .bgif {
-    background: url('https://i.giphy.com/media/m8Qc4qmdZVScnxMFfv/giphy.gif') no-repeat 0px 0px;
+    background: url(/gifs/video-home2.gif) no-repeat 0px 0px;
     height: 266px;
     position: relative;
     top: 51px;
@@ -1917,7 +1917,7 @@ input#usuario {
         position: relative;
     }
     .bgif2 {
-        background: url(https://media.giphy.com/media/QNFhNIOOJQnU0QOHN2/giphy.gif) no-repeat 0 0;
+        background: url(/gifs/video-secciones.gif) no-repeat 0 0;
         width: 257px;
         height: 254px;
         display: block;
