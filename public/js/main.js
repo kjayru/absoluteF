@@ -1576,19 +1576,15 @@ $(document).ready(function(e){
 
         $(".contenedorman").hide();
         let filtro = 'OTROS';
-
         $("#grid2").hide();
         $("#grid3").hide();
         $("#grid4").hide();
         $("#grid5").hide();
-
         $("#grid6").fadeIn(350,'swing');
-
 
           let ihtm ='';
           // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
           const pathurl = `/getcategoria/${filtro}`;
-
           fetch(pathurl,{
             mode: 'cors',
             headers: {
