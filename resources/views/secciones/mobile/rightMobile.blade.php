@@ -106,8 +106,8 @@
 
                             <div class="grid__item grid__item--height2">
                                 <div class="box">
-                                    <video controls="">
-                                        <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+                                    <video controls="" >
+                                        <source src="//s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
                                     </video>
                                 </div>
                             </div>

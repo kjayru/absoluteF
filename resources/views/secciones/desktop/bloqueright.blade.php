@@ -94,26 +94,45 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                             <div class="grid__gutter-sizer"></div>
 
                         @foreach($twitts as $key => $tw)
-                        @php
-                           $op = rand(1, 4);
-                        @endphp
-                            @if(fmod($key, 4) == 0)
-                            <div class="grid__item grid__item--width2">
-                                <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
+                            @switch($key)
+                                @case(0)
+                                    <div class="grid__item grid__item--width2 {{$key}}">
+                                        <div class="box" style="background:url(/images/scroll-bt1.png); background-size:cover;">
 
+                                        </div>
+                                    </div>
+                                @break
+                                @case(4)
+                                    <div class="grid__item grid__item--width2  {{$key}}">
+                                        <div class="box" style="background:url(/images/scroll-bt2.png); background-size:cover;">
+
+                                        </div>
+                                    </div>
+                                @break
+                               @case(8)
+                               <div class="grid__item grid__item--width2  {{$key}}">
+                                    <div class="box" style="background:url(/images/scroll-bt3.png); background-size:cover;">
+
+                                    </div>
                                 </div>
-                            </div>
-                            @else
+                                @break
+                                @case(12)
+                                <div class="grid__item grid__item--width2  {{$key}}">
+                                    <div class="box" style="background:url(/images/scroll-bt4.png); background-size:cover;">
 
-                            <div class="grid__item grid__item--height2">
-                                <div class="box">
-                                    <video controls="">
-                                        <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
-                                    </video>
+                                    </div>
                                 </div>
-                            </div>
+                                @break
+                                @default
+                                <div class="grid__item grid__item--height2  {{$key}}">
+                                    <div class="box">
+                                        <video controls="">
+                                            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            @endswitch
 
-                            @endif
                         @endforeach
 
                         </div>

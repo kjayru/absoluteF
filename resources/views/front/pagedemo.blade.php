@@ -36,20 +36,17 @@
 
   <div class="grid__item grid__item--width2 {{$k}}">
     <div class="box">
-                <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
-
-                </div>
+        <video  controls>
+            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+          </video>
     </div>
 </div>
 @else
 <div class="grid__item grid__item--height2">
     <div class="box">
-
         <video  controls>
             <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
-
           </video>
-
     </div>
 </div>
 @endif
