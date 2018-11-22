@@ -53,7 +53,7 @@
                            <p>Busca tu tweet</p>
                            <form  id="fr-buscar" class="form-inline  justify-content-center">
                             <div class="form-group mb-2">
-                               <input type="text" name="usuario" class="form-control" id="usuario" data-rel="INGRESAR USUARIO">
+                               <input type="text" name="usuario" class="form-control" id="usuario" data-rel="INGRESAR USUARIO" required>
                             </div>
                                <a href="#" id="btn-buscar" class="btn btn-senduser mb-2">
                                 Buscar

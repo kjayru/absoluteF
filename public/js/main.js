@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
     $(".loading").show().delay(1200).fadeOut(700,'swing');
     $('#app').delay(1200).fadeIn(250,'swing');
@@ -1593,6 +1596,23 @@ $(document).ready(function(e){
        }
 
     });
+});
+
+$(document).ready(function(e){
+
+    $('#usuario').keypress(function (event) {
+        console.log(event);
+
+        if (event.keyCode === 10 || event.keyCode === 13) {
+            event.preventDefault();
+        }
+
+    });
+
+
+
+
+
 });
 
 
