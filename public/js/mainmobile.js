@@ -938,75 +938,396 @@ $('.grid').infiniteScroll({
 
 }
 
-function filtros(){
+$(document).ready(function(e){
 
-    ///filtros
 
-    var $grid2 = $('.grid').masonry({
-        itemSelector: 'none', // select none at first
-        columnWidth: '.grid__col-sizer',
-        gutter: '.grid__gutter-sizer',
-        percentPosition: true,
-        stagger: 30,
-        // nicer reveal transition
-        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+
+    $("#usuario").focus(function(){
+        $(".form-check-input").each(function(){
+            $(this).prop('checked',false);
+        });
     });
 
-    // get Masonry instance
-    var msnry2 = $grid2.data('masonry');
 
-    // initial items reveal
-    $grid2.imagesLoaded( function() {
-        $grid2.removeClass('are-images-unloaded');
-        $grid2.masonry( 'option', { itemSelector: '.grid__item' });
-        var $items2 = $grid2.find('.grid__item');
-        $grid2.masonry( 'appended', $items2 );
+    $("#btn-buscar").click(function(e){
+        e.preventDefault();
+
+        $(".grid3").html(``);
+
+        $(".contenedorman").hide();
+        $(".btn-vermas").hide();
+        let usuario = $("#usuario").val();
+        $("#grid2").hide();
+        $("#grid4").hide();
+        $("#grid5").hide();
+        $("#grid6").hide();
+        $("#grid7").hide();
+        $("#grid3").fadeIn(350,'swing');
+
+       let ihtm='';
+
+    $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`, function(response) {
+
+        if(response.cantidad>0){
+
+           $.each(response.data,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
+                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }
+
+            })
+
+            $(".grid3").append(ihtm).promise().done(function(){
+
+
+
+                /* var $grid =  $('.grid3').masonry({
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    gutter: '.gutter-sizer',
+
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();*/
+                  //$grid.masonry('layout');
+                  //$grid.masonry('reloadItems');
+
+            });
+
+
+        }else{
+
+            $(".grid3").html("<p class='text-center'>No se encontraron resultados..</p>");
+        }
     });
 
-    $grid2.infiniteScroll({
-        path: getPath2,
-        append: '.grid__item',
-        outlayer: msnry2,
-        history: false,
-        status: '.page-load-status',
+
     });
 
-}
+    $("#matrimonio").change(function(){
+        $(".grid2").html("");
+        if($(this).is(':checked')){
 
-function usuarios(){
+            $(".form-check-input").each(function(){
+                $(this).prop('checked',false);
+            });
 
-    ///porusuario
+            $(this).prop('checked',true);
 
-    var $grid3 = $('.grid').masonry({
-        itemSelector: 'none', // select none at first
-        columnWidth: '.grid__col-sizer',
-        gutter: '.grid__gutter-sizer',
-        percentPosition: true,
-        stagger: 30,
-        // nicer reveal transition
-        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+        $(".contenedorman").hide();
+        let filtro = 'MATRIMONIO';
+        $("#grid4").hide();
+        $("#grid3").hide();
+        $("#grid5").hide();
+        $("#grid6").hide();
+
+        $(".grid2").fadeIn(350,'swing');
+
+        $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+
+        alert(response.data.length);
+            $.each(response,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
+                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }
+
+            })
+
+            $(".grid2").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid2').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
+
+       }
+
+    });
+    //racismo
+
+    $("#racismo").change(function(){
+        $(".grid4").html("");
+        if($(this).is(':checked')){
+
+            $(".form-check-input").each(function(){
+                $(this).prop('checked',false);
+            });
+
+            $(this).prop('checked',true);
+
+        $(".contenedorman").hide();
+        let filtro = 'RACISMO';
+
+        $("#grid2").hide();
+        $("#grid3").hide();
+
+        $("#grid6").hide();
+        $("#grid5").hide();
+        $("#grid4").fadeIn(350,'swing');
+
+
+          let ihtm ='';
+
+         // const pathurl = `/getcategoria/${filtro}`;
+
+          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+
+            $.each(response,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
+                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }
+
+            })
+
+            $(".grid4").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid4').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
+
+
+       }
+
     });
 
-    // get Masonry instance
-    var msnry3 = $grid3.data('masonry');
+    //peruchile
 
-    // initial items reveal
-    $grid3.imagesLoaded( function() {
-        $grid3.removeClass('are-images-unloaded');
-        $grid3.masonry( 'option', { itemSelector: '.grid__item' });
-        var $items3 = $grid3.find('.grid__item');
-        $grid3.masonry( 'appended', $items3 );
+    $("#peruchile").change(function(){
+        $(".grid5").html("");
+        if($(this).is(':checked')){
+
+            $(".form-check-input").each(function(){
+                $(this).prop('checked',false);
+            });
+
+            $(this).prop('checked',true);
+
+        $(".contenedorman").hide();
+        let filtro = 'CHILE';
+
+        $("#grid2").hide();
+        $("#grid3").hide();
+        $("#grid4").hide();
+
+        $("#grid6").hide();
+        $("#grid5").fadeIn(350,'swing');
+
+
+          let ihtm ='';
+          // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
+         // const pathurl = `/getcategoria/${filtro}`;
+
+          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+
+            $.each(response,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
+                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }
+
+            })
+
+            $(".grid5").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid5').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
+
+       }
+
     });
 
-    $grid3.infiniteScroll({
-        path: getPath,
-        append: '.grid__item',
-        outlayer: msnry3,
-        history: false,
-        status: '.page-load-status',
+
+    //OTROS
+
+    $("#otros").change(function(){
+        $(".grid6").html("");
+        if($(this).is(':checked')){
+
+            $(".form-check-input").each(function(){
+                $(this).prop('checked',false);
+            });
+
+            $(this).prop('checked',true);
+
+        $(".contenedorman").hide();
+        let filtro = 'OTROS';
+        $("#grid2").hide();
+        $("#grid3").hide();
+        $("#grid4").hide();
+        $("#grid5").hide();
+        $("#grid6").fadeIn(350,'swing');
+
+          let ihtm ='';
+          // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
+          //const pathurl = `/getcategoria/${filtro}`;
+
+          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+
+            $.each(response,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
+                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>`;
+                }
+
+            })
+
+            $(".grid6").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid6').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
+
+
+
+       }
+
     });
-}
+});
+
 
 

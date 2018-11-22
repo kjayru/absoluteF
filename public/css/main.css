@@ -1259,6 +1259,72 @@ input#usuario {
 }
 
 @media(max-width: 769px){
+    .grid__item {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .grid__item .box {
+        height: 100%;
+        width: 100%;
+    }
+    .btn-senduser:hover {
+        color: white;
+        text-decoration: underline !important;
+    }
+    .content2 {
+        display: block;
+        float: left;
+    }
+    .grid video {
+        width: 100%;
+
+        display: block;
+    }
+    .grid2 video,.grid3 video,.grid4 video,.grid5 video,.grid6 video {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .grid {
+        max-width: 100%;
+
+      }
+      .grid2,.grid3,.grid4,.grid5,.grid6 {
+        width: 100%;
+
+      }
+
+    .grid-sizer,
+    .grid-item {
+        width: 300px;
+        height:300px;
+        margin-bottom: 10px;
+        }
+
+    .gutter-sizer {
+        width: 30px;
+    }
+
+    .grid-item--width2 {
+        width: 300px;
+        height:300px;
+    }
+
+    .grid-item2--width2 {
+        width: 300px;
+        height:300px;
+    }
+
+    .grid-sizer2,
+    .grid-item2 {
+        width: 300px;
+        height:300px;
+        margin-bottom: 10px;
+    }
+
+
     .infinito .contenedorman {
         width: 100%;
         height: initial;
@@ -1675,53 +1741,7 @@ input#usuario {
 
 
 
-    /*infinity*/
-    .grid video,.grid2 video,.grid3 video {
-        width: 100%;
-        display: block;
-    }
-    .grid,.grid2,.grid3 {
-        max-width: 100%;
 
-    }
-
-    /* reveal grid after images loaded */
-    .grid.are-images-unloaded {
-         opacity: 1;
-    }
-
-    .grid__item,
-    .grid__col-sizer {
-        width: 87%;
-    }
-
-
-    .grid__gutter-sizer {
-        width: 2%;
-     }
-
-    /* hide by default */
-    .grid.are-images-unloaded .image-grid__item {
-        opacity: 0;
-    }
-
-    .grid__item {
-        margin:0 auto;
-        position: relative;
-    }
-    .grid__item  video {
-        display: block;
-        width: 100% !important ;
-    }
-
-    .grid__item--height2 {
-        height: 338px;
-    }
-
-    .grid__item--width2 {
-        width: 90%;
-
-    }
     .page-load-status {
         display: none;
         padding-top: 20px;
@@ -1737,28 +1757,22 @@ input#usuario {
         background: rgba(0,0,0,0.8);
 
     }
-
-    .grid .box,.grid2 .box,.grid3 .box{
-        background-size: cover;
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
     .infinito{
-
         background: url('/images/back006.png') no-repeat 80% 0px;
         background-size:cover;
+        color: white;
     }
     .infinito p.text-center {
         display: block;
         width: 100%;
         padding-bottom: 40px;
+        padding-top: 40px;
+        color: white;
     }
     .infinito .contador.text-center {
         display: block;
         width: 100%;
-        font-size: 100px;
+        font-size: 80px;
         line-height: 65px;
         padding-bottom: 0;
         margin-bottom: 0;

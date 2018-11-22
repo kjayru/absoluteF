@@ -49,7 +49,7 @@
 
                 <div class="row justify-content-center">
                     <p class="text-center">Tweets de odio hackeados y convertidos en amor:</p>
-                    <div class="contador text-center">00429</div>
+                    <div class="contador text-center">{{ $cantidad }}</div>
                     <div class="hash text-center">#MásAmorMenosOdio</div>
                     <div class="buscar text-center">
                            <p>Busca tu tweet</p>
@@ -57,14 +57,13 @@
                             <div class="form-group mb-2">
                                <input type="text" name="usuario" class="form-control" id="usuario" data-rel="INGRESAR USUARIO">
                             </div>
-
-                               <button id="btn-buscar" class="btn btn-senduser mb-2">
-                                   Buscar
-                               </button>
+                               <a href="#" id="btn-buscar" class="btn btn-senduser mb-2">
+                                Buscar
+                               </a>
                            </form>
 
                     </div>
-                    <div class="fitros text-center">
+                    <div class="fitros text-center" style="display:none">
                             <h4>Filtrar por:</h4>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="matrimonio" >
@@ -83,14 +82,11 @@
                                         <label class="form-check-label" for="inlineCheckbox3">Otros</label>
                                 </div>
                     </div>
-                    <div class="contenedorman content " data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
+
+                    <div class="contenedorman content" data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
 
 
                         <div class="grid are-images-unloaded">
-
-
-                            <div class="grid__col-sizer"></div>
-                            <div class="grid__gutter-sizer"></div>
 
                         @foreach($twitts as $key => $tw)
                         @php
@@ -128,9 +124,36 @@
                           <span class="loader-ellips__dot"></span>
                           <span class="loader-ellips__dot"></span>
                         </div>
-                        <p class="infinite-scroll-last">End of content</p>
-                        <p class="infinite-scroll-error">No more pages to load</p>
                     </div>
+
+                    <div class="content2" data-mcs-theme="dark">
+                        <div id="grid3" class="grid3" style="display:none;">
+
+
+                        </div>
+                    </div>
+
+                    <div id="grid2" class="grid2" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
+                    <div id="grid4" class="grid4" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
+                    <div id="grid5" class="grid5" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
+
+                    <div id="grid6" class="grid6" style="display:none;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"></div>
+                    </div>
+
                 </div>
 
          </div>
