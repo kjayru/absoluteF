@@ -87,11 +87,11 @@
 
 
                         <div class="grid are-images-unloaded">
-
-                        @foreach($twitts as $key => $tw)
                         @php
-                           $op = rand(1, 4);
-                        @endphp
+                            $op = rand(1, 4);
+                         @endphp
+                        @foreach($twitts as $key => $tw)
+
                             @if(fmod($key, 4) == 0)
                             <div class="grid__item grid__item--width2">
                                 <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
