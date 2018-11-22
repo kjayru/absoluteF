@@ -1303,7 +1303,7 @@ $(document).ready(function(e){
 
         }else{
 
-            $(".grid3").html("<p class='text-center'>No se encontraron Tweets con el usuario ingresado.ls</p>");
+            $(".grid3").html("<p class='text-center'>No se encontraron Tweets con el usuario ingresado.</p>");
         }
     });
 
@@ -1413,7 +1413,7 @@ $(document).ready(function(e){
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
                     <div class="box">
-                        <video controls="">
+                        <video controls="" poster="/images/fondo${op}.png">
                             <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1422,7 +1422,7 @@ $(document).ready(function(e){
                 }else{
                     ihtm+=`<div class="grid-item">
                         <div class="box">
-                            <video controls="">
+                            <video controls="" poster="/images/fondo${op}.png">
                                 <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1490,7 +1490,7 @@ $(document).ready(function(e){
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
                     <div class="box">
-                        <video controls="">
+                        <video controls="" poster="/images/fondo${op}.png">
                             <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1499,7 +1499,7 @@ $(document).ready(function(e){
                 }else{
                     ihtm+=`<div class="grid-item">
                         <div class="box">
-                            <video controls="">
+                            <video controls="" poster="/images/fondo${op}.png">
                                 <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1565,7 +1565,7 @@ $(document).ready(function(e){
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
                     <div class="box">
-                        <video controls="">
+                        <video controls="" poster="/images/fondo${op}.png">
                             <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1574,7 +1574,7 @@ $(document).ready(function(e){
                 }else{
                     ihtm+=`<div class="grid-item">
                         <div class="box">
-                            <video controls="">
+                            <video controls="" poster="/images/fondo${op}.png">
                                 <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
