@@ -1258,6 +1258,20 @@ input#usuario {
     margin-left: -2px;
 }
 
+.btn-mancha{
+    right: 0px;
+    background: #c43a94;
+    color: white;
+    font-family: 'Conv_AbsolutHeadline2017';
+    padding: 5px 40px;
+    border: 2px solid white;
+    border-radius: 0;
+    margin-left: -2px;
+}
+.cmprest {
+    margin-bottom: 40px;
+}
+
 @media(max-width: 769px){
     .grid__item {
         width: 300px;

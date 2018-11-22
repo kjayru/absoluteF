@@ -29,7 +29,7 @@
 @foreach($twitts as $k => $tw )
 
  @php
-    $op = rand(1, 4);
+    $op = rand(1, 12);
  @endphp
  @if(fmod($k, 4) == 0)
 

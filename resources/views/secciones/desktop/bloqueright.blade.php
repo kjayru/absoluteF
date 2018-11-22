@@ -88,6 +88,12 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                                         <label class="form-check-label" for="inlineCheckbox3">Otros</label>
                                 </div>
                     </div>
+
+                    <div class="cmprest col-md-12 text-center">
+                        <a href="#" class="btn-mancha btn-reset" style="display:none;">Regresar</a>
+                    </div>
+
+
                     <div class="contenedorman content" data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
 
 
@@ -97,35 +103,36 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                             <div class="grid__col-sizer"></div>
                             <div class="grid__gutter-sizer"></div>
 
-                        @php
-                            $op = rand(1, 4);
-                        @endphp
+
                         @foreach($twitts as $key => $tw)
+                        @php
+                            $op = rand(1, 12);
+                        @endphp
                             @switch($key)
                                 @case(0)
                                     <div class="grid__item grid__item--width2 {{$key}}">
-                                        <div class="box" style="background:url(/images/scroll-bt1.png); background-size:cover;">
+                                        <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
 
                                         </div>
                                     </div>
                                 @break
                                 @case(4)
                                     <div class="grid__item grid__item--width2  {{$key}}">
-                                        <div class="box" style="background:url(/images/scroll-bt2.png); background-size:cover;">
+                                        <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
 
                                         </div>
                                     </div>
                                 @break
                                @case(8)
                                <div class="grid__item grid__item--width2  {{$key}}">
-                                    <div class="box" style="background:url(/images/scroll-bt3.png); background-size:cover;">
+                                    <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
 
                                     </div>
                                 </div>
                                 @break
                                 @case(12)
                                 <div class="grid__item grid__item--width2  {{$key}}">
-                                    <div class="box" style="background:url(/images/scroll-bt4.png); background-size:cover;">
+                                    <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
 
                                     </div>
                                 </div>

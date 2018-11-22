@@ -81,16 +81,20 @@
                                 </div>
                     </div>
 
+                    <div class="cmprest">
+                        <a href="#" class="btn-mancha btn-reset" style="display:none;">Regresar</a>
+                    </div>
+
                     <div class="contenedorman content" data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
 
 
                         <div class="grid are-images-unloaded">
-                        @php
-                            $op = rand(1, 4);
-                         @endphp
-                        @foreach($twitts as $key => $tw)
 
-                            @if(fmod($key, 4) == 0)
+                        @foreach($twitts as $key => $tw)
+                         @php
+                            $op = rand(1, 12);
+                         @endphp
+                            @if(fmod($key, 12) == 0)
                             <div class="grid__item grid__item--width2">
                                 <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
 

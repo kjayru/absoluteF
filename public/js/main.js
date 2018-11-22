@@ -1243,7 +1243,7 @@ $(document).ready(function(e){
         e.preventDefault();
 
         $(".grid3").html(`<div class="grid-sizer"></div><div class="gutter-sizer"></div>`);
-
+        $(".btn-reset").fadeIn(350,'swing');
         $(".contenedorman").hide();
         let usuario = $("#usuario").val();
         $(".content2").hide();
@@ -1260,12 +1260,12 @@ $(document).ready(function(e){
         if(response.cantidad>0){
 
            $.each(response.data,function(i,e){
-
+                let op = Math.floor((Math.random() * 4) + 1);
                 let resto = i % 3;
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
                     <div class="box">
-                        <video controls="">
+                        <video controls="" poster="/images/fondo${op}.png">
                             <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1274,7 +1274,7 @@ $(document).ready(function(e){
                 }else{
                     ihtm+=`<div class="grid-item">
                         <div class="box">
-                            <video controls="">
+                            <video controls="" poster="/images/fondo${op}.png">
                                 <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1319,7 +1319,7 @@ $(document).ready(function(e){
             });
 
             $(this).prop('checked',true);
-
+            $(".btn-reset").fadeIn(350,'swing');
         $(".contenedorman").hide();
         let filtro = 'UNIONCIVIL';
         $(".content4").hide();
@@ -1333,12 +1333,12 @@ $(document).ready(function(e){
             $.get(`/getcategoria/${filtro}`, function(response) {
 
             $.each(response,function(i,e){
-
+                let op = Math.floor((Math.random() * 4) + 1);
                 let resto = i % 3;
                 if(resto===0){
-                    ihtm+=`<div class="grid-item  grid-item--width2">
+                    ihtm+=`<div class="grid-item  grid-item--width2" >
                     <div class="box">
-                        <video controls="">
+                        <video controls="" poster="/images/fondo${op}.png">
                             <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1347,7 +1347,7 @@ $(document).ready(function(e){
                 }else{
                     ihtm+=`<div class="grid-item">
                         <div class="box">
-                            <video controls="">
+                            <video controls="" poster="/images/fondo${op}.png">
                                 <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
                             </video>
@@ -1389,10 +1389,10 @@ $(document).ready(function(e){
             });
 
             $(this).prop('checked',true);
-
+            $(".btn-reset").fadeIn(350,'swing');
         $(".contenedorman").hide();
         let filtro = 'RACISMO';
-
+        $(".btn-reset").fadeIn(350,'swing');
         $(".content2").hide();
         $(".content3").hide();
 
@@ -1408,7 +1408,7 @@ $(document).ready(function(e){
           //$.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
         $.get(`/getcategoria/${filtro}`, function(response) {
             $.each(response,function(i,e){
-
+                let op = Math.floor((Math.random() * 4) + 1);
                 let resto = i % 3;
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
@@ -1469,7 +1469,7 @@ $(document).ready(function(e){
 
         $(".contenedorman").hide();
         let filtro = 'CHILE';
-
+        $(".btn-reset").fadeIn(350,'swing');
         $(".content2").hide();
         $(".content3").hide();
         $(".content4").hide();
@@ -1485,7 +1485,7 @@ $(document).ready(function(e){
           //$.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
         $.get(`/getcategoria/${filtro}`, function(response) {
             $.each(response,function(i,e){
-
+                let op = Math.floor((Math.random() * 4) + 1);
                 let resto = i % 3;
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
@@ -1543,7 +1543,7 @@ $(document).ready(function(e){
             });
 
             $(this).prop('checked',true);
-
+        $(".btn-reset").fadeIn(350,'swing');
         $(".contenedorman").hide();
         let filtro = 'ODIO';
         $(".content2").hide();
@@ -1560,7 +1560,7 @@ $(document).ready(function(e){
             $.get(`/getcategoria/${filtro}`, function(response) {
 
             $.each(response,function(i,e){
-
+                let op = Math.floor((Math.random() * 4) + 1);
                 let resto = i % 3;
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
@@ -1618,6 +1618,18 @@ $(document).ready(function(e){
             event.preventDefault();
         }
 
+    });
+
+    $(".btn-reset").on('click',function(e){
+        e.preventDefault();
+        $(".content2").hide();
+        $(".content3").hide();
+        $(".content4").hide();
+        $(".content5").hide();
+        $(".content6").hide();
+        $(".btn-reset").hide();
+        $(".btn-vermas").fadeIn(350,'swing');
+        $(".contenedorman").fadeIn(350,'swing');
     });
 });
 
