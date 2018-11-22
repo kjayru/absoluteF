@@ -1211,27 +1211,27 @@ $(document).ready(function(e){
     $(".content2").mCustomScrollbar({
         scrollInertia:0,
 		setTop: 0,
-        setHeight: 1050
+        setHeight: 760
     });
     $(".content3").mCustomScrollbar({
         scrollInertia:0,
 		setTop: 0,
-        setHeight: 1050
+        setHeight: 760
     });
     $(".content4").mCustomScrollbar({
         scrollInertia:0,
 		setTop: 0,
-        setHeight: 1050
+        setHeight: 760
     });
     $(".content5").mCustomScrollbar({
         scrollInertia:0,
 		setTop: 0,
-        setHeight: 1050
+        setHeight: 760
     });
     $(".content6").mCustomScrollbar({
         scrollInertia:0,
 		setTop: 0,
-        setHeight: 1050
+        setHeight: 760
     });
 
     $("#usuario").focus(function(){
@@ -1295,8 +1295,7 @@ $(document).ready(function(e){
                   });
                   $grid.masonry('destroy');
                   $grid.masonry();
-                  //$grid.masonry('layout');
-                  //$grid.masonry('reloadItems');
+
 
             });
 
