@@ -1218,7 +1218,9 @@ $(document).ready(function(e){
     });
     $("#btn-buscar").click(function(e){
         e.preventDefault();
-        $(".grid3").masonry('destroy');
+
+        $(".grid3").html(`<div class="grid-sizer"></div><div class="gutter-sizer"></div>`);
+
         $(".contenedorman").hide();
         let usuario = $("#usuario").val();
         $("#grid2").hide();
@@ -1230,10 +1232,12 @@ $(document).ready(function(e){
 
        let ihtm='';
 
-      $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`, function(response) {
-           // console.log(response.data);
-            $.each(response.data,function(i,e){
-                console.log(e);
+    $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`, function(response) {
+
+        if(response.cantidad>0){
+
+           $.each(response.data,function(i,e){
+
                 let resto = i % 3;
                 if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
@@ -1262,80 +1266,31 @@ $(document).ready(function(e){
 
 
                  var $grid =  $('.grid3').masonry({
-                    // options
-
                     columnWidth: '.grid-sizer',
                     itemSelector: '.grid-item',
-                    percentPosition: true,
+                    gutter: '.gutter-sizer',
+
                     gutter: 30
                   });
-
+                  $grid.masonry('destroy');
                   $grid.masonry();
-                  $grid.masonry('layout');
-                  $grid.masonry('reloadItems');
+                  //$grid.masonry('layout');
+                  //$grid.masonry('reloadItems');
 
             });
-        });
 
 
-      /*let ihtm ='';
-       const pathurl = `/getusuario/${usuario}`;
-       fetch(pathurl,{
-            mode: 'cors',
-            headers: {
-                'Access-Control-Allow-Origin':'*'
-            }
-        }).then(res=>res.json())
-            .catch(error=> console.error('error',error))
-            .then(response=>{
+        }else{
 
-                $.each(response,function(i,e){
-
-                    let resto = i % 3;
-                    if(resto===0){
-                    ihtm+=`<div class="grid-item  grid-item--width2">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
-
-                                </video>
-                            </div>
-                        </div>`;
-                    }else{
-                        ihtm+=`<div class="grid-item">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
-
-                                </video>
-                            </div>
-                        </div>`;
-                    }
-
-                })
-                console.log(ihtm);
-                   $(".grid3").append(ihtm).promise().done(function(){
-
-                   var $grid3 =  $('.grid3').masonry({
-                        // options
-
-                        columnWidth: '.grid-sizer',
-                        itemSelector: '.grid-item',
-                        percentPosition: true,
-                        gutter: 30
-                      });
-
-                      var elems = $grid3.masonry('getItemElements')
-                      console.log(elems);
-                   });
-
-        });*/
-
-
+            $(".grid3").html("<p class='text-center'>No se encontraron resultados..</p>");
+        }
     });
 
+
+});
+
     $("#matrimonio").change(function(){
-        $(".grid2").masonry('destroy');
+        $(".grid2").html("");
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1355,6 +1310,7 @@ $(document).ready(function(e){
 
         $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
 
+        alert(response.data.length);
             $.each(response,function(i,e){
 
                 let resto = i % 3;
@@ -1392,7 +1348,7 @@ $(document).ready(function(e){
                     percentPosition: true,
                     gutter: 30
                   });
-
+                  $grid.masonry('destroy');
                   $grid.masonry();
                   $grid.masonry('layout');
                   $grid.masonry('reloadItems');
@@ -1400,75 +1356,13 @@ $(document).ready(function(e){
             });
         });
 
-        /*let ihtm ='';
-        const pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`;
-         // const pathurl = `/getcategoria/${filtro}`;
-
-          fetch(pathurl,{
-            method: 'GET',
-            mode: 'cors',
-            headers: {
-                'Access-Control-Allow-Origin':'*',
-                'Access-Control-Allow-Headers': 'Content-Type',
-                'Access-Control-Allow-Methods':'GET'
-            }
-          }).then(res=>res.json())
-            .catch(error=> console.error('error',error))
-            .then(response=>{
-
-                $.each(response,function(i,e){
-
-                    let resto = i % 3;
-                    if(resto===0){
-                        ihtm+=`<div class="grid-item  grid-item--width2">
-                        <div class="box">
-                            <video controls="">
-                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
-
-                                </video>
-                            </div>
-                        </div>`;
-                    }else{
-                        ihtm+=`<div class="grid-item">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
-
-                                </video>
-                            </div>
-                        </div>`;
-                    }
-
-                })
-
-                $(".grid2").append(ihtm).promise().done(function(){
-
-
-
-                     var $grid =  $('.grid2').masonry({
-                        // options
-
-                        columnWidth: '.grid-sizer',
-                        itemSelector: '.grid-item',
-                        percentPosition: true,
-                        gutter: 30
-                      });
-
-                      $grid.masonry();
-                      $grid.masonry('layout');
-                      $grid.masonry('reloadItems');
-
-                });
-            })
-            */
-
        }
 
     });
     //racismo
 
     $("#racismo").change(function(){
-        $(".grid4").masonry('destroy');
+        $(".grid4").html("");
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1489,59 +1383,55 @@ $(document).ready(function(e){
 
 
           let ihtm ='';
-          // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
-          const pathurl = `/getcategoria/${filtro}`;
 
-          fetch(pathurl,{
-            mode: 'cors',
-            headers: {
-                'Access-Control-Allow-Origin':'*'
-            }
-          }).then(res=>res.json())
-            .catch(error=> console.error('error',error))
-            .then(response=>{
+         // const pathurl = `/getcategoria/${filtro}`;
 
-                $.each(response,function(i,e){
+          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
 
-                    let resto = i % 2;
-                    if(resto===0){
+            $.each(response,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
-                                </video>
-                            </div>
-                        </div>`;
-                    }else{
-                        ihtm+=`<div class="grid-item">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
-                                </video>
-                            </div>
-                        </div>`;
-                    }
+                            </video>
+                        </div>
+                    </div>`;
+                }
 
-                })
-
-                $(".grid4").append(ihtm).promise().done(function(){
-
-                   var $grid =  $('.grid4').masonry({
-                        // options
-
-                        columnWidth: '.grid-sizer',
-                        itemSelector: '.grid-item',
-                        percentPosition: true,
-                        gutter: 30
-                      });
-
-                      $grid.masonry();
-                      $grid.masonry('layout');
-                      $grid.masonry('reloadItems');
-                });
             })
+
+            $(".grid4").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid4').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
 
 
        }
@@ -1551,7 +1441,7 @@ $(document).ready(function(e){
     //peruchile
 
     $("#peruchile").change(function(){
-        $(".grid5").masonry('destroy');
+        $(".grid5").html("");
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1573,59 +1463,54 @@ $(document).ready(function(e){
 
           let ihtm ='';
           // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
-          const pathurl = `/getcategoria/${filtro}`;
+         // const pathurl = `/getcategoria/${filtro}`;
 
-          fetch(pathurl,{
-            mode: 'cors',
-            headers: {
-                'Access-Control-Allow-Origin':'*'
-            }
-          }).then(res=>res.json())
-            .catch(error=> console.error('error',error))
-            .then(response=>{
+          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
 
-                $.each(response,function(i,e){
+            $.each(response,function(i,e){
 
-                    let resto = i % 3;
-                    if(resto===0){
+                let resto = i % 3;
+                if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
-                                </video>
-                            </div>
-                        </div>`;
-                    }else{
-                        ihtm+=`<div class="grid-item">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
-                                </video>
-                            </div>
-                        </div>`;
-                    }
+                            </video>
+                        </div>
+                    </div>`;
+                }
 
-                })
-
-                $(".grid5").append(ihtm).promise().done(function(){
-
-                   var $grid = $('.grid5').masonry({
-                        // options
-
-                        columnWidth: '.grid-sizer',
-                        itemSelector: '.grid-item',
-                        percentPosition: true,
-                        gutter: 30
-                      });
-
-                      $grid.masonry();
-                      $grid.masonry('layout');
-                      $grid.masonry('reloadItems');
-                });
             })
 
+            $(".grid5").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid5').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
 
        }
 
@@ -1635,7 +1520,7 @@ $(document).ready(function(e){
     //OTROS
 
     $("#otros").change(function(){
-        $(".grid6").masonry('destroy');
+        $(".grid6").html("");
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1654,57 +1539,55 @@ $(document).ready(function(e){
 
           let ihtm ='';
           // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
-          const pathurl = `/getcategoria/${filtro}`;
-          fetch(pathurl,{
-            mode: 'cors',
-            headers: {
-                'Access-Control-Allow-Origin':'*'
-            }
-          }).then(res=>res.json())
-            .catch(error=> console.error('error',error))
-            .then(response=>{
+          //const pathurl = `/getcategoria/${filtro}`;
 
-                $.each(response,function(i,e){
+          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
 
-                    let resto = i % 2;
-                    if(resto===0){
+            $.each(response,function(i,e){
+
+                let resto = i % 3;
+                if(resto===0){
                     ihtm+=`<div class="grid-item  grid-item--width2">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+                    <div class="box">
+                        <video controls="">
+                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
-                                </video>
-                            </div>
-                        </div>`;
-                    }else{
-                        ihtm+=`<div class="grid-item">
-                            <div class="box">
-                                <video controls="">
-                                    <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>`;
+                }else{
+                    ihtm+=`<div class="grid-item">
+                        <div class="box">
+                            <video controls="">
+                                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/${e.idStr}.mp4" type="video/mp4">
 
-                                </video>
-                            </div>
-                        </div>`;
-                    }
+                            </video>
+                        </div>
+                    </div>`;
+                }
 
-                })
-
-                $(".grid6").append(ihtm).promise().done(function(){
-
-                    var $grid = $('.grid6').masonry({
-                        // options
-
-                        columnWidth: '.grid-sizer',
-                        itemSelector: '.grid-item',
-                        percentPosition: true,
-                        gutter: 30
-                      });
-
-                      $grid.masonry();
-                      $grid.masonry('layout');
-                      $grid.masonry('reloadItems')
-                });
             })
+
+            $(".grid6").append(ihtm).promise().done(function(){
+
+
+
+                 var $grid =  $('.grid6').masonry({
+                    // options
+
+                    columnWidth: '.grid-sizer',
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 30
+                  });
+                  $grid.masonry('destroy');
+                  $grid.masonry();
+                  $grid.masonry('layout');
+                  $grid.masonry('reloadItems');
+
+            });
+        });
+
 
 
        }

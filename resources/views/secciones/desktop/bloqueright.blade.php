@@ -146,7 +146,8 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                 <div class="content2" data-mcs-theme="dark">
                     <div id="grid3" class="grid3" style="display:none;">
                         <div class="grid-sizer"></div>
-                        <div class="grid-item"></div>
+                        <div class="gutter-sizer"></div>
+
                     </div>
                 </div>
 

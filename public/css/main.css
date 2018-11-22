@@ -1900,10 +1900,15 @@ input#usuario {
      height:200px;
      margin-bottom: 10px;
     }
-    .grid-item--width2 {
-        width: 390px;
-        height:390px;
-    }
+
+.gutter-sizer {
+    width: 30px;
+}
+
+.grid-item--width2 {
+    width: 390px;
+    height:390px;
+}
 
 .grid-item2--width2 {
      width: 390px;
