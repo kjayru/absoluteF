@@ -1709,7 +1709,7 @@ input#usuario {
         background-size: contain;
     }
     .bgif2 {
-        background: url(https://media.giphy.com/media/QNFhNIOOJQnU0QOHN2/giphy.gif) no-repeat 0 0;
+        background: url(/gifs/video-secciones.gif) no-repeat 0 0;
         width: 230px;
         height: 227px;
         display: block;
