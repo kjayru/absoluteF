@@ -1329,5 +1329,16 @@ $(document).ready(function(e){
     });
 });
 
+$(document).ready(function(){
+
+    $('#usuario').keypress(function (event) {
+        console.log(event);
+
+        if (event.keyCode === 10 || event.keyCode === 13) {
+            event.preventDefault();
+        }
+
+    });
+});
 
 

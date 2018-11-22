@@ -1608,11 +1608,6 @@ $(document).ready(function(e){
         }
 
     });
-
-
-
-
-
 });
 
 
