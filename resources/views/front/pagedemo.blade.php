@@ -26,29 +26,26 @@
   <div class="grid__col-sizer"></div>
   <div class="grid__gutter-sizer"></div>
 
-  @foreach($twitts as $k => $tw )
+@foreach($twitts as $k => $tw )
 
  @php
- $op = rand(1, 4);
-
+    $op = rand(1, 4);
  @endphp
  @if(fmod($k, 4) == 0)
 
-  <div class="grid__item grid__item--width2 {{$k}}">
+  <div class="grid__item grid__item--width2">
     <div class="box">
         <video  controls poster="/images/fondo{{$op}}.png">
-            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
-            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.webm" type="video/webm">
-          </video>
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+        </video>
     </div>
 </div>
 @else
 <div class="grid__item grid__item--height2">
-    <div class="box" poster="/images/fondo{{$op}}.png">
-        <video  controls>
-            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
-            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.webm" type="video/webm">
-          </video>
+    <div class="box" >
+        <video  controls poster="/images/fondo{{$op}}.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+        </video>
     </div>
 </div>
 @endif

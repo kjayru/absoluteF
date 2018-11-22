@@ -134,8 +134,8 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                                 <div class="grid__item grid__item--height2  {{$key}}">
                                     <div class="box">
                                         <video controls="" poster="/images/fondo{{$op}}.png">
-                                            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
-                                            <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.webm" type="video/webm">
+                                            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
+
                                         </video>
                                     </div>
                                 </div>
