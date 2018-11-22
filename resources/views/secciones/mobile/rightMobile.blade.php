@@ -36,9 +36,7 @@
                       </div>
                 </div>
             </div>
-            <div class="texto-pie">
-                    <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
-                </div>
+
         </div>
 
 
