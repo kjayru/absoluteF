@@ -36,7 +36,7 @@
 
   <div class="grid__item grid__item--width2 {{$k}}">
     <div class="box">
-        <video  controls>
+        <video  controls poster="/images/fondo{{$op}}.png">
             <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
             <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.webm" type="video/webm">
           </video>
@@ -44,7 +44,7 @@
 </div>
 @else
 <div class="grid__item grid__item--height2">
-    <div class="box">
+    <div class="box" poster="/images/fondo{{$op}}.png">
         <video  controls>
             <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
             <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.webm" type="video/webm">

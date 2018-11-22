@@ -1757,9 +1757,10 @@ input#usuario {
         background: rgba(0,0,0,0.8);
 
     }
-    .infinito{
-        background: url('/images/back006.png') no-repeat 80% 0px;
-        background-size:cover;
+
+    .infinito {
+        background: url(/images/back006.png) no-repeat 36% 0px;
+        background-size: cover;
         color: white;
     }
     .infinito p.text-center {

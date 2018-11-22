@@ -88,7 +88,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                                         <label class="form-check-label" for="inlineCheckbox3">Otros</label>
                                 </div>
                     </div>
-                    <div class="contenedorman content " data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
+                    <div class="contenedorman content" data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
 
 
                         <div class="grid are-images-unloaded">
@@ -97,6 +97,9 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                             <div class="grid__col-sizer"></div>
                             <div class="grid__gutter-sizer"></div>
 
+                        @php
+                            $op = rand(1, 4);
+                        @endphp
                         @foreach($twitts as $key => $tw)
                             @switch($key)
                                 @case(0)
@@ -130,7 +133,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                                 @default
                                 <div class="grid__item grid__item--height2  {{$key}}">
                                     <div class="box">
-                                        <video controls="">
+                                        <video controls="" poster="/images/fondo{{op}}.png">
                                             <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
                                             <source src=" https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.webm" type="video/webm">
                                         </video>

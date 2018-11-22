@@ -1282,7 +1282,7 @@ $(document).ready(function(e){
 
         }else{
 
-            $(".grid3").html("<p class='text-center'>No se encontraron Tweets con el usuario ingresado.</p>");
+            $(".grid3").html("<p class='text-center'>No se encontraron Tweets con el usuario ingresado.ls</p>");
         }
     });
 
