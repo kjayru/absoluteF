@@ -75,7 +75,7 @@ class HomeController extends Controller
                     //insert table
                     if($existe==0){
                         $tw = new Twitt();
-
+                    $tw->category = $g['category'];
                     $tw->createdAt = $g['createdAt'];
                     $tw->text = $g['text'];
                     $tw->fullText = $g['fullText'];
@@ -161,7 +161,7 @@ class HomeController extends Controller
 
         //$userdata = $twitts['data'];
 
-        $userdata = Twitt::inRandomOrder()->limit(20)->get();
+        $userdata = Twitt::where('category',$filtro)->inRandomOrder()->limit(20)->get();
 
         return response()->json($userdata);
     }

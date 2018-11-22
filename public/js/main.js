@@ -1213,6 +1213,26 @@ $(document).ready(function(e){
 		setTop: 0,
         setHeight: 1050
     });
+    $(".content3").mCustomScrollbar({
+        scrollInertia:0,
+		setTop: 0,
+        setHeight: 1050
+    });
+    $(".content4").mCustomScrollbar({
+        scrollInertia:0,
+		setTop: 0,
+        setHeight: 1050
+    });
+    $(".content5").mCustomScrollbar({
+        scrollInertia:0,
+		setTop: 0,
+        setHeight: 1050
+    });
+    $(".content6").mCustomScrollbar({
+        scrollInertia:0,
+		setTop: 0,
+        setHeight: 1050
+    });
 
     $("#usuario").focus(function(){
         $(".form-check-input").each(function(){
@@ -1226,12 +1246,12 @@ $(document).ready(function(e){
 
         $(".contenedorman").hide();
         let usuario = $("#usuario").val();
-        $("#grid2").hide();
-        $("#grid4").hide();
-        $("#grid5").hide();
-        $("#grid6").hide();
-        $("#grid7").hide();
-        $("#grid3").fadeIn(350,'swing');
+        $(".content2").hide();
+        $(".content4").hide();
+        $(".content5").hide();
+        $(".content6").hide();
+
+        $(".content3").fadeIn(350,'swing');
 
        let ihtm='';
 
@@ -1271,9 +1291,7 @@ $(document).ready(function(e){
                  var $grid =  $('.grid3').masonry({
                     columnWidth: '.grid-sizer',
                     itemSelector: '.grid-item',
-                    gutter: '.gutter-sizer',
-
-                    gutter: 30
+                    gutter: '.gutter-sizer'
                   });
                   $grid.masonry('destroy');
                   $grid.masonry();
@@ -1293,7 +1311,7 @@ $(document).ready(function(e){
     });
 
     $("#matrimonio").change(function(){
-        $(".grid2").html("");
+        $(".grid2").html(`<div class="grid-sizer"></div><div class="gutter-sizer"></div>`);
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1303,17 +1321,17 @@ $(document).ready(function(e){
             $(this).prop('checked',true);
 
         $(".contenedorman").hide();
-        let filtro = 'MATRIMONIO';
-        $("#grid4").hide();
-        $("#grid3").hide();
-        $("#grid5").hide();
-        $("#grid6").hide();
+        let filtro = 'UNIONCIVIL';
+        $(".content4").hide();
+        $(".content3").hide();
+        $(".content5").hide();
+        $(".content6").hide();
 
-        $(".grid2").fadeIn(350,'swing');
+        $(".content2").fadeIn(350,'swing');
+        let ihtm='';
+        //$.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+            $.get(`/getcategoria/${filtro}`, function(response) {
 
-        $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
-
-        alert(response.data.length);
             $.each(response,function(i,e){
 
                 let resto = i % 3;
@@ -1348,13 +1366,11 @@ $(document).ready(function(e){
 
                     columnWidth: '.grid-sizer',
                     itemSelector: '.grid-item',
-                    percentPosition: true,
-                    gutter: 30
+                    gutter: '.gutter-sizer'
                   });
                   $grid.masonry('destroy');
                   $grid.masonry();
-                  $grid.masonry('layout');
-                  $grid.masonry('reloadItems');
+
 
             });
         });
@@ -1365,7 +1381,7 @@ $(document).ready(function(e){
     //racismo
 
     $("#racismo").change(function(){
-        $(".grid4").html("");
+        $(".grid4").html(`<div class="grid-sizer"></div><div class="gutter-sizer"></div>`);
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1377,20 +1393,20 @@ $(document).ready(function(e){
         $(".contenedorman").hide();
         let filtro = 'RACISMO';
 
-        $("#grid2").hide();
-        $("#grid3").hide();
+        $(".content2").hide();
+        $(".content3").hide();
 
-        $("#grid6").hide();
-        $("#grid5").hide();
-        $("#grid4").fadeIn(350,'swing');
+        $(".content6").hide();
+        $(".content5").hide();
+        $(".content4").fadeIn(350,'swing');
 
 
           let ihtm ='';
 
          // const pathurl = `/getcategoria/${filtro}`;
 
-          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
-
+          //$.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+        $.get(`/getcategoria/${filtro}`, function(response) {
             $.each(response,function(i,e){
 
                 let resto = i % 3;
@@ -1425,13 +1441,11 @@ $(document).ready(function(e){
 
                     columnWidth: '.grid-sizer',
                     itemSelector: '.grid-item',
-                    percentPosition: true,
-                    gutter: 30
+                    gutter: '.gutter-sizer'
                   });
                   $grid.masonry('destroy');
                   $grid.masonry();
-                  $grid.masonry('layout');
-                  $grid.masonry('reloadItems');
+
 
             });
         });
@@ -1444,7 +1458,7 @@ $(document).ready(function(e){
     //peruchile
 
     $("#peruchile").change(function(){
-        $(".grid5").html("");
+        $(".grid5").html(`<div class="grid-sizer"></div><div class="gutter-sizer"></div>`);
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1456,20 +1470,20 @@ $(document).ready(function(e){
         $(".contenedorman").hide();
         let filtro = 'CHILE';
 
-        $("#grid2").hide();
-        $("#grid3").hide();
-        $("#grid4").hide();
+        $(".content2").hide();
+        $(".content3").hide();
+        $(".content4").hide();
 
-        $("#grid6").hide();
-        $("#grid5").fadeIn(350,'swing');
+        $(".content6").hide();
+        $(".content5").fadeIn(350,'swing');
 
 
           let ihtm ='';
           // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
          // const pathurl = `/getcategoria/${filtro}`;
 
-          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
-
+          //$.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+        $.get(`/getcategoria/${filtro}`, function(response) {
             $.each(response,function(i,e){
 
                 let resto = i % 3;
@@ -1504,13 +1518,11 @@ $(document).ready(function(e){
 
                     columnWidth: '.grid-sizer',
                     itemSelector: '.grid-item',
-                    percentPosition: true,
-                    gutter: 30
+                    gutter: '.gutter-sizer'
                   });
                   $grid.masonry('destroy');
                   $grid.masonry();
-                  $grid.masonry('layout');
-                  $grid.masonry('reloadItems');
+
 
             });
         });
@@ -1523,7 +1535,7 @@ $(document).ready(function(e){
     //OTROS
 
     $("#otros").change(function(){
-        $(".grid6").html("");
+        $(".grid6").html(`<div class="grid-sizer"></div><div class="gutter-sizer"></div>`);
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
@@ -1533,18 +1545,19 @@ $(document).ready(function(e){
             $(this).prop('checked',true);
 
         $(".contenedorman").hide();
-        let filtro = 'OTROS';
-        $("#grid2").hide();
-        $("#grid3").hide();
-        $("#grid4").hide();
-        $("#grid5").hide();
-        $("#grid6").fadeIn(350,'swing');
+        let filtro = 'ODIO';
+        $(".content2").hide();
+        $(".content3").hide();
+        $(".content4").hide();
+        $(".content5").hide();
+        $(".content6").fadeIn(350,'swing');
 
           let ihtm ='';
           // let pathurl = `https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/${usuario}?limite=20`;
           //const pathurl = `/getcategoria/${filtro}`;
 
-          $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+         // $.get(`https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/categorias/${filtro}?limite=20`, function(response) {
+            $.get(`/getcategoria/${filtro}`, function(response) {
 
             $.each(response,function(i,e){
 
@@ -1580,13 +1593,11 @@ $(document).ready(function(e){
 
                     columnWidth: '.grid-sizer',
                     itemSelector: '.grid-item',
-                    percentPosition: true,
-                    gutter: 30
+                    gutter: '.gutter-sizer'
                   });
                   $grid.masonry('destroy');
                   $grid.masonry();
-                  $grid.masonry('layout');
-                  $grid.masonry('reloadItems');
+
 
             });
         });

@@ -69,7 +69,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                            </form>
 
                     </div>
-                    <div class="fitros text-center" style="display:none;">
+                    <div class="fitros text-center">
                             <h4>Filtrar por:</h4>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="matrimonio" >
@@ -146,35 +146,38 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
                         </div>
                     </div>
 
-                <div class="content2" data-mcs-theme="dark">
-                    <div id="grid3" class="grid3" style="display:none;">
+                <div class="content3" data-mcs-theme="dark" style="display:none;">
+                    <div id="grid3" class="grid3" >
                         <div class="grid-sizer"></div>
                         <div class="gutter-sizer"></div>
 
                     </div>
                 </div>
 
-                    <div id="grid2" class="grid2" style="display:none;">
+                <div class="content2" data-mcs-theme="dark"  style="display:none;">
+                    <div id="grid2" class="grid2">
                         <div class="grid-sizer"></div>
                         <div class="grid-item"></div>
                     </div>
-
-                    <div id="grid4" class="grid4" style="display:none;">
+                </div>
+                <div class="content4" data-mcs-theme="dark" style="display:none;">
+                    <div id="grid4" class="grid4" >
                         <div class="grid-sizer"></div>
                         <div class="grid-item"></div>
                     </div>
-
-                    <div id="grid5" class="grid5" style="display:none;">
+                </div>
+                <div class="content5" data-mcs-theme="dark" style="display:none;">
+                    <div id="grid5" class="grid5" >
                         <div class="grid-sizer"></div>
                         <div class="grid-item"></div>
                     </div>
-
-
-                    <div id="grid6" class="grid6" style="display:none;">
+                </div>
+                <div class="content6" data-mcs-theme="dark" style="display:none;">
+                    <div id="grid6" class="grid6" >
                         <div class="grid-sizer"></div>
                         <div class="grid-item"></div>
                     </div>
-
+                </div>
                     <div class="page-load-status">
                         <div class="loader-ellips infinite-scroll-request">
                           <span class="loader-ellips__dot"></span>
