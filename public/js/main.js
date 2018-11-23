@@ -340,7 +340,7 @@ $("#validarEdad").on('click',function(e){
     $(".sliderurl1").on('click',function(){
         const contenedor = document.getElementById("marco");
         const ccright = window.innerWidth*2;
-        altoDinamico(1);
+        altoDinamico(3);
         TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
     });
 
