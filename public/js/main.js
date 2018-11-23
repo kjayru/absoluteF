@@ -1670,6 +1670,21 @@ $(document).ready(function(e){
         $(".btn-vermas").fadeIn(350,'swing');
         $(".contenedorman").fadeIn(350,'swing');
     });
+
 });
+
+function addSpinner2() {
+    spinner = new CanvasLoader("spinner2");
+    spinner.setShape("spiral");
+    spinner.setDiameter(90);
+    spinner.setDensity(90);
+    spinner.setRange(1);
+    spinner.setSpeed(4);
+    spinner.setColor("#ffffff");
+
+    spinner.show();
+
+    $("#spinner2").fadeIn("slow");
+};
 
 

@@ -969,7 +969,7 @@ div#resultado {
 	width:0;
 }
 
-#spinner {
+#spinner,#spinner2 {
 	position:absolute;
 	left:50%;
 	top:50%;
@@ -980,7 +980,7 @@ div#resultado {
 	display:none;
 }
 
-#spinner span {
+#spinner span ,#spinner2 span {
 	position:absolute;
 	top:50%;
 	width:100%;
@@ -1713,6 +1713,11 @@ input#usuario {
         left: 82%;
 
     }
+    #spinner2 {
+
+        left: 82%;
+
+    }
 
     .videoplayer2 {
         background: url(/images/video-2.png) no-repeat 0 0;
@@ -2087,7 +2092,7 @@ input#usuario {
         width:100%;
         z-index: 2;
         position: absolute;
-        text-indent: -9999px;
+        text-indent: -999999px;
     }
     .nav-item a.active{
         background: rgba(235,245,255,0.3) !important;

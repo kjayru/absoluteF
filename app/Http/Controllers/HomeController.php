@@ -138,13 +138,7 @@ class HomeController extends Controller
 
     public function getUsuario($usuario){
 
-       // $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$usuario."?limite=20");
 
-       // $twitts = json_decode($url, true);
-         //dd($twitts);
-         // dd($twitts['data']);
-
-        //$userdata = $twitts['data'];
 
         $userdata = Twitt::inRandomOrder()->limit(20)->get();
         //dd($userdata->items());
@@ -153,13 +147,6 @@ class HomeController extends Controller
 
     public function getCategoria($filtro){
 
-        // $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/usuarios/".$filtro."?limite=20");
-
-       // $twitts = json_decode($url, true);
-         //dd($twitts);
-         // dd($twitts['data']);
-
-        //$userdata = $twitts['data'];
 
         $userdata = Twitt::where('category',$filtro)->inRandomOrder()->limit(20)->get();
 

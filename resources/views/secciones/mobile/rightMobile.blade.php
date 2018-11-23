@@ -46,11 +46,11 @@
             <div class="container">
 
                 <div class="row justify-content-center">
-                    <p class="text-center">Tweets de odio hackeados y convertidos en amor:</p>
-                    <div class="contador text-center">{{ $cantidad }}</div>
+                    <p class="text-center">Tweets de odio convertidos en amor:</p>
+                    <div class="contador text-center">4240</div>
                     <div class="hash text-center">#MásAmorMenosOdio</div>
                     <div class="buscar text-center">
-                           <p>Busca tu tweet</p>
+                           <p>Busca tu tweet con el nombre de tu usuario </p>
                            <form  id="fr-buscar" class="form-inline  justify-content-center">
                             <div class="form-group mb-2">
                                <input type="text" name="usuario" class="form-control" id="usuario" data-rel="INGRESAR USUARIO" required>
