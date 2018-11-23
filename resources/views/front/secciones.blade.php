@@ -26,6 +26,16 @@
 
 
 
+                <div  id="modal-3" class="boxmodal" >
+                    <div class="container-fluid">
+                        <div class="row justify-content-center item-align-center">
+                            <div id="player3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                </li>
                <li id="postfeed">@include('secciones.desktop.bloqueright')
@@ -37,12 +47,13 @@
                             <div id="player2">
 
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
+
+
+
+
                </li>
             </ul>
     </div>
@@ -82,6 +93,16 @@
 
             </div>
 
+        </div>
+
+        <div  id="modal-3" class="boxmodal" >
+            <div class="container-fluid">
+                <div class="row justify-content-center item-align-center">
+                    <div id="player3">
+
+                    </div>
+                </div>
+            </div>
         </div>
 </div>
 @endmobile

@@ -158,6 +158,7 @@ $("#validarEdad").on('click',function(e){
         $(".boxmodal").removeClass('active');
             stopVideo();
             stopVideo2();
+            stopVideo3();
     });
 
 
@@ -359,15 +360,19 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player,player2;
+var player, player2,play3;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
+
       height: '360',
       width: '640',
       videoId: 'y0MOF0b8yq8',
-      playerVars: {'showinfo':0, 'controls': 0,'modestbranding':1,'playsinline':0,'rel':0,'iv_load_policy': 3 },
-
+      origin: pageurl,
+      playerVars: {
+           'autoplay': 0,'loop': 0,'showinfo':0, 'controls': 0,'modestbranding':0,
+           'playsinline':0,'rel':0,'iv_load_policy': 3
+          },
     });
 
 
@@ -375,27 +380,26 @@ function onYouTubeIframeAPIReady() {
       height:'360',
       width:'640',
       videoId:'at1ZNjcf-NA',
-      playerVars: {'showinfo':0, 'controls': 0,'modestbranding':1,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+      origin: pageurl,
+      playerVars: {
+          'autoplay': 0,'loop': 0,'showinfo':0, 'controls': 0,'modestbranding':0,
+          'playsinline':0,'rel':0,'iv_load_policy': 3
+         },
+  });
 
+  player3= new YT.Player('player3',{
+      height:'360',
+      width:'640',
+      videoId:'0ubq5F3k7ac',
+      origin: pageurl,
+      playerVars: {
+          'autoplay': 0,'loop': 0,'showinfo':0, 'controls': 0,'modestbranding':0,
+          'playsinline':0,'rel':0,'iv_load_policy': 3
+         },
   });
   }
-
-  function onPlayerReady(event) {
-    var player = event.target;
-    iframe = $('#player');
-    setupListener();
-  }
-
-  function setupListener (){
-    $('button').addEventListener('click', playFullscreen);
-    }
-
   function onPlayerReady() {
       player.playVideo();
-      var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
-      if (requestFullScreen) {
-        requestFullScreen.bind(iframe)();
-      }
     }
     var done = false;
 
@@ -403,20 +407,20 @@ function onYouTubeIframeAPIReady() {
       player.stopVideo();
     }
 
-
-
-
   function PlayerReady2(){
 
       player2.playVideo();
-      var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
-      if (requestFullScreen) {
-        requestFullScreen.bind(iframe)();
-      }
   }
   function stopVideo2(){
       player2.stopVideo();
+  }
 
+  function PlayerReady3(){
+
+      player3.playVideo();
+  }
+  function stopVideo3(){
+      player3.stopVideo();
   }
 
 
@@ -429,6 +433,11 @@ $( ".player").on("click", function (e){
 $( ".players2").on("click", function (e){
     e.preventDefault();
     PlayerReady2();
+});
+
+$( ".players3").on("click", function (e){
+    e.preventDefault();
+    PlayerReady3();
 });
 var _createClass = function () {
     function defineProperties(target, props)

@@ -247,6 +247,7 @@ $("#validarEdad").on('click',function(e){
         $(".boxmodal").removeClass('active');
             stopVideo();
             stopVideo2();
+            stopVideo3();
     });
 
 
@@ -557,19 +558,24 @@ function handle(delta) {
 
 //api youtube
 var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
+tag.src = "//youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
-var player2;
+var player, player2,play3;
+
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
+
     height: '360',
     width: '640',
     videoId: 'y0MOF0b8yq8',
-    playerVars: {'showinfo':0, 'controls': 0,'modestbranding':0,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+    origin: pageurl,
+    playerVars: {
+         'autoplay': 0,'loop': 0,'showinfo':0, 'controls': 0,'modestbranding':0,
+         'playsinline':0,'rel':0,'iv_load_policy': 3
+        },
   });
 
 
@@ -577,7 +583,22 @@ function onYouTubeIframeAPIReady() {
     height:'360',
     width:'640',
     videoId:'at1ZNjcf-NA',
-    playerVars: {'showinfo':0, 'controls': 0,'modestbranding':0,'playsinline':0,'rel':0,'iv_load_policy': 3 },
+    origin: pageurl,
+    playerVars: {
+        'autoplay': 0,'loop': 0,'showinfo':0, 'controls': 0,'modestbranding':0,
+        'playsinline':0,'rel':0,'iv_load_policy': 3
+       },
+});
+
+player3= new YT.Player('player3',{
+    height:'360',
+    width:'640',
+    videoId:'0ubq5F3k7ac',
+    origin: pageurl,
+    playerVars: {
+        'autoplay': 0,'loop': 0,'showinfo':0, 'controls': 0,'modestbranding':0,
+        'playsinline':0,'rel':0,'iv_load_policy': 3
+       },
 });
 }
 function onPlayerReady() {
@@ -600,6 +621,16 @@ function stopVideo2(){
     player2.stopVideo();
 }
 
+function PlayerReady3(){
+
+    player3.playVideo();
+}
+function stopVideo3(){
+    player3.stopVideo();
+}
+
+
+
   //modal
  let mod = document.querySelector(".player");
  if(mod){
@@ -615,6 +646,15 @@ if(mod2){
 mod2.addEventListener('click',function(e){
     e.preventDefault();
     PlayerReady2();
+});
+}
+
+
+let mod3 = document.querySelector(".players3");
+if(mod3){
+mod3.addEventListener('click',function(e){
+    e.preventDefault();
+    PlayerReady3();
 });
 }
 

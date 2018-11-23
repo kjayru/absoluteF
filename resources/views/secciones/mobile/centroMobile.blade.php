@@ -16,7 +16,12 @@
                                         <div class="carousel-item active">
                                           <div class="row h-100 justify-content-center">
                                             <div class=" col-7">
-                                            <img src="//media.giphy.com/media/8PsfvYbpWIXs2blrra/giphy.gif" alt="b2" class="img-fluid" />
+                                                <div class="videoplayer3">
+                                                    <div class="bgif3">
+                                                        <a href="#" class=" modal-trigger link players3" data-modal="#modal-3">player </a>
+                                                        <div class="player3"></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class=" col-12 text-center textocentro">
                                                 <p>En el mundo hay mucho <strong>odio</strong>. Por eso, decidimos
