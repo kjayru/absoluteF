@@ -42,8 +42,11 @@ class CreateTwittsTable extends Migration
             $table->boolean('isTweetPublished');
             $table->boolean('isTweetDestroyed');
             $table->string('url');
+
             $table->bigInteger('id');
+
             $table->string('idStr');
+            $table->string('category')->nullable();
             $table->timestamps();
         });
     }
