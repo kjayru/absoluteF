@@ -15,12 +15,7 @@
                                         <div class="carousel-item active">
                                           <div class="row justify-content-center align-items-center">
                                             <div class="col-md-3 col-8">
-                                                <div class="videoplayer3">
-                                                    <div class="bgif3">
-                                                        <a href="#" class=" modal-trigger link players3" data-modal="#modal-3">player </a>
-                                                        <div class="player3"></div>
-                                                    </div>
-                                                </div>
+                                                <iframe width="300" height="300" src="https://www.youtube.com/embed/0ubq5F3k7ac?loop=1&rel=0&control=0&autoplay=1&mute=1&enablejsapi=1"></iframe>
                                             </div>
                                             <div class="col-md-5 textocentro">
                                                 <p>En el mundo hay mucho <strong>odio</strong>. Por eso, decidimos

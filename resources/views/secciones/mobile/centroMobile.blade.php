@@ -15,12 +15,9 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                           <div class="row h-100 justify-content-center">
-                                            <div class=" col-7">
+                                            <div class=" col-12 text-center">
                                                 <div class="videoplayer3">
-                                                    <div class="bgif3">
-                                                        <a href="#" class=" modal-trigger link players3" data-modal="#modal-3">player </a>
-                                                        <div class="player3"></div>
-                                                    </div>
+                                                    <iframe width="200" height="200" src="https://www.youtube.com/embed/0ubq5F3k7ac?loop=1&rel=0&control=0&autoplay=1&mute=1&enablejsapi=1"></iframe>
                                                 </div>
                                             </div>
                                             <div class=" col-12 text-center textocentro">
