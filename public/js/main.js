@@ -1169,7 +1169,7 @@ function getPath() {
     var slug = nextPages[ this.loadCount ];
     console.log('Don: '+slug);
     if ( slug ) {
-    return `${pageurl}/getdemoview/?page=${slug}`;
+    return `/getdemoview/?page=${slug}`;
     }
 }
 
@@ -1183,7 +1183,7 @@ function getPath2(name) {
 //usuario
 function getPath3(filtro) {
 
-    return `${pageurl}/getcategoria/?page=${filtro}`;
+    return `/getcategoria/?page=${filtro}`;
 
 }
 
