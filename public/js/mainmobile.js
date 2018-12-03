@@ -292,7 +292,7 @@ $("#validarEdad").on('click',function(e){
 
 
 var nextPages = [];
-
+console.log('paginas: '+pages);
 for(var i=1;i<pages ;i++){
     nextPages.push(i);
 }
