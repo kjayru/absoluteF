@@ -161,5 +161,10 @@ class HomeController extends Controller
 
         return response()->json($userdata);
     }
+
+    public function galeria()
+    {
+        return view('interno.galeria');
+    }
 }
 
