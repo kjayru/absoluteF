@@ -129,7 +129,7 @@ class HomeController extends Controller
 
 
     public function getdata(){
-        $twitts =Twitt::inRandomOrder()->limit(50)->get();
+        $twitts =Twitt::inRandomOrder()->limit(15)->get();
 
         return response()->json($twitts);
     }
@@ -165,6 +165,14 @@ class HomeController extends Controller
     public function galeria()
     {
         return view('interno.galeria');
+    }
+
+
+    public function videos(){
+        return view('interno.video');
+    }
+    public function videosMob(){
+        return view('interno.video-mob');
     }
 }
 

@@ -85,38 +85,10 @@
                         <a href="#" class="btn-mancha btn-reset" style="display:none;">Regresar</a>
                     </div>
 
-                    <div class="contenedorman content" data-mcs-theme="dark" data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
+                    <div class="contenedorman"  data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
+                            <iframe src="{{env('APP_URL')}}/videos-mob"  frameborder="0" allowtransparency="true" width="100%" height="800" >
 
-
-                        <div class="grid are-images-unloaded">
-
-                        @foreach($twitts as $key => $tw)
-                         @php
-                            $op = rand(1, 12);
-                         @endphp
-                            @if(fmod($key, 12) == 0)
-                            <div class="grid__item grid__item--width2">
-                                <div class="box" style="background:url(/images/scroll-bt{{$op}}.png); background-size:cover;">
-
-                                </div>
-                            </div>
-                            @else
-
-                            <div class="grid__item grid__item--height2">
-                                <div class="box">
-                                    <video controls=""  poster="/images/fondo{{$op}}.png">
-                                        <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/{{ $tw->id }}.mp4" type="video/mp4">
-
-                                    </video>
-                                </div>
-                            </div>
-
-                            @endif
-                        @endforeach
-
-                        </div>
-
-
+                            </iframe>
                     </div>
                     <button class="btn btn-vermas view-more-button">Ver más</button>
                     <div class="page-load-status">

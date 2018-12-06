@@ -385,176 +385,7 @@ $("#validarEdad").on('click',function(e){
     }
 
 
-$(window).on("load", function () {
 
-    var $grid = $('.grid').masonry({
-        itemSelector: 'none', // select none at first
-        columnWidth: '.grid__col-sizer',
-        gutter: '.grid__gutter-sizer',
-        percentPosition: true,
-        stagger: 30,
-        // nicer reveal transition
-        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
-    });
-
-    // get Masonry instance
-    var msnry = $grid.data('masonry');
-
-    // initial items reveal
-    $grid.imagesLoaded( function() {
-        $grid.removeClass('are-images-unloaded');
-        $grid.masonry( 'option', { itemSelector: '.grid__item' });
-        var $items = $grid.find('.grid__item');
-        $grid.masonry( 'appended', $items );
-    });
-
-  /*  $grid.infiniteScroll({
-        path: getPath,
-        append: '.grid__item',
-        outlayer: msnry,
-        history: false,
-        status: '.page-load-status',
-
-
-    });*/
-
-    var nextPages = [];
-
-    for(var i=1;i<pages ;i++){
-        nextPages.push(i);
-    }
-
-
-    $grid.infiniteScroll({
-        path: function() {
-            var slug = nextPages[ this.loadCount ];
-            console.log('pages '+slug);
-            if ( slug ) {
-            return `/getdata/?page=${slug}`;
-            }
-
-        },
-        // load response as flat text
-        outlayer: msnry,
-        responseType: 'text',
-        status: '.page-load-status',
-        history: false,
-        append: false
-      });
-
-      $grid.on( 'load.infiniteScroll', function( event, response ) {
-
-        var data = JSON.parse( response );
-        var itemsHTML = data.map( getItemHTML ).join('');
-        var $itempe =  $( itemsHTML );
-        $itempe.imagesLoaded( function() {
-
-
-            $grid.infiniteScroll('appendItems', $itempe );
-           $grid.masonry( 'appended', $itempe );
-
-        });
-
-
-      });
-      $('.grid').infiniteScroll('loadNextPage');
-
-    $(".content").mCustomScrollbar({
-        scrollInertia:0,
-		setTop: 0,
-		setHeight: 1000,
-        callbacks: {
-            onCreate: function(){
-
-            },
-            advanced:{
-
-                updateOnContentResize: true
-            },
-            onBeforeUpdate: function(){
-
-            },
-            onTotalScroll: function(){
-               /* $grid.infiniteScroll( 'option', {
-                  loadOnScroll: true,
-                  outlayer: msnry,
-                  history: false
-                });*/
-
-               // $grid.infiniteScroll('loadNextPage');
-               // msnry.reloadItems();
-               // msnry.layout();
-            }
-
-        }
-    });
-});
-
-
-function getItemHTML( photo ) {
-    var rn = Math.floor((Math.random() * 10) + 1);
-switch (rn) {
-    case 1:
-
-    var itemTemplateSrc = $('#photo-item-template').html();
-    break;
-    case 2:
-
-    var itemTemplateSrc = $('#photo-item-template2').html();
-    break;
-    case 3:
-
-    var itemTemplateSrc = $('#photo-item-template3').html();
-    break;
-    case 4:
-
-    var itemTemplateSrc = $('#photo-item-template4').html();
-    break;
-
-    case 5:
-
-    var itemTemplateSrc = $('#photo-item-template5').html();
-    break;
-
-    case 6:
-
-    var itemTemplateSrc = $('#photo-item-template6').html();
-    break;
-    case 7:
-
-    var itemTemplateSrc = $('#photo-item-template7').html();
-    break;
-    case 8:
-    var itemTemplateSrc = $('#photo-item-template8').html();
-    break;
-    case 9:
-
-    var itemTemplateSrc = $('#photo-item-template9').html();
-    break;
-    case 10:
-
-    var itemTemplateSrc = $('#photo-item-template10').html();
-    break;
-    }
-
-    return microTemplate( itemTemplateSrc, photo );
-
-}
-
-
-function microTemplate( src, data ) {
-
-
-  return src.replace( /\{\{([\w\-_\.]+)\}\}/gi, function( match, key ) {
-    var value = data;
-
-    value = data.idStr;
-
-
-    return value;
-  });
-}
 
 $(window).resize(function(){
 
@@ -1792,4 +1623,110 @@ function addSpinner2() {
     $("#spinner2").fadeIn("slow");
 };
 
+
+
+var msnry = new Masonry( '.grid', {
+    itemSelector: '.grid__item',
+    columnWidth: '.grid__col-sizer',
+    gutter: '.grid__gutter-sizer',
+    percentPosition: true,
+    stagger: 30,
+    // nicer reveal transition
+    visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+    hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+  });
+
+
+  var infScroll = new InfiniteScroll( '.grid', {
+    path: function() {
+        console.log( this.pageIndex);
+      return '/getdata?page=' + this.pageIndex;
+    },
+    // load response as flat text
+    responseType: 'text',
+    outlayer: msnry,
+    status: '.page-load-status',
+    elementScroll: '.contenedorman',
+    history: false,
+  });
+
+
+    var proxyElem = document.createElement('div');
+        infScroll.on( 'load', function( response ) {
+            var data = JSON.parse( response );
+            var itemsHTML = data.map( getItemHTML ).join('');
+            proxyElem.innerHTML = itemsHTML;
+            var items = proxyElem.querySelectorAll('.grid__item');
+            imagesLoaded( items, function() {
+            infScroll.appendItems( items );
+        msnry.appended( items );
+    });
+});
+
+infScroll.loadNextPage();
+
+
+function getItemHTML( photo ) {
+var rn = Math.floor((Math.random() * 10) + 1);
+switch (rn) {
+case 1:
+
+var itemTemplateSrc = $('#photo-item-template').html();
+break;
+case 2:
+
+var itemTemplateSrc = $('#photo-item-template2').html();
+break;
+case 3:
+
+var itemTemplateSrc = $('#photo-item-template3').html();
+break;
+case 4:
+
+var itemTemplateSrc = $('#photo-item-template4').html();
+break;
+
+case 5:
+
+var itemTemplateSrc = $('#photo-item-template5').html();
+break;
+
+case 6:
+
+var itemTemplateSrc = $('#photo-item-template6').html();
+break;
+case 7:
+
+var itemTemplateSrc = $('#photo-item-template7').html();
+break;
+case 8:
+var itemTemplateSrc = $('#photo-item-template8').html();
+break;
+case 9:
+
+var itemTemplateSrc = $('#photo-item-template9').html();
+break;
+case 10:
+
+var itemTemplateSrc = $('#photo-item-template10').html();
+break;
+}
+
+return microTemplate( itemTemplateSrc, photo );
+
+}
+
+
+function microTemplate( src, data ) {
+
+
+return src.replace( /\{\{([\w\-_\.]+)\}\}/gi, function( match, key ) {
+var value = data;
+
+value = data.idStr;
+
+
+return value;
+});
+}
 

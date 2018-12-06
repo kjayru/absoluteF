@@ -22,3 +22,5 @@ Route::get('/getDataExcel','ExcelController@index');
 Route::get('/getusuario/{any}','HomeController@getUsuario');
 Route::get('/getcategoria/{any}','HomeController@getCategoria');
 Route::get('/galeria','HomeController@galeria');
+Route::get('/videos','HomeController@videos');
+Route::get('/videos-mob','HomeController@videosMob');
