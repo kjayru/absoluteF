@@ -1623,7 +1623,7 @@ function addSpinner2() {
     $("#spinner2").fadeIn("slow");
 };
 
-
+/*
 
 var msnry = new Masonry( '.grid', {
     itemSelector: '.grid__item',
@@ -1729,4 +1729,5 @@ value = data.idStr;
 return value;
 });
 }
+*/
 
