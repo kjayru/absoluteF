@@ -9,10 +9,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     <li class="nav-item">
-        <a class="nav-link btnInicio" href="#" >Inicio</a>
+        <a class="nav-link btnInicio" href="/secciones" >Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btnConoce" href="#" >Conoce la botella</a>
+        <a class="nav-link btnConoce" href="/secciones" >Conoce la botella</a>
       </li>
 
       <li class="nav-item">

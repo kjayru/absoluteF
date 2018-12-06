@@ -8,13 +8,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link btnConoce btn-effect" href="#" ><i class="fas fa-angle-left">
+        <a class="nav-link btnConoce btn-effect" href="/secciones/conoce-la-botella" ><i class="fas fa-angle-left">
             </i> Conoce la <strong>botella</strong>
             <span></span>
          </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btnInicio btn-effect" href="#" >Inicio
+        <a class="nav-link btnInicio btn-effect" href="/secciones" >Inicio
                 <span></span>
         </a>
 
