@@ -298,7 +298,7 @@ body {
       var infScroll = new InfiniteScroll( '.grid', {
         path: function() {
             console.log( this.pageIndex);
-          return 'https://absolutef.test/getdata?page=' + this.pageIndex;
+          return '/getdata?page=' + this.pageIndex;
         },
         // load response as flat text
         responseType: 'text',
