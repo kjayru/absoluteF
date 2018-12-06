@@ -1,6 +1,12 @@
 @extends('layout.interno')
 @section('content')
+@desktop
+@include('partial.navigationInterno')
+@enddesktop
 
+ @mobile
+ @include('partial.navigationMobileInterno')
+ @endmobile
 <div class="layout" id="app">
       <div class="layout__main">
         <div class="page1">
