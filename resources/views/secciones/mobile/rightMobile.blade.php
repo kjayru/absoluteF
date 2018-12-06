@@ -86,7 +86,7 @@
                     </div>
 
                     <div class="contenedorman"  data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
-                            <iframe src="{{env('APP_URL')}}/videos-mob"  frameborder="0" allowtransparency="true" width="100%" height="800" >
+                            <iframe src="/videos-mob"  frameborder="0" allowtransparency="true" width="100%" height="800" >
 
                             </iframe>
                     </div>
