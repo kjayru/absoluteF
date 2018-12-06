@@ -57,7 +57,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
 
                 <div class="row justify-content-center">
                     <p class="text-center">Tweets de odio convertidos en amor:</p>
-                    <div class="contador text-center">4240</div>
+                    <div class="contador text-center">{{ $totaltwitts }}</div>
                     <div class="hash text-center">#MásAmorMenosOdio</div>
                     <div class="buscar text-center">
                            <p>Busca tu tweet con el nombre de tu usuario</p>
@@ -205,3 +205,124 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
             <p>2018 Importado por Pernod Ricard Peru S.A., Lima, Perú.</p>
         </div>-->
         </div>
+<!-- .photo-item template HTML -->
+
+<script type="text/html" id="photo-item-template">
+
+  <div class="grid__item grid__item--height2 ">
+        <div class="box">
+            <video controls="" poster="/images/fondo1.png">
+                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="photo-item-template2">
+
+  <div class="grid__item grid__item--width2  ">
+        <div class="box">
+            <video controls="" poster="/images/fondo2.png">
+                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="photo-item-template3">
+
+<div class="grid__item grid__item--height2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo4.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+
+<script type="text/html" id="photo-item-template4">
+
+<div class="grid__item grid__item--width2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo2.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+<script type="text/html" id="photo-item-template5">
+
+<div class="grid__item grid__item--height2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo3.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+<script type="text/html" id="photo-item-template6">
+
+<div class="grid__item grid__item--width2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo1.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+<script type="text/html" id="photo-item-template7">
+
+<div class="grid__item grid__item--height2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo2.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+<script type="text/html" id="photo-item-template8">
+
+<div class="grid__item grid__item--width2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo4.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+<script type="text/html" id="photo-item-template9">
+
+<div class="grid__item grid__item--height2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo3.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+<script type="text/html" id="photo-item-template10">
+
+<div class="grid__item grid__item--width2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo1.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>

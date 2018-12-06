@@ -31,7 +31,16 @@ class HomeController extends Controller
         $paginas = $twitts->lastPage();
         $actual = $twitts->currentPage();
         $cantidad = Twitt::count();
-        return view('front.secciones',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual,'twitts'=>$posts,'cantidad'=>$cantidad]);
+
+
+        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/hacked/?limite=10",true);
+
+
+        $twitts = json_decode($url, true);
+
+        $totaltwitts = $twitts['totalTweets'];
+
+        return view('front.secciones',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual,'twitts'=>$posts,'cantidad'=>$cantidad,'totaltwitts'=>$totaltwitts]);
     }
     /**
      * Show the form for creating a new resource.
@@ -120,7 +129,7 @@ class HomeController extends Controller
 
 
     public function getdata(){
-        $twitts =Twitt::inRandomOrder()->limit(20)->get();
+        $twitts =Twitt::inRandomOrder()->limit(50)->get();
 
         return response()->json($twitts);
     }

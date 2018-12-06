@@ -167,3 +167,125 @@
         </div>-->
         </div>
     </div>
+
+
+
+<script type="text/html" id="photo-item-template">
+
+<div class="grid__item grid__item--height2 ">
+      <div class="box">
+          <video controls="" poster="/images/fondo1.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+<script type="text/html" id="photo-item-template2">
+
+<div class="grid__item grid__item--width2  ">
+      <div class="box">
+          <video controls="" poster="/images/fondo2.png">
+              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+          </video>
+      </div>
+  </div>
+</script>
+
+<script type="text/html" id="photo-item-template3">
+
+<div class="grid__item grid__item--height2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo4.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
+
+
+<script type="text/html" id="photo-item-template4">
+
+<div class="grid__item grid__item--width2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo2.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="photo-item-template5">
+
+<div class="grid__item grid__item--height2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo3.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="photo-item-template6">
+
+<div class="grid__item grid__item--width2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo1.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="photo-item-template7">
+
+<div class="grid__item grid__item--height2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo2.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="photo-item-template8">
+
+<div class="grid__item grid__item--width2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo4.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="photo-item-template9">
+
+<div class="grid__item grid__item--height2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo3.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
+
+<script type="text/html" id="photo-item-template10">
+
+<div class="grid__item grid__item--width2  ">
+    <div class="box">
+        <video controls="" poster="/images/fondo1.png">
+            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+
+        </video>
+    </div>
+</div>
+</script>
