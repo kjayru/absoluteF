@@ -15,11 +15,11 @@
 
 
 .contenido::-webkit-scrollbar {
-    width: 2px;
+    width: 10px;
 }
 
 .contenido::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
 .contenido::-webkit-scrollbar-thumb {
