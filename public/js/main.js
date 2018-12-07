@@ -350,6 +350,10 @@ $("#validarEdad").on('click',function(e){
         TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
     });
 
+    $(".sliderurl3").on('click',function(){
+       window.location.href="/galeria"
+    });
+
 
 });
     var nextPages = [];

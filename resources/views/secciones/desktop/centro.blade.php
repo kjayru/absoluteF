@@ -9,10 +9,33 @@
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 
                                     </ol>
                                     <div class="carousel-inner">
+
+
                                         <div class="carousel-item active">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-md-3 col-8">
+                                                        <img src="/images/bottle.png" alt="b1" class="img-fluid" />
+                                                    </div>
+                                                    <div class="col-md-5 textocentro">
+                                                        <p>Estuvimos presente en la noche limeña llenando de amor
+                                                            las mejores fiestas de la capital con nuestros increíbles Love Drinks.
+                                                        </p>
+                                                        <div class="btn-slide btn-galeria sliderurl3">
+                                                            <div>
+                                                                <span>Entérate de más</span>
+                                                                <span>Entérate de más</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+
+                                        <div class="carousel-item ">
                                           <div class="row justify-content-center align-items-center">
                                             <div class="col-md-3 col-8">
                                                 <iframe width="300" height="300" src="https://www.youtube.com/embed/0ubq5F3k7ac?loop=1&rel=0&control=0&autoplay=1&mute=1&enablejsapi=1"></iframe>

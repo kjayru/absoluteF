@@ -285,6 +285,10 @@ $("#validarEdad").on('click',function(e){
     });
 
 
+    $(".mbslide3").on('click',function(){
+        window.location.href="/galeria"
+     });
+
 
 });
 

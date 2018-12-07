@@ -12,8 +12,34 @@
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                     </ol>
+
+
+
+
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+
+                                            <div class="carousel-item active">
+                                                    <div class="row h-100 justify-content-center">
+                                                        <div class=" col-7">
+                                                            <img src="/images/bottle.png" alt="b1" class="img-fluid" />
+                                                        </div>
+                                                        <div class=" col-12 text-center textocentro">
+                                                            <p>Estuvimos presente en la noche limeña llenando de amor las mejores fiestas
+                                                                de la capital con nuestros increíbles Love Drinks.
+                                                            </p>
+
+
+                                                        </div>
+                                                        <a class="btnmobslide mbslide3">
+
+                                                                <span>Entérate de más</span>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+
+                                        <div class="carousel-item ">
                                           <div class="row h-100 justify-content-center">
                                             <div class=" col-12 text-center">
                                                 <div class="videoplayer3">
@@ -61,6 +87,10 @@
                                                 </a>
                                             </div>
                                         </div>
+
+
+
+
 
                                     </div>
 
