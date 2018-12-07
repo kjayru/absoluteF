@@ -14,6 +14,19 @@
 <style>
 
 
+.contenido::-webkit-scrollbar {
+    width: 2px;
+}
+
+.contenido::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+.contenido::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2));
+  outline: 1px solid slategrey;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -25,7 +38,7 @@ body {
 .contenido {
   padding: 10px;
   height: 800px;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 
