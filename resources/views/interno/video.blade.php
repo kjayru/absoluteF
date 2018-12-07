@@ -29,8 +29,17 @@ body {
 }
 .grid__col-sizer,
 .grid__item {
-  width: 32%;
+  /*width: 32%;*/
+  width: 250px;
+    height:250px;
+    margin-bottom: 10px;
 }
+
+
+
+    .gutter-sizer {
+        width: 30px;
+    }
 
 .grid__gutter-sizer {
   width: 30px;
@@ -94,11 +103,13 @@ body {
 
   .grid__item,
   .grid__col-sizer {
-    width: 17%;
+    width: 250px;
+    height:250px;
+    margin-bottom: 10px;
   }
 
 
-  .grid__gutter-sizer { width: 2%; }
+  .grid__gutter-sizer { width: 30px; }
 
   /* hide by default */
   .grid.are-images-unloaded .image-grid__item {
@@ -115,16 +126,14 @@ body {
     width: 100% !important ;
   }
 
-  .grid__item--height1 {
-      height: 370px;
-     }
+
   .grid__item--height2 {
-      height: 252px;
+      height: 230px;
     }
 
   .grid__item--width2 {
-    width: 34%;
-    height: 376px;
+    width: 440px;
+    height: 440px;
     }
 </style>
 <body>
@@ -133,6 +142,7 @@ body {
                 <div id="grid" class="grid" >
                     <div class="grid__col-sizer"></div>
                     <div class="grid__gutter-sizer "></div>
+
                 </div>
 
                 <div class="page-load-status">

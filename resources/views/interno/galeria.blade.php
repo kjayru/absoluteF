@@ -25,7 +25,7 @@
           <div class="page1__main">
             <section class="section1">
               <div class="section1__align">
-                <div class="section1__main">
+                <div class="section1_                                       _main">
                   <div class="title">
                     <h3> <span>LOVE DRINKS</span></h3>
                   </div>

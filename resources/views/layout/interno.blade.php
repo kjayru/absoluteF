@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Absolut</title>
+        <title>ABSOLUT A DROP OF LOVE</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -14,6 +14,13 @@
 
         <meta name="apple-mobile-web-app-capable" content="yes">
     @endmobile
+    <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-128589220-1');
+     </script>
   </head>
   <body>
     @yield('content')
