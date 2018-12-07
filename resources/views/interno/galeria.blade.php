@@ -7,6 +7,13 @@
  @mobile
  @include('partial.navigationMobileInterno')
  @endmobile
+ <style>
+ .section2 p {
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+ </style>
 <div class="layout" id="app">
       <div class="layout__main">
         <div class="page1">
