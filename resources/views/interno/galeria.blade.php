@@ -43,7 +43,8 @@
                 <div class="section2__main">
                   <div class="title">
                     <h3> <span>LOVE EVENTS</span></h3>
-                    <h4>BULBO</h4>
+                    <h4>BULBO 29 – 09</h4>
+                    <p>Estuvimos presentes en el aniversario de Bulbo, para celebrar una noche mágica llena de amor, música electrónica y mucha buena onda.</p>
                   </div>
                   <div class="list" id="list2">
                     <div class="list__item" data-responsive="assets/photos/small/bulbo/01.jpg" data-src="assets/photos/large/bulbo/01.jpg" data-sub-html="Foto: Fernando Farias."><a><img src="assets/photos/small/bulbo/01.jpg" alt=""/></a></div>
@@ -59,7 +60,8 @@
                     <div class="list__item" data-responsive="assets/photos/small/bulbo/11.jpg" data-src="assets/photos/large/bulbo/11.jpg" data-sub-html="Foto: Fernando Farias."><a><img src="assets/photos/small/bulbo/11.jpg" alt=""/></a></div>
                   </div>
                   <div class="title">
-                    <h4>RUBIK</h4>
+                    <h4>RUBIK 22 – 09</h4>
+                    <p>Celebramos junto a Rubik una noche en dónde el arte y la música se juntaron para disfrutar absolutamente del amor.</p>
                   </div>
                   <div class="list" id="list3">
                     <div class="list__item" data-responsive="assets/photos/small/rubik/01.jpg" data-src="assets/photos/large/rubik/01.jpg" data-sub-html="Foto: Fernando Farias."><a><img src="assets/photos/small/rubik/01.jpg" alt=""/></a></div>
