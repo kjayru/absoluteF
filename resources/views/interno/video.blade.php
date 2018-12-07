@@ -23,7 +23,7 @@
 }
 
 .contenido::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.2));
+  background-color: slategrey;
   outline: 1px solid slategrey;
 }
 
