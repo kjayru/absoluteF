@@ -27,48 +27,17 @@ body {
   height: 800px;
   overflow-y: scroll;
 }
-.grid__col-sizer,
-.grid__item {
-  /*width: 32%;*/
-  width: 250px;
-    height:250px;
-    margin-bottom: 10px;
+
+
+.grid__item,
+.grid__col-sizer {
+  width: 32%;
 }
-
-
-
-    .gutter-sizer {
-        width: 30px;
-    }
-
-.grid__gutter-sizer {
-  width: 30px;
-}
-
 .grid__item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   float: left;
 }
-
-
-.grid__item__image {
-  display: block;
-  max-width: 100%;
-}
-
-.grid__item__caption {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  margin: 0;
-}
-
-.grid__item__caption a {
-  color: white;
-  font-size: 0.8em;
-  text-decoration: none;
-}
-
+.grid__gutter-sizer { width: 2%; }
 .container {
     position: relative;
 }
@@ -84,65 +53,50 @@ body {
 
     display: block;
 }
-.grid2 video,.grid3 video,.grid4 video,.grid5 video,.grid6 video {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
+
 .grid {
     max-width: 1200px;
   }
-  .grid2,.grid3,.grid4,.grid5,.grid6 {
-    width: 1200px;
 
-  }
   /* reveal grid after images loaded */
   .grid.are-images-unloaded {
     opacity: 1;
   }
 
-  .grid__item,
-  .grid__col-sizer {
-    width: 250px;
-    height:250px;
-    margin-bottom: 10px;
-  }
-
-
-  .grid__gutter-sizer { width: 30px; }
 
   /* hide by default */
   .grid.are-images-unloaded .image-grid__item {
     opacity: 0;
   }
 
-  .grid__item {
-    margin-bottom: 20px;
-    float: left;
-    position: relative;
-  }
+
   .grid__item  video {
     display: block;
     width: 100% !important ;
   }
 
-
-  .grid__item--height2 {
+  .grid__item--height {
       height: 230px;
     }
 
+  .grid__item--width {
+      width: 230px;
+    }
   .grid__item--width2 {
-    width: 440px;
-    height: 440px;
+      width: 200px;
+      height: 200px;
+    }
+  .grid__item--height2 {
+      height: 350px;
+      width:350px;
     }
 </style>
 <body>
 
             <div class="contenido">
                 <div id="grid" class="grid" >
-                    <div class="grid__col-sizer"></div>
-                    <div class="grid__gutter-sizer "></div>
-
+                        <div class="grid__col-sizer"></div>
+                        <div class="grid__gutter-sizer"></div>
                 </div>
 
                 <div class="page-load-status">
@@ -177,7 +131,7 @@ body {
 </script>
 <script type="text/html" id="photo-item-template2">
 
-  <div class="grid__item grid__item--width2  ">
+  <div class="grid__item grid__item--width2">
         <div class="box">
             <video controls="" poster="/images/fondo2.png">
                 <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
@@ -299,7 +253,6 @@ body {
         gutter: '.grid__gutter-sizer',
         percentPosition: true,
         stagger: 30,
-        // nicer reveal transition
         visibleStyle: { transform: 'translateY(0)', opacity: 1 },
         hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
       });
@@ -318,22 +271,22 @@ body {
         history: false,
       });
 
-      // use element to turn HTML string into elements
-var proxyElem = document.createElement('div');
 
-infScroll.on( 'load', function( response ) {
-  // parse response into JSON data
-  var data = JSON.parse( response );
-  // compile data into HTML
-  var itemsHTML = data.map( getItemHTML ).join('');
-  // convert HTML string into elements
-  proxyElem.innerHTML = itemsHTML;
-  // append item elements
-  var items = proxyElem.querySelectorAll('.grid__item');
-  imagesLoaded( items, function() {
-    infScroll.appendItems( items );
-    msnry.appended( items );
-  });
+    var proxyElem = document.createElement('div');
+
+    infScroll.on( 'load', function( response ) {
+
+    var data = JSON.parse( response );
+
+    var itemsHTML = data.map( getItemHTML ).join('');
+
+    proxyElem.innerHTML = itemsHTML;
+
+    var items = proxyElem.querySelectorAll('.grid__item');
+    imagesLoaded( items, function() {
+        infScroll.appendItems( items );
+        msnry.appended( items );
+    });
 });
 
 infScroll.loadNextPage();

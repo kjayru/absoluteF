@@ -1006,10 +1006,7 @@ div#resultado {
     width: 100%;
     background: transparent;
 }
-.grid__col-sizer,
-.grid__item {
-  width: 32%;
-}
+
 
 .grid__gutter-sizer {
   width: 30px;
@@ -1017,21 +1014,9 @@ div#resultado {
 
 .grid__item {
   margin-bottom: 10px;
-  float: left;
 }
 
 
-.grid__item__image {
-  display: block;
-  max-width: 100%;
-}
-
-.grid__item__caption {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  margin: 0;
-}
 
 .grid__item__caption a {
   color: white;
@@ -2072,9 +2057,7 @@ input#usuario {
     width: 100% !important ;
   }
 
-  .grid__item--height1 {
-      height: 370px;
-     }
+
   .grid__item--height2 {
       height: 252px;
     }
