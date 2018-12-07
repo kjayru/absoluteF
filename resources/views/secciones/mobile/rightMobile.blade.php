@@ -86,11 +86,11 @@
                     </div>
 
                     <div class="contenedorman"  data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
-                            <iframe src="/videos-mob"  frameborder="0" allowtransparency="true" width="100%" height="800" scrolling="no">
+                            <iframe src="/videos-mob"  frameborder="0" allowtransparency="true" width="100%" height="1200" scrolling="no">
 
                             </iframe>
                     </div>
-                    <button class="btn btn-vermas view-more-button">Ver más</button>
+
                     <div class="page-load-status">
                         <div class="loader-ellips infinite-scroll-request">
                           <span class="loader-ellips__dot"></span>
@@ -155,26 +155,26 @@
 </script>
 <script type="text/html" id="photo-item-template2">
 
-<div class="grid__item grid__item--width2  ">
-      <div class="box">
-          <video controls="" poster="/images/fondo2.png">
-              <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+    <div class="grid__item grid__item--width2  ">
+        <div class="box">
+            <video controls="" poster="/images/fondo2.png">
+                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
 
-          </video>
-      </div>
-  </div>
+            </video>
+        </div>
+    </div>
 </script>
 
 <script type="text/html" id="photo-item-template3">
 
 <div class="grid__item grid__item--height2  ">
     <div class="box">
-        <video controls="" poster="/images/fondo4.png">
-            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+            <video controls="" poster="/images/fondo4.png">
+                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
 
-        </video>
+            </video>
+        </div>
     </div>
-</div>
 </script>
 
 
@@ -192,14 +192,14 @@
 
 <script type="text/html" id="photo-item-template5">
 
-<div class="grid__item grid__item--height2  ">
-    <div class="box">
-        <video controls="" poster="/images/fondo3.png">
-            <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
+    <div class="grid__item grid__item--height2  ">
+        <div class="box">
+            <video controls="" poster="/images/fondo3.png">
+                <source src="https://s3.amazonaws.com/arquea-absolute-dev/output/@{{valor.idStr}}.mp4" type="video/mp4">
 
-        </video>
+            </video>
+        </div>
     </div>
-</div>
 </script>
 
 <script type="text/html" id="photo-item-template6">

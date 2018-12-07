@@ -2476,7 +2476,7 @@ footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, a
 /*
 
 .example1{
-  font-size: convert(18, px, percent); // converted from pixels 
+  font-size: convert(18, px, percent); // converted from pixels
 }
 
 .example2{
@@ -2488,7 +2488,7 @@ footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, a
 }
 
 .example4{
-  font-size: convert(234, percent, px); // converted from percentage 
+  font-size: convert(234, percent, px); // converted from percentage
 }
 
 */
@@ -2902,10 +2902,10 @@ html.fp-enabled,
     .layout__header--links ul li {
       display: inline-block;
       /*a.router-link-active{
-            background: #d61929;  
+            background: #d61929;
           }*/
       /*a.router-link-exact-active.router-link-active{
-            background: #d61929;  
+            background: #d61929;
           }
           a.router-link-exact-active{
             background: #d61929;
@@ -3201,7 +3201,7 @@ html.fp-enabled,
           position: relative;
           margin: 0 auto;
           /*.swiper-button-disabled{
-								opacity: .85;	
+								opacity: .85;
 							}*/
           /*.slick-slide {
 						    float: left;
@@ -3640,7 +3640,7 @@ html.fp-enabled,
                 font-size: 1em; } }
         .layout__main .page1__main .section2__main .list {
           /*.swiper-button-disabled{
-								opacity: .85;	
+								opacity: .85;
 							}*/
           /*.slick-slide {
 						    float: left;
