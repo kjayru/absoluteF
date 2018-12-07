@@ -1605,6 +1605,9 @@ $(document).ready(function(e){
         $(".btn-reset").hide();
         $(".btn-vermas").fadeIn(350,'swing');
         $(".contenedorman").fadeIn(350,'swing');
+        $(".form-check-input").each(function(){
+            $(this).prop('checked',false);
+        });
     });
 
 });
