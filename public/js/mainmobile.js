@@ -1085,13 +1085,14 @@ $(document).ready(function(e){
 
     $("#matrimonio").change(function(){
         $(".grid2").html("");
+
         if($(this).is(':checked')){
 
             $(".form-check-input").each(function(){
                 $(this).prop('checked',false);
             });
-
-            $(this).prop('checked',true);
+            $("#usuario").val('');
+        $(this).prop('checked',true);
         $(".btn-reset").fadeIn(350,'swing');
         $(".contenedorman").hide();
         $(".btn-vermas").hide();
@@ -1143,7 +1144,7 @@ $(document).ready(function(e){
 
     $("#racismo").change(function(){
         $(".grid4").html("");
-
+        $("#usuario").val('');
         if($(this).is(':checked')){
             $(".btn-reset").fadeIn(350,'swing');
             $(".form-check-input").each(function(){
@@ -1209,6 +1210,7 @@ $(document).ready(function(e){
     //peruchile
 
     $("#peruchile").change(function(){
+        $("#usuario").val('');
         $(".grid5").html("");
         if($(this).is(':checked')){
             $(".btn-reset").fadeIn(350,'swing');
@@ -1275,6 +1277,7 @@ $(document).ready(function(e){
     //OTROS
 
     $("#otros").change(function(){
+        $("#usuario").val('');
         $(".grid6").html("");
         if($(this).is(':checked')){
             $(".btn-reset").fadeIn(350,'swing');
