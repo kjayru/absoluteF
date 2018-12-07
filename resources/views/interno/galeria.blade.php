@@ -13,6 +13,11 @@
     padding-top: 30px;
     text-align: center;
 }
+@media screen and (max-width: 425px){
+    .layout__main .page1__main .section2__main .title h4 {
+        font-size: 2em;
+    }
+}
  </style>
 <div class="layout" id="app">
       <div class="layout__main">
