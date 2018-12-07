@@ -99,7 +99,7 @@ en mensajes de amor, fomentando tolerancia, constancia y calma.
 
                     <div class="contenedorman"  data-contador="{{$total}}" data-pages="{{$paginas}}" data-actual="{{$actual}}">
 
-                      <iframe src="/videos"  frameborder="0" allowtransparency="true" width="100%" height="800" >
+                      <iframe src="/videos"  frameborder="0" allowtransparency="true" width="100%" height="800" scrolling="no" >
 
                       </iframe>
 
