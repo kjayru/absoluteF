@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 425px){
     .layout__main .page1__main .section2__main .title h4 {
-        font-size: 2em;
+        font-size: 21px;
     }
 }
  </style>
