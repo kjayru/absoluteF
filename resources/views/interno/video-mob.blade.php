@@ -20,7 +20,7 @@ body {
 }
 .contenido {
   padding: 10px;
-  height: 800px;
+  height: 1200px;
   overflow-y: scroll;
 }
 .grid__col-sizer,
