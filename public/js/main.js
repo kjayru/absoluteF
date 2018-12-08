@@ -120,7 +120,7 @@ $("#validarEdad").on('click',function(e){
           const ccright = window.innerWidth*2;
 
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn,onComplete:function(){
-                altoDinamico(2);
+                altoDinamico(1);
             }});
 
           $(".nav-link").removeClass("active");
@@ -340,7 +340,7 @@ $("#validarEdad").on('click',function(e){
     $(".sliderurl1").on('click',function(){
         const contenedor = document.getElementById("marco");
         const ccright = window.innerWidth*2;
-        altoDinamico(2);
+        altoDinamico(1);
         TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
     });
 
@@ -399,12 +399,12 @@ $(window).resize(function(){
     let alto = window.innerHeight;
     const lienzo = ancho*3;
     const ccright = ancho*2;
-    const alt = alto * 2;
+
     contenedor.style.width = `${lienzo}px`;
 
     contenedor.style.left=`-${ancho}px`;
 
-    $("#postfeed").css("height",`${alt}px`);
+
         if(window.location.pathname==='/secciones'){
             altoDinamico(2);
             TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
@@ -414,7 +414,7 @@ $(window).resize(function(){
             TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
         }
         if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
-            altoDinamico(2);
+            altoDinamico(1);
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
         }
     }
