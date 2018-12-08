@@ -1971,6 +1971,11 @@ input#usuario {
 
 
 @media (min-width: 768px) {
+    #pagina2-r .bloquemedio h3 {
+        font-family: 'Conv_AbsolutHeadline2017';
+        font-size: 50px;
+        line-height: 55px;
+    }
      /*play3*/
      .videoplayer3 {
 

@@ -120,7 +120,7 @@ $("#validarEdad").on('click',function(e){
           const ccright = window.innerWidth*2;
 
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn,onComplete:function(){
-                altoDinamico(3);
+                altoDinamico(2);
             }});
 
           $(".nav-link").removeClass("active");
@@ -340,7 +340,7 @@ $("#validarEdad").on('click',function(e){
     $(".sliderurl1").on('click',function(){
         const contenedor = document.getElementById("marco");
         const ccright = window.innerWidth*2;
-        altoDinamico(3);
+        altoDinamico(2);
         TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
     });
 
@@ -396,12 +396,15 @@ $(window).resize(function(){
     const contenedor = document.getElementById("marco");
     if(contenedor){
     let ancho = window.innerWidth;
+    let alto = window.innerHeight;
     const lienzo = ancho*3;
     const ccright = ancho*2;
+    const alt = alto * 2;
     contenedor.style.width = `${lienzo}px`;
 
     contenedor.style.left=`-${ancho}px`;
 
+    $("#postfeed").css("height",`${alt}px`);
         if(window.location.pathname==='/secciones'){
             altoDinamico(2);
             TweenMax.to(contenedor,1,{left:`-${ancho}px`,ease:Power4.easeIn});
@@ -411,7 +414,7 @@ $(window).resize(function(){
             TweenMax.to(contenedor,1,{left:0,ease:Power4.easeIn});
         }
         if(window.location.pathname==='/secciones/Mira-lo-que-hicimos-con-todo-el-odio'){
-            altoDinamico(3);
+            altoDinamico(2);
             TweenMax.to(contenedor,1,{left:`-${ccright}px`,ease:Power4.easeIn});
         }
     }
@@ -522,7 +525,7 @@ function onYouTubeIframeAPIReady() {
   player2= new YT.Player('player2',{
     height:'360',
     width:'640',
-    videoId:'at1ZNjcf-NA',
+    videoId:'INqE_iUnoWo',
     origin: pageurl,
     playerVars: {
         'autoplay': 0,'loop': 0,'showinfo':0, 'controls': 0,'modestbranding':0,
