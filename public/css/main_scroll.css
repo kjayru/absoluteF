@@ -2735,6 +2735,18 @@ input#usuario {
 
 @media(max-width:679px){
 
+    body {
+        font-family: 'Conv_Absolut-Medium';
+        line-height: 1.42857143;
+        color: #333;
+        background: url(/images/back003.png) no-repeat 80% 0px;
+        background-size: cover;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: block;
+        padding: 0;
+        min-height: 100vh;
+    }
     .gotasvideo {
         display: none;
     }
@@ -2747,8 +2759,8 @@ input#usuario {
     }
     #tweetrigami #videoabsolute .bgif {
         left: 47px;
-        width: 233px;
-        height: 121px;
+        width: 268px;
+        height: 142px;
         top: 24px;
         position: absolute;
     }
