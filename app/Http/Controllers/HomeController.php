@@ -174,5 +174,34 @@ class HomeController extends Controller
     public function videosMob(){
         return view('interno.video-mob');
     }
+
+    public function tweetrigami()
+    {
+        return view('interno.tweetrigami');
+    }
+
+    public function hackeoTwitter(){
+
+        $posts = Twitt::inRandomOrder()->limit(10)->get();
+        $twitts = DB::table('twitts')->paginate(10);
+        $paginador = $twitts->count();
+        $total = $twitts->total();
+        $paginas = $twitts->lastPage();
+        $actual = $twitts->currentPage();
+        $cantidad = Twitt::count();
+
+        $url = file_get_contents("https://dflc3vgmc8.execute-api.us-east-1.amazonaws.com/Prod/tweets/hacked/?limite=10",true);
+
+
+        $twitts = json_decode($url, true);
+
+        $totaltwitts = $twitts['totalTweets'];
+
+        return view('interno.tweetrigami',['total'=>$total,'paginas'=>$paginas,'actual'=>$actual,'twitts'=>$posts,'cantidad'=>$cantidad,'totaltwitts'=>$totaltwitts]);
+    }
+
+    public function hackeoinstagram(){
+        return view('interno.instagran');
+    }
 }
 

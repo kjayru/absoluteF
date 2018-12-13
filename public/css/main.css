@@ -64,6 +64,31 @@ html body  .container h1{
   line-height:50px;
   margin-bottom:0
 }
+.btn-light{
+    background: #c43a94;
+    color: white;
+    font-family: 'Conv_AbsolutHeadline2017';
+    padding: 4px 40px;
+    border: 2px solid white;
+    border-radius: 0;
+}
+
+.btn-blue{
+    background: #124bca;
+    color: white;
+    font-family: 'Conv_AbsolutHeadline2017';
+    padding: 4px 40px;
+    border: 2px solid white;
+    border-radius: 0;
+}
+.btn i{
+    font-size:20px;
+}
+.btn-blue:hover{
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df;
+}
 a{
 	-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -1360,7 +1385,30 @@ input#usuario {
 }
 
 @media(max-width: 769px){
-
+    .btn-blue {
+        background: #124bca;
+        color: white;
+        font-family: 'Conv_AbsolutHeadline2017';
+        padding: 10px 0;
+        border: 2px solid white;
+        border-radius: 0;
+        display: block;
+    }
+    .btn-light {
+        background: #c43a94;
+        color: white;
+        font-family: 'Conv_AbsolutHeadline2017';
+        padding: 10px 0;
+        border: 2px solid white;
+        border-radius: 0;
+        display: block;
+    }
+    .btn i {
+        font-size: 45px;
+    }
+    .bloquemedio {
+     margin-bottom: 0px;
+    }
     .grid__item {
         width: 300px;
         height: 300px;
@@ -2326,7 +2374,7 @@ input#usuario {
 
     #pagina1-r .bloquetexto h1 {
 
-        font-size: 50px;
+        font-size: 42px;
         line-height:49px;
 
     }
@@ -2336,8 +2384,9 @@ input#usuario {
         padding-top: 38px;
     }
     #pagina1-r .bloquemedio h3 {
-        font-size: 50px;
+        font-size: 42px;
         line-height: 55px;
+        margin-bottom: 60px;
     }
     #pagina1-r .bloquemedio p {
         font-size: 20px;
