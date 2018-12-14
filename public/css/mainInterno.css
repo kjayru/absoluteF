@@ -2641,7 +2641,7 @@ input#usuario {
 
 
 
-@media(max-width:679px){
+@media(max-width:677px){
 
     .gotasvideo {
         display: none;
@@ -2659,5 +2659,12 @@ input#usuario {
         height: 121px;
         top: 24px;
         position: absolute;
+    }
+}
+@media(min-width:678px){
+    #sec-instagram {
+        color: white;
+        margin-bottom: 70px;
+        margin-top: 70px;
     }
 }
