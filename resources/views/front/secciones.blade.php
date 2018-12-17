@@ -112,17 +112,17 @@
 @include('secciones.tablet.leftTable')
 @include('secciones.tablet.rightTable')
 <div  id="modal-1" class="boxmodal" >
-                <div class="container-fluid">
-                    <div class="row justify-content-center item-align-center">
-                        <div id="player">
-
-                        </div>
-
-                    </div>
-                    <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center item-align-center">
+            <div id="player">
 
             </div>
+
+        </div>
+        <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    </div>
+
+</div>
 @endtablet
  @include('partial.footer')
  @include('partial.scriptseccion')

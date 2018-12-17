@@ -262,6 +262,21 @@
     </div>
   </script>
 
+
+  <div  id="modal-1" class="boxmodal" >
+    <div class="container-fluid">
+        <div class="row justify-content-center item-align-center">
+            <div id="player">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
   @include('partial.footer')
   @include('partial.scriptseccion')
 
