@@ -693,6 +693,21 @@ function componer(){
 
 }
 
+$(window).on('load',function(){
+
+    console.log("onload "+localStorage.getItem('first'));
+        if(localStorage.getItem('first')){
+            console.log('ya visito..');
+
+        }else{
+
+            localStorage.setItem('first','primera-carga');
+           window.location.reload();
+
+        }
+    });
+
+
 //api youtube
 var tag = document.createElement('script');
 tag.src = "//youtube.com/iframe_api";
@@ -739,19 +754,7 @@ function onYouTubeIframeAPIReady() {
 
 
 
-$(window).on('load',function(){
 
-console.log("onload "+localStorage.getItem('first'));
-    if(localStorage.getItem('first')){
-        console.log('ya visito..');
-
-    }else{
-
-        localStorage.setItem('first','primera-carga');
-       window.location.reload();
-
-    }
-});
 
 
 
@@ -796,9 +799,9 @@ var _createClass = function () {
     this.activeModal = null;
 
     this.modals.map(function (modal) {
-      var close = document.createElement('button');
+      var close = document.createElement('div');
       close.innerHTML = ' <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>';
-      close.classList.add('close');
+      //close.classList.add('close');
       modal.appendChild(close);
       close.addEventListener('click', function (evt) {return _this._closeModal(evt, modal);}, false);
     });
@@ -898,3 +901,12 @@ var _createClass = function () {
     clearTimeout(id);
   };
 })();
+
+$(".close").on('click',function(e){
+    e.preventDefault();
+
+    $(".boxmodal").removeClass('active');
+        stopVideo();
+        stopVideo2();
+        stopVideo3();
+});

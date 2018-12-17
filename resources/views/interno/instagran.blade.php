@@ -1,4 +1,4 @@
-@extends('layout.interno')
+@extends('layout.instagram')
 @section('content')
 @desktop
 @include('partial.navigationInterno')
@@ -41,4 +41,18 @@
             </div>
     </div>
 </section>
+
+
+<div  id="modal-1" class="boxmodal" >
+    <div class="container-fluid">
+        <div class="row justify-content-center item-align-center">
+            <div id="player">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 @endsection
