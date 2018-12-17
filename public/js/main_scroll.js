@@ -1,112 +1,6 @@
 
-
-var msnry = new Masonry( '.grid', {
-    itemSelector: '.grid__item',
-    columnWidth: '.grid__col-sizer',
-    gutter: '.grid__gutter-sizer',
-    percentPosition: true,
-    stagger: 30,
-    visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-    hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
-  });
-
-
-  var infScroll = new InfiniteScroll( '.grid', {
-    path: function() {
-        console.log( this.pageIndex);
-      return '/getdata?page=' + this.pageIndex;
-    },
-    // load response as flat text
-    responseType: 'text',
-    outlayer: msnry,
-    status: '.page-load-status',
-    //elementScroll: '.contenido',
-    history: false,
-  });
-
-
-var proxyElem = document.createElement('div');
-infScroll.on( 'load', function( response ) {
-var data = JSON.parse( response );
-var itemsHTML = data.map( getItemHTML ).join('');
-proxyElem.innerHTML = itemsHTML;
-var items = proxyElem.querySelectorAll('.grid__item');
-imagesLoaded( items, function() {
-    infScroll.appendItems( items );
-    msnry.appended( items );
-});
-});
-
-infScroll.loadNextPage();
-
-
-
-function getItemHTML( photo ) {
-var rn = Math.floor((Math.random() * 10) + 1);
-switch (rn) {
-case 1:
-
-var itemTemplateSrc = $('#photo-item-template').html();
-break;
-case 2:
-
-var itemTemplateSrc = $('#photo-item-template2').html();
-break;
-case 3:
-
-var itemTemplateSrc = $('#photo-item-template3').html();
-break;
-case 4:
-
-var itemTemplateSrc = $('#photo-item-template4').html();
-break;
-
-case 5:
-
-var itemTemplateSrc = $('#photo-item-template5').html();
-break;
-
-case 6:
-
-var itemTemplateSrc = $('#photo-item-template6').html();
-break;
-case 7:
-
-var itemTemplateSrc = $('#photo-item-template7').html();
-break;
-case 8:
-var itemTemplateSrc = $('#photo-item-template8').html();
-break;
-case 9:
-
-var itemTemplateSrc = $('#photo-item-template9').html();
-break;
-case 10:
-
-var itemTemplateSrc = $('#photo-item-template10').html();
-break;
-}
-
-return microTemplate( itemTemplateSrc, photo );
-
-}
-
-
-function microTemplate( src, data ) {
-
-    return src.replace( /\{\{([\w\-_\.]+)\}\}/gi, function( match, key ) {
-    var value = data;
-
-    value = data.idStr;
-
-
-    return value;
-    });
-}
-
-
-
 $(window).resize(function(){
+    console.log("resize");
     componer();
 });
 
@@ -139,6 +33,14 @@ $(".buscar input.form-control").blur(function(){
 });
 
 
+$(window).on('load',function(){
+
+    if(!localStorage.getItem('first')){
+        $(window).reload();
+    }else{
+        localStorage.setItem('fisrt','primera-cargar');
+    }
+});
 
 
 
@@ -152,7 +54,7 @@ for(var i=1;i<pages ;i++){
 
 function getPath() {
     var slug = nextPages[ this.loadCount ];
-    console.log('Don: '+slug);
+
     if ( slug ) {
     return `/getdemoview/?page=${slug}`;
     }
@@ -160,7 +62,7 @@ function getPath() {
 
 //filtro
 function getPath2(name) {
-    console.log(`${pageurl}/getusuario/${name}`);
+
     return `${pageurl}/getusuario/${name}`;
 
 }
@@ -688,8 +590,11 @@ $(document).ready(function(e){
 
 });
 
-
+var i=0;
 function componer(){
+    i =i+1;
+
+
     var msnry = new Masonry( '.grid', {
         itemSelector: '.grid__item',
         columnWidth: '.grid__col-sizer',
@@ -703,7 +608,7 @@ function componer(){
 
       var infScroll = new InfiniteScroll( '.grid', {
         path: function() {
-            console.log( this.pageIndex);
+
           return '/getdata?page=' + this.pageIndex;
         },
         // load response as flat text
@@ -711,7 +616,7 @@ function componer(){
         outlayer: msnry,
         status: '.page-load-status',
         //elementScroll: '.contenido',
-        history: false,
+        history: false
       });
 
 
@@ -728,6 +633,7 @@ function componer(){
     });
 
     infScroll.loadNextPage();
+
 
 
     function getItemHTML( photo ) {
@@ -793,4 +699,8 @@ function componer(){
         });
     }
 
+    console.log("grilla "+i);
+
+
 }
+
