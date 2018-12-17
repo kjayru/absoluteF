@@ -514,7 +514,7 @@ a.navbar-brand {
   }
 
   #videoabsolute .bgif {
-    background: url(/gifs/video-home2.gif) no-repeat 0px 0px;
+    background: url(/images/video-hackea.gif) no-repeat 0px 0px;
     height: 266px;
     position: relative;
     top: 51px;
@@ -1351,7 +1351,9 @@ input#usuario {
         width: 100%;
 
       }
-
+    .grid-item{
+        margin: 0 auto 10px auto;
+    }
     .grid-sizer,
     .grid-item {
         width: 300px;

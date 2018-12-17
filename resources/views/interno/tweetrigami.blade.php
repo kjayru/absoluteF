@@ -14,6 +14,9 @@
                     <div class="col-md-12 text-center">
 
                             <h3 class="titulseccion">Tweetrigami</h3>
+                            <p>Invitamos a los usuarios de esta plataforma a hackear los tuits de odio que encuentren
+                                con nuestro <strong>#MásAmorMenosOdio</strong>, y así pudimos re tuitear
+                                 estos mensajes en forma de un corazón de origami, transformándolos en amor.</p>
                     </div>
                     <div class="col-md-8">
                         <div id="videoabsolute">

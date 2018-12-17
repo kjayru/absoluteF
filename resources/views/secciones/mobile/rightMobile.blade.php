@@ -8,8 +8,9 @@
                                                 Acabemos con el odio</h1>
                                         <p>
                                             Nuestro compromiso con el amor continua, únete y juntos luchemos por un mundo con
-                                                <strong> #MásAmorMenosOdio</strong>.</p>
+                                                <strong> #MásAmorMenosOdio</strong>.
                                         </p>
+
                                 </div>
 
                                 <div class="col-12 text-center">
