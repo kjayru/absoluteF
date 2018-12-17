@@ -20,7 +20,7 @@
     <a class="navbar-brand" href="/secciones"><img src="/images/logo-absolut.svg" class="img-fluid"/></a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-         <a class="nav-link btnVolver btn-effect" href="/secciones"> Volver <span></span> </a>
+         <a class="nav-link btnVolver btn-effect" href="/secciones/Mira-lo-que-hicimos-con-todo-el-odio"> Volver <span></span> </a>
       </li>
     </ul>
   </div>
